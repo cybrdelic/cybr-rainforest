@@ -4,7 +4,15 @@ A static frame-1 scene is saved separately. All original stand placements,
 numbered cameras, host wood and packed scan images are preserved.
 """
 from __future__ import annotations
-import bpy,numpy as np,random,sys,os,json,math,hashlib,gc,resource,time,re
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
+import bpy,numpy as np,random,sys,os,json,math,hashlib,gc,time,re
 from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
@@ -19,7 +27,7 @@ SEED=481516
 
 def sha(path):
     with Path(path).open('rb') as stream:return hashlib.file_digest(stream,'sha256').hexdigest()
-def log(message):print(message,'RSS_MB',resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,flush=True)
+def log(message):print(message,'RSS_MB',peak_rss_mib(),flush=True)
 def mesh_record(ob):
     me=ob.data;me.calc_loop_triangles();n=len(me.vertices)
     v=np.empty(n*3,np.float32);me.vertices.foreach_get('co',v);v=v.reshape(-1,3)

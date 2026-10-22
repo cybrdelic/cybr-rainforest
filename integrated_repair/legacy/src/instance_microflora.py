@@ -4,7 +4,15 @@ The macro-habitat field is continuous on each host. Shared microshoots have sixt
 seeded forms. Host thalli, crusts and lifted bark remain individually projected.
 This is an authored representation change, not a lossless geometry claim.
 """
-import bpy,sys,os,json,math,random,hashlib,gc,ctypes,traceback,resource
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import bpy,sys,os,json,math,random,hashlib,gc,ctypes,traceback
 from pathlib import Path
 import numpy as np
 from mathutils import Vector,Quaternion,Matrix
@@ -62,10 +70,10 @@ def main():
                 if not ob.users_collection:bpy.data.objects.remove(ob)
         new,rows,r=ns['colonize'](wood,col,mats,rc['seed']%3000,budget)
         batch(library,rows,col,'GT11 | '+wood.name+' | microshoot anchors');report['hosts'].append(r)
-        bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0);print('FACTORED',name,len(rows),flush=True)
+        bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator();print('FACTORED',name,len(rows),flush=True)
     s=bpy.context.scene;s.cycles.debug_bvh_type='STATIC_BVH'
     out=ROOT/'GREEN_TERROR_V11_INSTANCED.blend';bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
-    report.update(completed=True,scene=str(out),scene_sha256=hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),peak_MB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024)
+    report.update(completed=True,scene=str(out),scene_sha256=hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),peak_MB=peak_rss_mib())
     (ROOT/'evidence/microflora_instancing.json').write_text(json.dumps(report,indent=2))
 if __name__=='__main__':
     try:main()

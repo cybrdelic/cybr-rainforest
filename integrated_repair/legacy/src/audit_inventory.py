@@ -1,4 +1,12 @@
-import bpy,json,os,resource
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
+import bpy,json,os
 from collections import Counter
 p='inputs/historical/GREEN_TERROR_V9/GREEN_TERROR_V9_STREAMING.blend'
 bpy.ops.wm.open_mainfile(filepath=p,load_ui=False,use_scripts=False)
@@ -12,7 +20,7 @@ for o in bpy.data.objects:
 for i in bpy.data.images:r['images'].append({'name':i.name,'path':i.filepath,'packed':bool(i.packed_file)})
 for m in bpy.data.materials:
  r['materials'].append({'name':m.name,'nodes':[(n.name,n.type) for n in m.node_tree.nodes] if m.use_nodes else []})
-r['rss']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+r['rss']=peak_rss_mib()
 r['scene']={'camera':s.camera.name,'world':s.world.name,'exposure':s.view_settings.exposure,'look':s.view_settings.look,'samples':s.cycles.samples}
 open('inputs/historical/GREEN_TERROR_V11/evidence/scene_inventory.json','w').write(json.dumps(r,indent=2))
 print('INSPECT_DONE',r['counts'],r['rss'],flush=True)

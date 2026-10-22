@@ -4,6 +4,13 @@ Only selected climbing foliage and two fern families are changed. Not a global
 photorealism declaration. New prototypes remain candidates pending review.
 """
 from __future__ import annotations
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import trim_allocator, enable_cycles_debug
 import os,sys,json,hashlib,time,gc,ctypes,random
 from pathlib import Path
 import bpy,numpy as np
@@ -54,7 +61,7 @@ def main():
                 if ob.name not in c.objects:c.objects.link(ob)
         for ob in oldobjects:bpy.data.objects.remove(ob,do_unlink=True)
         report['climbers'].append({'collection':name,'blade_instances':len(leaves),'root_attachment_coordinates':nodes,'removed_meshes':[o.name for o in []]})
-        print('INTEGRATED',name,len(leaves),flush=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+        print('INTEGRATED',name,len(leaves),flush=True);gc.collect();trim_allocator()
     # Shared fern assets replace the old frond family in both original/detail collections.
     for idx in (0,1):
         cols=[bpy.data.collections.get(f'{pre}fern prototype {idx:02d}') for pre in ('','GT7 | ')];cols=[c for c in cols if c]

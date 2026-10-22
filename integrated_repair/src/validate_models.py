@@ -1,5 +1,13 @@
 """Validate the actual native checkpoints, not merely the generation scripts."""
-import bpy,numpy as np,json,hashlib,sys,time,os,resource
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
+import bpy,numpy as np,json,hashlib,sys,time,os
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()

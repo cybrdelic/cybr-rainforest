@@ -34,9 +34,30 @@ The asset-gate archive explicitly says the complete candidate set was not approv
 
 The V14 final scene, matched native 2K acceptance comparisons and requested ten-second/240-frame 1080p rainforest film are still unavailable. No A01 or V11 artifact has been renamed to imply V14 completion.
 
+## Portable botanical quickstart
+
+Use Python 3.10+ and Blender 4.5 or newer on Windows, macOS or Linux. The launcher discovers Blender from --blender, BLENDER, PATH, or standard Windows/macOS application locations. A missing executable or older version produces a clear error. It starts Blender with factory settings, uses absolute input/output paths and never overwrites an existing working directory.
+
+    python -m venv .venv
+    python -m pip install --no-compile -r asset_gate/requirements.txt
+    python tools/botanical_study.py --workdir work/branch-check --kind branch
+
+Use the virtual environment's Python for the final two commands (activate it first, or use .venv/Scripts/python on Windows and .venv/bin/python elsewhere). The default is one 320x240, eight-sample static diagnostic render with two CPU threads. It generates the selected family's full-size atlases and original geometry; lower render resolution is only a bounded check. --width, --height, --samples, --threads, --timeout and --blender are explicit controls. Full-quality rendering takes longer and is not implied by this smoke test.
+
+Memory telemetry is peak process resident memory in MiB; unavailable measurements are JSON null, never invented zero. Windows uses its native process counters, macOS corrects the byte-based resource unit, and Linux uses resource KiB. EXR output selects capabilities from the installed Blender RNA rather than assuming a 5.4-only enum.
+
+    python -m unittest discover -s tests -v
+    python -m unittest discover -s recovery/src -p test_compat_unit.py -v
+
+The three-OS CI workflow runs source/runtime and EXR compatibility unit checks with fresh host dependencies. It does not install Blender or claim a native render, full forest, wind simulation or completed film. Native render evidence is recorded separately. Keep cybr_runtime.py with the checkout or portable study copy when using individual legacy scripts.
+
+## Windows execution evidence
+
+A fresh isolated Python environment generated full-size Piper atlases, built the procedural branch and rendered a real 320x240, eight-sample Cycles PNG with Blender 4.5.3 LTS. Peak native process memory was 519.93 MiB. The current runtime/core checks and six EXR compatibility tests pass. [Evidence and exact scope](verification/windows-portability/README.md). This is one static branch, not a recovered full forest or a completed film. Three-OS core CI is configured but not yet run remotely.
+
 ## Start with the self-contained botanical construction
 
-The archive records Blender 5.4.0 Alpha, build `3fe0f2ab2a29`, CPU Cycles. Compatibility with a different Blender build has not been tested here. The atlas generator uses host Python with NumPy, SciPy and Pillow; native scene scripts run inside Blender's Python. FFmpeg and FFprobe are needed only for video encoding/inspection.
+The archive records Blender 5.4.0 Alpha, build `3fe0f2ab2a29`, CPU Cycles. The portable branch quickstart has now also been executed on Windows with Blender 4.5.3 LTS; this does not establish compatibility of every archived full-forest path. The atlas generator uses host Python with NumPy, SciPy and Pillow; native scene scripts run inside Blender's Python. FFmpeg and FFprobe are needed only for video encoding/inspection.
 
 Use a disposable working copy so reruns do not overwrite the historical evidence in this repository:
 
@@ -46,6 +67,7 @@ python3 -m venv .venv
 python3 -m pip install -r asset_gate/requirements.txt
 mkdir -p work
 cp -R asset_gate work/botanical-study
+cp cybr_runtime.py work/botanical-study/
 cd work/botanical-study
 export BLENDER=/path/to/your/blender
 
@@ -76,7 +98,7 @@ These are source-derived reproduction instructions, not commands rerun during pu
 
 It also needs the complete `GREEN_TERROR_INTEGRATED_REPAIR_SOURCE.zip` layout and assets, plus a compatible Blender executable. The smaller code-only repair checkpoint in this repository is not a substitute for that complete archive. Native `.blend` inputs and the packed substrate were intentionally excluded because their complete embedded content was not verified for public redistribution. No download link or availability claim is made for the missing full scene.
 
-The recovery code retains input/output hashes, verified stage resumption, native pixel-band assembly and final render/scene identity checks. Its included unit and native test sources are useful starting points, but no fresh test result is claimed here.
+The recovery code retains input/output hashes, verified stage resumption, native pixel-band assembly and final render/scene identity checks. Six EXR compatibility tests now pass again, and a separate native EXR smoke passes on Blender 4.5.3. These do not exercise the missing full-forest inputs.
 
 ## How the botanical models work
 

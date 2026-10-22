@@ -1,5 +1,13 @@
 """Lossless deduplication: identical fern meshes share the same native datablock."""
-import bpy,numpy as np,json,gc,ctypes,hashlib,resource
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import bpy,numpy as np,json,gc,ctypes,hashlib
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'GREEN_TERROR_V11.blend'),use_scripts=False)
@@ -24,8 +32,8 @@ for me in bpy.data.meshes:
         if at.name in ('.select_vert','.select_edge','.select_poly'):
             me.attributes.remove(at);r['removed_selection_attributes']+=1
 bpy.context.scene.cycles.debug_bvh_type='STATIC_BVH'
-bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator()
 out=ROOT/'GREEN_TERROR_V11_NATIVE.blend';bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
 with out.open('rb') as f:r['scene_sha256']=hashlib.file_digest(f,'sha256').hexdigest()
-r.update(completed=True,peak_MB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024)
+r.update(completed=True,peak_MB=peak_rss_mib())
 (ROOT/'evidence/lossless_sharing.json').write_text(json.dumps(r,indent=2));print('LOSSLESS_SHARING_DONE',r)

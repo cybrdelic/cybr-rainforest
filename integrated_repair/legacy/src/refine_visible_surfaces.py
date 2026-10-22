@@ -1,4 +1,11 @@
 """Correct the first native QC: excessive ribbing and subpixel attached growth."""
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import trim_allocator, enable_cycles_debug
 import bpy,sys,os,math,json,random,re,gc,ctypes,hashlib,traceback
 from pathlib import Path
 import numpy as np
@@ -34,7 +41,7 @@ def main():
     c.objects.unlink(ob)
    bpy.data.objects.remove(ob)
   report['rebuilt_climbers'].append(A.mesh_record(new));print('REFINED',name,flush=True)
-  bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+  bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator()
  dims={x['collection']:x for x in json.loads((ROOT/'evidence/build.json').read_text())['plants']}
  for col in list(bpy.data.collections):
   m=re.fullmatch(r'GT8 \| broadleaf prototype (\d+) \| architecture (\d+)',col.name)
@@ -45,7 +52,7 @@ def main():
   for ob in old:
    col.objects.unlink(ob)
    if not ob.users_collection:bpy.data.objects.remove(ob)
-  report['rebuilt_basal_plants'].append(A.mesh_record(new));bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+  report['rebuilt_basal_plants'].append(A.mesh_record(new));bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator()
  for ob in bpy.data.objects:
   if not ob.name.endswith('microshoot anchors') or ob.type!='MESH':continue
   co=np.empty(len(ob.data.vertices)*3,np.float32);ob.data.vertices.foreach_get('co',co);co=co.reshape(-1,3)

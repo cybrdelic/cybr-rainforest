@@ -1,5 +1,13 @@
 """Reopen candidate and compare original stand/camera/light controls to baseline."""
-import bpy,sys,os,json,hashlib,resource,gc,ctypes
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import bpy,sys,os,json,hashlib,gc,ctypes
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
@@ -22,7 +30,7 @@ def capture():
 def main():
  baseline=ROOT/'BASELINE_RELINKED.blend';model=ROOT/'GREEN_TERROR_V11_STRUCTURE.blend'
  bpy.ops.wm.open_mainfile(filepath=str(baseline),use_scripts=False,load_ui=False);before=capture()
- bpy.ops.wm.read_factory_settings(use_empty=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+ bpy.ops.wm.read_factory_settings(use_empty=True);gc.collect();trim_allocator()
  bpy.ops.wm.open_mainfile(filepath=str(model),use_scripts=False,load_ui=False);after=capture()
  checks={k:before[k]==after[k] for k in before}
  images=[]
@@ -35,7 +43,7 @@ def main():
   a=np.empty(len(me.vertices)*3,np.float32);me.vertices.foreach_get('co',a);f=bool(np.isfinite(a).all());finite&=f
   geometry.append({'name':me.name,'vertices':len(me.vertices),'polygons':len(me.polygons),'finite':f})
  checks['finite_coordinates']=finite
- r={'completed':True,'passed':all(checks.values()),'checks':checks,'scene':str(model),'scene_sha256':sha(model),'baseline_sha256':sha(baseline),'baseline_revision':'Preserved V9 checkpoint, texture paths repaired','original_placements':sum(i['count'] for i in after['points'].values()),'native_version':bpy.app.version_string,'native_build':bpy.app.build_hash.decode(),'packed_images':images,'meshes':geometry,'static_frame':bpy.context.scene.frame_current,'animation_verified':False,'peak_rss_mb':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024}
+ r={'completed':True,'passed':all(checks.values()),'checks':checks,'scene':str(model),'scene_sha256':sha(model),'baseline_sha256':sha(baseline),'baseline_revision':'Preserved V9 checkpoint, texture paths repaired','original_placements':sum(i['count'] for i in after['points'].values()),'native_version':bpy.app.version_string,'native_build':bpy.app.build_hash.decode(),'packed_images':images,'meshes':geometry,'static_frame':bpy.context.scene.frame_current,'animation_verified':False,'peak_rss_mb':peak_rss_mib()}
  (ROOT/'evidence/native_reopen.json').write_text(json.dumps(r,indent=2));print('NATIVE_REOPEN',r['passed'],checks,flush=True)
  if not r['passed']:raise AssertionError('Reopen validation failed')
 if __name__=='__main__':

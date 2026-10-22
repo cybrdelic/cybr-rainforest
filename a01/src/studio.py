@@ -1,6 +1,14 @@
 """Native Cycles asset gate; same specimen/camera, separately controlled lighting."""
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
 from pathlib import Path
-import sys,os,argparse,json,time,hashlib,resource,math
+import sys,os,argparse,json,time,hashlib,math
 import bpy
 from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
@@ -54,6 +62,6 @@ def main():
     out.with_suffix('.json').write_text(json.dumps(report,indent=2))
     if a.build_only:return
     bpy.ops.render.render(write_still=True)
-    report.update(completed=out.exists(),seconds=time.time()-t,image_sha256=hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),peak_rss_mb=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024)
+    report.update(completed=out.exists(),seconds=time.time()-t,image_sha256=hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),peak_rss_mb=peak_rss_mib())
     out.with_suffix('.json').write_text(json.dumps(report,indent=2));print('COMPLETED',report,flush=True)
 if __name__=='__main__':main()

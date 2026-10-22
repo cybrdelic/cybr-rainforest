@@ -20,3 +20,8 @@ integrated_repair/assets/
 integrated_repair/raw_bands/
 integrated_repair/renders/
 recovery/dependencies/
+
+.venv/
+work/
+output/
+__pycache__/

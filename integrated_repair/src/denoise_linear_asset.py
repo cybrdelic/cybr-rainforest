@@ -1,8 +1,16 @@
 """Denoise true Cycles multilayer radiance+native guides in a fresh process.
 No geometry, no resizing, no invented surface guides. One AgX display transform.
 """
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
 from pathlib import Path
-import bpy,sys,argparse,json,time,hashlib,resource
+import bpy,sys,argparse,json,time,hashlib
 ap=argparse.ArgumentParser();ap.add_argument('--input',required=True);ap.add_argument('--output',required=True);a=ap.parse_args(sys.argv[sys.argv.index('--')+1:]);p=Path(a.input);out=Path(a.output)
 def sha(p):
  with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -24,4 +32,4 @@ ng.interface.new_socket(name='Image',in_out='OUTPUT',socket_type='NodeSocketColo
 s.view_settings.view_transform=r['view_transform'];s.view_settings.look=r['look'];s.view_settings.exposure=r['exposure'];s.view_settings.gamma=r['gamma'];s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB';s.render.image_settings.color_depth='16';s.render.filepath=str(out)
 rec={**r,'completed':False,'output':str(out),'denoised':True,'linear_checkpoint':False,'raw_checkpoint':str(p),'transport_record':str(transport_record),'raw_checkpoint_sha256':sha(p),'denoising_separate_process':True,'denoising':'Native OIDN High / Accurate, matching Cycles normal and albedo'};out.with_suffix('.json').write_text(json.dumps(rec,indent=2))
 bpy.ops.render.render(write_still=True)
-rec.update(completed=True,image_sha256=sha(out),transport_seconds=r['seconds'],denoising_seconds=time.monotonic()-t,seconds=r['seconds']+time.monotonic()-t,peak_rss_mb=max(r['peak_rss_mb'],resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024));out.with_suffix('.json').write_text(json.dumps(rec,indent=2));print('NATIVE_FINISH_COMPLETE',flush=True)
+rec.update(completed=True,image_sha256=sha(out),transport_seconds=r['seconds'],denoising_seconds=time.monotonic()-t,seconds=r['seconds']+time.monotonic()-t,peak_rss_mb=max_known(r.get('peak_rss_mb'),peak_rss_mib()));out.with_suffix('.json').write_text(json.dumps(rec,indent=2));print('NATIVE_FINISH_COMPLETE',flush=True)

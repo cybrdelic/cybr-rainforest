@@ -32,7 +32,8 @@ assert len(set(frame_hashes))==96
 # Controlled light changes share exactly one camera, geometry and exposure.
 lightrows=[json.loads((D/f'{n}.json').read_text()) for n in ['03_BRANCH_SOFT','04_BRANCH_SIDE','05_BRANCH_BACK']]
 assert len({x['scene_sha256'] for x in lightrows})==1;assert all(np.allclose(lightrows[0]['camera_matrix'],x['camera_matrix']) for x in lightrows)
-font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',22)
+try:font=ImageFont.truetype('DejaVuSans.ttf',22)
+except OSError:font=ImageFont.load_default(size=22)
 board=Image.new('RGB',(1800,496),(18,20,21));dr=ImageDraw.Draw(board)
 for k,(n,label) in enumerate([('03_BRANCH_SOFT','SOFT LIGHT'),('04_BRANCH_SIDE','SIDE LIGHT'),('05_BRANCH_BACK','BACKLIGHT')]):
  im=Image.open(D/f'{n}.png').convert('RGB');im=im.resize((600,450),Image.Resampling.LANCZOS);board.paste(im,(k*600,46));dr.text((k*600+18,13),label,font=font,fill=(235,235,230))
