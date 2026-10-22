@@ -1,8 +1,16 @@
 """Native branch inspection reel. Two real camera moves; no image interpolation.
 This is a static botanical asset inspection, NOT forest animation or wind physics.
 """
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
 from pathlib import Path
-import bpy,sys,os,math,time,json,hashlib,resource
+import bpy,sys,os,math,time,json,hashlib
 from mathutils import Vector,Matrix
 R=Path(__file__).resolve().parents[1];D=R/'video_frames';D.mkdir(exist_ok=True)
 source=R/'BRANCH_ASSET_GATE.blend'
@@ -22,7 +30,7 @@ if not resume:
  bpy.ops.wm.open_mainfile(filepath=str(source),load_ui=False,use_scripts=False)
  s=bpy.context.scene;s.timeline_markers.clear();s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=32;s.cycles.use_adaptive_sampling=False;s.cycles.use_denoising=True;s.cycles.seed=52713;s.cycles.use_animated_seed=False
  s.render.resolution_x=960;s.render.resolution_y=720;s.render.resolution_percentage=100;s.render.fps=24;s.frame_start=1;s.frame_end=96;s.render.use_persistent_data=True;s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB';s.render.image_settings.color_depth='8'
- bpy.context.preferences.view.show_developer_ui=True;bpy.context.preferences.experimental.use_cycles_debug=True;s.cycles.debug_bvh_layout='EMBREE';s.cycles.debug_bvh_type='STATIC_BVH';s.cycles.debug_use_compact_bvh=True
+ enable_cycles_debug(bpy);s.cycles.debug_bvh_layout='EMBREE';s.cycles.debug_bvh_type='STATIC_BVH';s.cycles.debug_use_compact_bvh=True
  for vl in s.view_layers:vl.samples=0
  cam=s.camera;target=Vector((.02,0,.29));original=cam.location.copy();poses=[]
  for frame in range(1,97):
@@ -36,7 +44,7 @@ if not resume:
  plan={'source_scene':str(source),'source_sha256':hashlib.file_digest(source.open('rb'),'sha256').hexdigest(),'animation_scene':str(scene),'animation_sha256':hashlib.file_digest(scene.open('rb'),'sha256').hexdigest(),'frames':96,'width':960,'height':720,'fps':24,'samples_per_frame':32,'camera_motion_only':True,'foliage_motion':False,'image_generation_used':False,'frame_interpolation_used':False,'poses':poses}
  (R/'evidence/VIDEO_PLAN.json').write_text(json.dumps(plan,indent=2))
 
-bpy.context.preferences.view.show_developer_ui=True;bpy.context.preferences.experimental.use_cycles_debug=True;s.render.use_persistent_data=True
+enable_cycles_debug(bpy);s.render.use_persistent_data=True
 for frame in range(1,97):
  p=D/f'{frame:04d}.png';record=p.with_suffix('.json')
  if p.is_file() and record.is_file():

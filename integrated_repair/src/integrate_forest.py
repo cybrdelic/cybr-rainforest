@@ -2,6 +2,13 @@
 Never changes the input file. Swaps referenced prototypes (including the base
 families previously missed by the historical chooser-only integrations).
 """
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import trim_allocator, enable_cycles_debug
 import os,sys,json,hashlib,time,gc,ctypes,re,random
 from pathlib import Path
 from collections import Counter
@@ -14,7 +21,7 @@ INPUT=Path(os.environ.get('GREEN_TERROR_BASELINE', 'inputs/historical/GREEN_TERR
 def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()
 def trim():
  gc.collect()
- try:ctypes.CDLL(None).malloc_trim(0)
+ try:trim_allocator()
  except:pass
 
 def controllers():

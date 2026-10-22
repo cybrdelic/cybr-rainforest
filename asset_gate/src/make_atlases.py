@@ -115,4 +115,7 @@ def main(family,seed):
     (A/f'{family}_network.json').write_text(json.dumps({'seed':seed,'family':family,'major':major,'node_count':len(ps),'joining_edges':len(loops),'nodes':points.tolist(),'parent':parents,'order':order,'growth':'prescribed main skeleton with attractor-driven fine branching and terminal joining'},separators=(',',':')))
     print(family, len(ps),len(loops),flush=True)
 if __name__=='__main__':
-    for f,s in [('piper',61317),('cordate',71521),('fern',31741)]:main(f,s)
+    import argparse
+    parser=argparse.ArgumentParser();parser.add_argument('--family',choices=['all','piper','cordate','fern'],default='all');args=parser.parse_args()
+    for f,s in [('piper',61317),('cordate',71521),('fern',31741)]:
+        if args.family in ('all',f):main(f,s)

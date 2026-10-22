@@ -2,8 +2,16 @@
 This is a local model/appearance gate, not a substituted rainforest background.
 Leaf meshes are never projected onto the terrain or stretched up the wood.
 """
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
 from pathlib import Path
-import sys,time,json,math,random,hashlib,resource
+import sys,time,json,math,random,hashlib
 import bpy,numpy as np
 from mathutils import Vector,Matrix,Euler
 from mathutils.bvhtree import BVHTree

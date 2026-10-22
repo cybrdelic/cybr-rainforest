@@ -1,8 +1,16 @@
 """Reopen portable asset scenes, audit native data, and render a packed-only smoke test.
 Run as a fresh Blender background process AFTER all renders and models are frozen.
 """
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
 from pathlib import Path
-import bpy,numpy as np,json,hashlib,shutil,time,sys,resource
+import bpy,numpy as np,json,hashlib,shutil,time,sys
 R=Path(__file__).resolve().parents[1];E=R/'evidence';C=R/'_clean_reopen';C.mkdir(exist_ok=True)
 paths=['BRANCH_ASSET_GATE.blend','CORDATE_ASSET_GATE.blend','FERN_ASSET_GATE.blend','PATCH_ASSET_GATE.blend','LEAF_UPPER_INSPECTION.blend','LEAF_UNDERSIDE_INSPECTION.blend','BRANCH_INSPECTION_ANIMATION.blend']
 def digest(p):
@@ -39,5 +47,5 @@ for im in bpy.data.images:
 s.render.resolution_x=320;s.render.resolution_y=240;s.render.resolution_percentage=100;s.cycles.samples=16;s.cycles.adaptive_min_samples=16;s.cycles.use_denoising=True
 s.render.filepath=str(E/'packed_only_smoke.png');t=time.monotonic();bpy.ops.render.render(write_still=True);copy.unlink()
 original=Path('inputs/historical/green_terror_original/GREEN_TERROR.blend');original_sha=digest(original);assert original_sha=='a39d6c6368e8dde7f0cc8eb745962136cf181b7cc2db4359e485ece44ed9ee04'
-out={'completed':True,'scope':'Native portability/topology/camera validation, NOT photorealism certification','blender':bpy.app.version_string,'build':bpy.app.build_hash.decode(),'source_forest_unchanged':True,'original_sha256':original_sha,'scenes':rows,'packed_only_smoke':{'completed':True,'external_image_paths_deliberately_invalidated':True,'width':320,'height':240,'seconds':time.monotonic()-t,'file':'evidence/packed_only_smoke.png'},'no_image_generation':True,'peak_rss_mb':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024}
+out={'completed':True,'scope':'Native portability/topology/camera validation, NOT photorealism certification','blender':bpy.app.version_string,'build':bpy.app.build_hash.decode(),'source_forest_unchanged':True,'original_sha256':original_sha,'scenes':rows,'packed_only_smoke':{'completed':True,'external_image_paths_deliberately_invalidated':True,'width':320,'height':240,'seconds':time.monotonic()-t,'file':'evidence/packed_only_smoke.png'},'no_image_generation':True,'peak_rss_mb':peak_rss_mib()}
 (E/'PACKED_NATIVE_VALIDATION.json').write_text(json.dumps(out,indent=2));print('PACKED_DELIVERY_VALIDATED',flush=True)

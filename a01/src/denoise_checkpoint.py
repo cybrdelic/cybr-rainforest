@@ -5,12 +5,19 @@ The compositor reuses the original camera's recorded display transform once.
 No procedural/image-generation approximation, resampling or upscaling occurs.
 """
 from __future__ import annotations
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr
 import argparse
 import hashlib
 import json
 import os
 from pathlib import Path
-import resource
 import sys
 import time
 import traceback
@@ -116,7 +123,7 @@ def main():
         result = bpy.ops.render.render(write_still=True)
         if 'FINISHED' not in result or not a.output.is_file():
             raise RuntimeError('Native denoising did not write the expected PNG.')
-        peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
+        peak = peak_rss_mib()
         record.update(completed=True, denoising_seconds=time.time() - started,
                       denoising_peak_rss_mb=peak, peak_rss_mb=max(raw['peak_rss_mb'], peak),
                       seconds=raw['seconds'] + time.time() - started,

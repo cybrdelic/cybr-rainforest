@@ -3,7 +3,15 @@
 This is a lower geometric LOD for small shrub/midstory blades, NOT removal of
 plants, branches, detail fields, large leaves, or background forest geometry.
 """
-import bpy,sys,os,json,traceback,random,re,hashlib,gc,ctypes,resource
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import bpy,sys,os,json,traceback,random,re,hashlib,gc,ctypes
 from pathlib import Path
 from functools import lru_cache
 import numpy as np
@@ -37,12 +45,12 @@ def main():
         for ob in previous:
             col.objects.unlink(ob)
             if not ob.users_collection:bpy.data.objects.remove(ob)
-        bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+        bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator()
         report['replacements'].append({'collection':col.name,'before_vertices':before,'after_vertices':len(new.data.vertices),'counted_structures':dict(m.counts)})
         print('SMALL_BLADE_BUDGET',col.name,before,len(new.data.vertices),flush=True)
     bpy.context.scene.cycles.debug_bvh_layout='BVH2';bpy.context.scene.cycles.debug_use_compact_bvh=True
     out=ROOT/'GREEN_TERROR_V11_BUDGETED.blend';bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
-    report.update(completed=True,scene_sha256=hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),peak_MB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024)
+    report.update(completed=True,scene_sha256=hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),peak_MB=peak_rss_mib())
     (ROOT/'evidence/small_blade_budget.json').write_text(json.dumps(report,indent=2))
 if __name__=='__main__':
     try:main()

@@ -1,0 +1,51 @@
+{
+  "completed": true,
+  "scene": "isolated-work/BRANCH_ASSET_GATE.blend",
+  "scene_sha256": "54d19844cd621d437766c8bbb0ce2ebb75db2a8ee88e132cbc225ba23cc7cbb7",
+  "width": 320,
+  "height": 240,
+  "samples_max": 8,
+  "denoised": true,
+  "linear_checkpoint": false,
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.0,
+  "gamma": 1.0,
+  "lighting": "soft",
+  "angle": 0,
+  "renderer": "CYCLES",
+  "native_blender": "4.5.3 LTS",
+  "image_generation_used": false,
+  "upscaled": false,
+  "camera_matrix": [
+    [
+      0.9751328229904175,
+      -0.06424299627542496,
+      0.21210554242134094,
+      0.3199999928474426
+    ],
+    [
+      0.22162112593650818,
+      0.28266915678977966,
+      -0.9332643151283264,
+      -1.3200000524520874
+    ],
+    [
+      -1.1941221345068698e-09,
+      0.9570637345314026,
+      0.28987759351730347,
+      0.699999988079071
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "seconds": 11.51500000001397,
+  "peak_rss_mb": 519.92578125,
+  "image_sha256": "541c8f91b82fbb34199443c8fba97f4d2a8fd81a0ffac0a6c67bda561505b7cb",
+  "output": "branch-320x240.png",
+  "scope": "Fresh host dependency setup, numeric Piper atlas, original procedural branch geometry and one static Cycles render. Not the absent full forest."
+}

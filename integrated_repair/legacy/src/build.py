@@ -1,5 +1,13 @@
 """Native V11 scene modification; preserves camera/light controls and stand points."""
-import os,sys,time,json,hashlib,math,re,gc,ctypes,resource,traceback
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import os,sys,time,json,hashlib,math,re,gc,ctypes,traceback
 from pathlib import Path
 from collections import Counter
 ROOT=Path(__file__).resolve().parents[1];sys.path[:0]=[str(ROOT/'src'),str(ROOT/'upstream')]
@@ -12,10 +20,10 @@ ORIGINAL=Path('inputs/historical/green_terror_original/GREEN_TERROR.blend')
 
 def sha(p):
     with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
-def log(x):print(x,'peak_MB',resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,flush=True)
+def log(x):print(x,'peak_MB',peak_rss_mib(),flush=True)
 def trim():
     gc.collect()
-    try:ctypes.CDLL(None).malloc_trim(0)
+    try:trim_allocator()
     except:pass
 
 def snapshots():
@@ -164,7 +172,7 @@ def main():
     s['gt11_revision']='structure-first native candidate';s['gt11_input_sha256']=report['input_sha256']
     s.camera=bpy.data.objects['04_BARK_AND_LITTER'];s.cycles.samples=128;s.render.use_persistent_data=False
     out=ROOT/'GREEN_TERROR_V11.blend';bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
-    report.update(completed=True,elapsed_seconds=time.time()-start,scene=str(out),scene_sha256=sha(out),original_input_unchanged=sha(INPUT)==report['input_sha256'],peak_rss_mb=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024)
+    report.update(completed=True,elapsed_seconds=time.time()-start,scene=str(out),scene_sha256=sha(out),original_input_unchanged=sha(INPUT)==report['input_sha256'],peak_rss_mb=peak_rss_mib())
     (ROOT/'evidence/build.json').write_text(json.dumps(report,indent=2));log('V11_COMPLETED')
 
 if __name__=='__main__':

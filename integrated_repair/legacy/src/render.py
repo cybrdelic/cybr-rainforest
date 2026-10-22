@@ -1,5 +1,13 @@
 """Native matched-camera rendering, separate first-surface guide pass."""
-import bpy,sys,os,argparse,json,time,hashlib,resource,traceback,gc,ctypes
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import bpy,sys,os,argparse,json,time,hashlib,traceback,gc,ctypes
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def sha(p):
@@ -21,7 +29,7 @@ def main():
             if not p.exists():p.write_bytes(raw)
             i.unpack(method='REMOVE');i.filepath=str(p);i.buffers_free()
     s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=a.samples;s.cycles.use_sample_subset=False;s.cycles.time_limit=0;s.cycles.use_adaptive_sampling=False;s.cycles.use_denoising=False;s.cycles.use_guiding=False
-    bpy.context.preferences.view.show_developer_ui=True;bpy.context.preferences.experimental.use_cycles_debug=True
+    enable_cycles_debug(bpy)
     s.cycles.debug_bvh_layout='EMBREE';s.cycles.debug_bvh_type='STATIC_BVH';s.cycles.debug_use_compact_bvh=True;s.cycles.debug_use_spatial_splits=False
     r['native_bvh']='EMBREE compact; debug settings explicitly enabled'
     s.render.use_texture_cache=True;s.render.use_auto_generate_texture_cache=True;s.cycles.debug_use_texture_cache_eviction=True;s.cycles.debug_texture_cache_preserve_unused=0
@@ -77,13 +85,13 @@ def main():
         # Write native combined emission and geometric normals directly.
         # No compositor is kept resident alongside the forest.
         s.render.use_compositing=False;s.render.image_settings.file_format='OPEN_EXR'
-    gc.collect();ctypes.CDLL(None).malloc_trim(0);save();print('NATIVE_RENDER_BEGIN',r,flush=True)
+    gc.collect();trim_allocator();save();print('NATIVE_RENDER_BEGIN',r,flush=True)
     bpy.ops.render.render(write_still=True)
     if not out.exists():
         candidates=list(out.parent.glob(out.stem+'*.exr'))
         if len(candidates)==1:candidates[0].replace(out)
     if not out.is_file():raise RuntimeError('No native EXR output '+str(out))
-    r.update(completed=True,seconds=time.time()-start,peak_rss_mb=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,image_sha256=sha(out),image_bytes=out.stat().st_size);save();print('NATIVE_RENDER_DONE',r,flush=True)
+    r.update(completed=True,seconds=time.time()-start,peak_rss_mb=peak_rss_mib(),image_sha256=sha(out),image_bytes=out.stat().st_size);save();print('NATIVE_RENDER_DONE',r,flush=True)
 if __name__=='__main__':
     try:main()
     except BaseException:traceback.print_exc();sys.stdout.flush();os._exit(1)

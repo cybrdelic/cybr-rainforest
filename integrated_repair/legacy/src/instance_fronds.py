@@ -1,5 +1,13 @@
 """Full-resolution frond templates instantiated within original fern crowns."""
-import bpy,sys,os,json,math,random,gc,ctypes,traceback,hashlib,resource
+# Locate the shared runtime in the checkout or portable study copy.
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import peak_rss_mib, max_known, configure_exr, trim_allocator, enable_cycles_debug
+import bpy,sys,os,json,math,random,gc,ctypes,traceback,hashlib
 from pathlib import Path
 import numpy as np
 from mathutils import Vector
@@ -17,7 +25,7 @@ def main():
             for o in list(c.objects):
                 c.objects.unlink(o)
                 if not o.users_collection:bpy.data.objects.remove(o)
-    bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+    bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator()
     library=bpy.data.collections.new('GT11 | shared detailed fronds');objects=[]
     for i in range(8):
         rng=random.Random(13897+i*237);m=M.Mesh('GT11 detailed frond form '+str(i),mats);d=Vector((1,0,0));side=Vector((0,1,0));L=1.;rise=.39+.043*(i%5)
@@ -51,9 +59,9 @@ def main():
         bpy.data.objects.remove(o)
     bpy.data.collections.remove(library);bpy.data.orphans_purge(do_recursive=True)
     bpy.context.scene.cycles.debug_bvh_type='DYNAMIC_BVH'
-    gc.collect();ctypes.CDLL(None).malloc_trim(0)
+    gc.collect();trim_allocator()
     out=ROOT/'GREEN_TERROR_V11_RENDER.blend';bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True)
-    report={'completed':True,'scene_sha256':hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),'frond_template_count':8,'fern_crowns':rep,'original_forest_placements_removed':0,'representation_changed':True,'no_render_geometry_culling':True,'peak_MB':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024}
+    report={'completed':True,'scene_sha256':hashlib.file_digest(out.open('rb'),'sha256').hexdigest(),'frond_template_count':8,'fern_crowns':rep,'original_forest_placements_removed':0,'representation_changed':True,'no_render_geometry_culling':True,'peak_MB':peak_rss_mib()}
     (ROOT/'evidence/frond_instancing.json').write_text(json.dumps(report,indent=2));print('FROND_FACTORIZATION_DONE')
 if __name__=='__main__':
     try:main()

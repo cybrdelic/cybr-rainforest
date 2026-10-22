@@ -2,6 +2,13 @@
 The earlier adapter used inherited wide generic blade ratios and changed family
 per blade. This native integration changes neither the woody host nor root poses.
 """
+import sys as _runtime_sys
+from pathlib import Path as _RuntimePath
+for _runtime_parent in _RuntimePath(__file__).resolve().parents:
+    if (_runtime_parent / "cybr_runtime.py").is_file():
+        _runtime_sys.path.insert(0, str(_runtime_parent))
+        break
+from cybr_runtime import trim_allocator, enable_cycles_debug
 from pathlib import Path
 import bpy,sys,json,random,hashlib,gc,ctypes,re
 from collections import Counter
@@ -53,7 +60,7 @@ for c in list(bpy.data.collections):
  if not all(len(v)==1 for v in byvine.values()):raise RuntimeError('A vine mixes blade families')
  new['leaf_family_binding']='One family per vine; developmental variation within that family'
  records.append({'host':wood.name,'leaves':vine_rows,'one_family_per_vine':True,'wood_unchanged':True})
- bpy.data.orphans_purge(do_recursive=True);gc.collect();ctypes.CDLL(None).malloc_trim(0)
+ bpy.data.orphans_purge(do_recursive=True);gc.collect();trim_allocator()
  print('COHERENT_CLIMBER',wood.name,len(vine_rows),flush=True)
 # Preserve the basal family's shape through the juvenile-to-mature sequence;
 # rebuild only actual referenced meshes using recorded construction heights.
