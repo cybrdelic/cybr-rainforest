@@ -12,8 +12,8 @@ Commands from the repository root, using the virtual environment's Python:
     python -m unittest discover -s recovery/src -p test_compat_unit.py -v
     python tools/botanical_study.py --workdir work/branch-check --kind branch --threads 2
 
-Observed: five runtime/source unit tests and six EXR compatibility unit tests pass. New native single/multilayer EXR tests pass. The pipeline dependencies were NumPy 2.5.4, SciPy 1.18.1 and Pillow 13.0.0. Installation was slow on this drive; the earlier 180-second install cap was not a dependency incompatibility.
+Observed: six runtime/source unit tests and six EXR compatibility unit tests pass. New native single/multilayer EXR tests pass. The pipeline dependencies were NumPy 2.5.4, SciPy 1.18.1 and Pillow 13.0.0. Installation was slow on this drive; the earlier 180-second install cap was not a dependency incompatibility.
 
-The original Windows resource import failure is fixed by real native memory counters, with null for unavailable telemetry. Absolute paths prevent Blender from writing to its unrelated working directory. RNA capability checks replace the 5.4-only EXR setting. Optional allocator/debug controls no longer assume glibc or one Blender build.
+The original Windows resource import failure is fixed by real native memory counters, with null for unavailable telemetry. Absolute paths prevent Blender from writing to its unrelated working directory. RNA capability checks replace the 5.4-only EXR setting and reject an unsupported multilayer request instead of silently writing single-layer data. Optional allocator/debug controls no longer assume glibc or one Blender build.
 
 See [native-render.json](native-render.json) for image/scene hashes and measured 519.93 MiB peak native process memory. Three-OS CI is configured for source/runtime checks; macOS/Linux results are not yet available. This does not validate all archival scripts, external scanned substrates, full-forest recovery, V14, wind or a completed film. The full native forest and exact recovery inputs remain missing.

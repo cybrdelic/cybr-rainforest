@@ -2,7 +2,14 @@ import ast,math,sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 import cybr_runtime as runtime
+from types import SimpleNamespace
 class RuntimeTests(unittest.TestCase):
+ def test_multilayer_does_not_silently_fall_back_to_single(self):
+  prop=SimpleNamespace(enum_items=[SimpleNamespace(identifier="OPEN_EXR")])
+  settings=SimpleNamespace(bl_rna=SimpleNamespace(properties={"file_format":prop}))
+  scene=SimpleNamespace(render=SimpleNamespace(image_settings=settings))
+  with self.assertRaisesRegex(RuntimeError,"refusing single-layer fallback"):
+   runtime.configure_exr(scene,multilayer=True)
  def test_real_memory_is_positive_or_unavailable(self):
   value=runtime.peak_rss_mib();self.assertTrue(value is None or math.isfinite(value) and value>0)
  def test_unknown_peak_is_not_zero(self):

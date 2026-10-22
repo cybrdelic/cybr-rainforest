@@ -107,6 +107,8 @@ def configure_exr(scene, *, multilayer=False):
             settings.media_type = 'IMAGE'
     if multilayer and 'OPEN_EXR_MULTILAYER' in formats:
         settings.file_format = 'OPEN_EXR_MULTILAYER'
+    elif multilayer and not media:
+        raise RuntimeError('Native build lacks multilayer EXR support; refusing single-layer fallback. Use a Blender build exposing OPEN_EXR_MULTILAYER or a multilayer media mode.')
     elif 'OPEN_EXR' in formats:
         settings.file_format = 'OPEN_EXR'
     else:
