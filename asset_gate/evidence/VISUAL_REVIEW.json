@@ -1,0 +1,19 @@
+{
+  "completed_native_assets": true,
+  "full_forest_rebuilt": false,
+  "visual_approval_for_forest_replication": false,
+  "original_scene_unchanged": true,
+  "primary_review_findings": [
+    "The branch makes fine venation, attachment and upper/lower surface differences substantially more readable than the earlier simple blades.",
+    "The fern frame orientation was corrected after native review; shared pinnae still show regularity.",
+    "The patch preserves curled litter instead of flattening leaves onto terrain. In the native 2K view, several dead leaves still look paper-like and stand too prominently above their support; that appearance is not approved for full-forest replication."
+  ],
+  "remaining_limits": [
+    "No new whole-forest branching/placement rollout in this package.",
+    "Stems remain too uniformly cylindrical and material response is authored, not spectrally measured.",
+    "Leaf edges and decay states remain finite procedural variants.",
+    "Local support raster is not a collision-free cloth or global equilibrium solution. Decay detail and shape/contact/material balance still need a further visual pass.",
+    "The four-second film is a branch inspection, not rainforest wind animation.",
+    "No exact botanical specimen reconstruction or hyperrealism certification."
+  ]
+}

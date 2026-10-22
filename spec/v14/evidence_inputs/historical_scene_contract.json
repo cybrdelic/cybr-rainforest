@@ -1,0 +1,107 @@
+{
+  "completed": true,
+  "passed": true,
+  "baseline": "inputs/historical/GREEN_TERROR_V11/GREEN_TERROR_V11_STRUCTURE.blend",
+  "baseline_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+  "scene": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+  "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+  "checks": {
+    "controllers": true,
+    "cameras": true,
+    "lights": true,
+    "wood_coordinates": true,
+    "world": true,
+    "display": true,
+    "all_replaced_collections_nonempty": true,
+    "no_linked_external_blend_libraries": true,
+    "all_file_images_packed": true,
+    "all_graphs_are_rooted_acyclic": true,
+    "original_root_count_18940": true
+  },
+  "original_planting_roots": 18940,
+  "controller_meshes": 165,
+  "plant_graphs": [
+    {
+      "object": "REPAIR | rooted cordate plant 3317",
+      "nodes": 38,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3317.002",
+      "nodes": 38,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3334",
+      "nodes": 37,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3334.002",
+      "nodes": 37,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3608",
+      "nodes": 34,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3608.002",
+      "nodes": 34,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3625",
+      "nodes": 34,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted cordate plant 3625.002",
+      "nodes": 34,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3414",
+      "nodes": 41,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3414.002",
+      "nodes": 41,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3431",
+      "nodes": 45,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3431.002",
+      "nodes": 45,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3511",
+      "nodes": 41,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3511.002",
+      "nodes": 41,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3528",
+      "nodes": 34,
+      "valid_hierarchy": true
+    },
+    {
+      "object": "REPAIR | rooted piper plant 3528.002",
+      "nodes": 34,
+      "valid_hierarchy": true
+    }
+  ],
+  "missing_replaced_collections": [],
+  "scope": "Final saved native data, not visual quality or complete global collisions."
+}

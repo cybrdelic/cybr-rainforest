@@ -1,0 +1,32 @@
+{
+  "retrieved_date": "2026-10-21",
+  "scope": "Public documentation and research, not evidence of a native V14 implementation.",
+  "S1": {
+    "title": "Modeling and visualization of leaf venation patterns",
+    "authors": "Runions et al.",
+    "year": 2005,
+    "url": "https://algorithmicbotany.org/papers/venation.sig2005.html"
+  },
+  "S2": {
+    "title": "Self-organizing tree models for image synthesis",
+    "authors": "Palubicki et al.",
+    "year": 2009,
+    "url": "https://algorithmicbotany.org/papers/selforg.sig2009.html"
+  },
+  "S3": {
+    "title": "Blender Manual: Displacement",
+    "url": "https://docs.blender.org/manual/en/latest/render/materials/components/displacement.html"
+  },
+  "S4": {
+    "title": "Blender Manual: Cycles Sampling",
+    "url": "https://docs.blender.org/manual/en/latest/render/cycles/render_settings/sampling.html"
+  },
+  "S5": {
+    "title": "Intel Open Image Denoise documentation",
+    "url": "https://www.openimagedenoise.org/documentation.html"
+  },
+  "S6": {
+    "title": "Blender Manual: Geometry Nodes Instances",
+    "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/instances.html"
+  }
+}

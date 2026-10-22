@@ -1,0 +1,88 @@
+{
+  "completed": true,
+  "plan": {
+    "scene": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/GREEN_TERROR_RECONSTRUCTED_BASELINE.blend",
+    "scene_sha256": "90d33964366c7103209ce4bb72aa1b9a253acee30f16262c57bf0560d09316d6",
+    "width": 960,
+    "height": 720,
+    "samples": 32,
+    "band_rows": 180,
+    "camera": "04_BARK_AND_LITTER",
+    "output": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/renders/RECOVERED_FOREST_PROOF.png",
+    "geometry_culled_for_memory": false,
+    "upscaling": false
+  },
+  "stages": [
+    {
+      "stage": "radiance_00",
+      "returncode": 0,
+      "seconds": 84.70263586099998
+    },
+    {
+      "stage": "radiance_01",
+      "returncode": 0,
+      "seconds": 72.64927208999995
+    },
+    {
+      "stage": "radiance_02",
+      "returncode": 0,
+      "seconds": 72.33347563500001
+    },
+    {
+      "stage": "radiance_03",
+      "returncode": 0,
+      "seconds": 70.62860223299992
+    },
+    {
+      "stage": "guides_00",
+      "returncode": 0,
+      "seconds": 6.178079536000041
+    },
+    {
+      "stage": "guides_01",
+      "returncode": 0,
+      "seconds": 5.785512595
+    },
+    {
+      "stage": "guides_02",
+      "returncode": 0,
+      "seconds": 5.6873777160000145
+    },
+    {
+      "stage": "guides_03",
+      "returncode": 0,
+      "seconds": 5.586081497000009
+    },
+    {
+      "stage": "normals_00",
+      "returncode": 0,
+      "seconds": 6.669087887000046
+    },
+    {
+      "stage": "normals_01",
+      "returncode": 0,
+      "seconds": 6.990999375000001
+    },
+    {
+      "stage": "normals_02",
+      "returncode": 0,
+      "seconds": 7.3693861000000425
+    },
+    {
+      "stage": "normals_03",
+      "returncode": 0,
+      "seconds": 7.3251043750000235
+    },
+    {
+      "stage": "assemble",
+      "returncode": 0,
+      "seconds": 1.2532679270000244
+    },
+    {
+      "stage": "denoise",
+      "returncode": 0,
+      "seconds": 4.637909783000055
+    }
+  ],
+  "running": null
+}

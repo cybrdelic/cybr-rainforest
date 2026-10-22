@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "passed": true,
+  "checks": 1714,
+  "hosts": 16,
+  "vines": 40,
+  "leaves": 558,
+  "failures": [],
+  "scope": "Recorded geometry-generation inputs; native mesh validation is separate."
+}

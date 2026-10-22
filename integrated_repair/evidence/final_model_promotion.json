@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "source": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_LEAF_BINDING_TEST.blend",
+  "final": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+  "sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+  "byte_identical": true,
+  "scope": "Promotes the visually inspected coherent-climber candidate; no additional geometry or material edits."
+}

@@ -1,0 +1,7 @@
+import bpy,sys,os,json
+from pathlib import Path
+R=Path('inputs/historical/GREEN_TERROR_V11');raw=R/'qc/after_raw.exr';r=json.loads(raw.with_suffix('.json').read_text());assert r['completed']
+bpy.ops.wm.read_factory_settings(use_empty=True);s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.samples=1;s.cycles.use_denoising=False;s.render.resolution_x=r['width'];s.render.resolution_y=r['height'];s.render.resolution_percentage=100;s.render.threads_mode='FIXED';s.render.threads=2
+cam=bpy.data.objects.new('Compositor only',bpy.data.cameras.new('Compositor only'));s.collection.objects.link(cam);s.camera=cam
+ng=bpy.data.node_groups.new('Native linear display','CompositorNodeTree');s.compositing_node_group=ng;ng.interface.new_socket(name='Image',in_out='OUTPUT',socket_type='NodeSocketColor');out=ng.nodes.new('NodeGroupOutput');n=ng.nodes.new('CompositorNodeImage');n.image=bpy.data.images.load(str(raw));n.image.colorspace_settings.name='Non-Color';ng.links.new(n.outputs['Image'],out.inputs['Image']);s.render.use_compositing=True
+s.view_settings.view_transform=r['view_transform'];s.view_settings.exposure=r['exposure'];s.view_settings.look=r['look'];s.view_settings.gamma=r['gamma'];s.render.image_settings.file_format='PNG';s.render.image_settings.color_depth='16';s.render.image_settings.color_mode='RGB';s.render.filepath=str(R/'qc/after_raw_view.png');bpy.ops.render.render(write_still=True);sys.stdout.flush();os._exit(0)

@@ -1,0 +1,208 @@
+{
+  "completed": true,
+  "scene": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+  "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+  "camera": "04_BARK_AND_LITTER",
+  "width": 1280,
+  "height": 960,
+  "mode": "radiance",
+  "samples": 48,
+  "renderer": "CYCLES",
+  "image_generated": false,
+  "native_resolution": true,
+  "camera_matrix": [
+    [
+      0.7071068286895752,
+      -0.5144957304000854,
+      0.48507124185562134,
+      -3.4000000953674316
+    ],
+    [
+      0.7071067690849304,
+      0.5144957900047302,
+      -0.48507124185562134,
+      0.20000000298023224
+    ],
+    [
+      -3.285616045900497e-08,
+      0.6859943270683289,
+      0.7276068925857544,
+      2.4808669090270996
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens_mm": 45.0,
+  "native_bvh": "EMBREE compact; debug settings explicitly enabled",
+  "exposure": 4.199999809265137,
+  "look": "AgX - Medium High Contrast",
+  "view_transform": "AgX",
+  "gamma": 1.0,
+  "seconds": 755.6732416152954,
+  "peak_rss_mb": 3530.375,
+  "linear_files": {
+    "Image": {
+      "path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/assembled_Image.exr",
+      "sha256": "d23741a6ce6e3f6a677426f4862260260e66f6e52b43763855b9f24e393c337a"
+    },
+    "Albedo": {
+      "path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/assembled_Albedo.exr",
+      "sha256": "5505102445a7af0e89ff4bbfba55817e42e69d062e84cc17dbe7e1e25052138e"
+    },
+    "Normal": {
+      "path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/assembled_Normal.exr",
+      "sha256": "22574c921bca044dd091b4312017ef2a5ba4d633264d39eab5e6a6aaeeed056b"
+    }
+  },
+  "true_first_surface_guides": true,
+  "guide_samples": 4,
+  "bands": [
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_00.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_00.json",
+      "mode": "radiance",
+      "top": 0,
+      "bottom": 240,
+      "sha256": "179690186c59f96a34095f05ddecd4b9373c6639dccc61db08450657fdf1ee95",
+      "seconds": 178.76342797279358,
+      "peak_rss_mb": 3500.09765625
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_01.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_01.json",
+      "mode": "radiance",
+      "top": 240,
+      "bottom": 480,
+      "sha256": "b5b58e3f81b73389318d1273fa1504b2e7a2ff6c501eadb6c475aecacf79a31c",
+      "seconds": 177.05548906326294,
+      "peak_rss_mb": 3530.375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_02.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_02.json",
+      "mode": "radiance",
+      "top": 480,
+      "bottom": 720,
+      "sha256": "fadeea69f3619bb15d4eef1e2534f81e6f574834ecde2d4d89ed34c4ca85addf",
+      "seconds": 173.8292007446289,
+      "peak_rss_mb": 3511.87109375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_03.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/radiance_03.json",
+      "mode": "radiance",
+      "top": 720,
+      "bottom": 960,
+      "sha256": "87814fd0b003a8aba5ef3813548a3e1fe33aa28337a6d1e88521a1d86c73cfec",
+      "seconds": 168.22570395469666,
+      "peak_rss_mb": 3500.80859375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_00.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_00.json",
+      "mode": "guides",
+      "top": 0,
+      "bottom": 240,
+      "sha256": "fe988c442e4913c80b8475e21815488fe2370ae7ef7c4cc09a4da202ee395caa",
+      "seconds": 5.496835231781006,
+      "peak_rss_mb": 2839.109375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_01.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_01.json",
+      "mode": "guides",
+      "top": 240,
+      "bottom": 480,
+      "sha256": "74f4761618d22d774ed6d1a8f87b8cc57965d71548b72692e6e283ce4fa83f82",
+      "seconds": 5.496325969696045,
+      "peak_rss_mb": 2837.58984375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_02.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_02.json",
+      "mode": "guides",
+      "top": 480,
+      "bottom": 720,
+      "sha256": "f95bd76c64e1dceb0e49f1eac12d2a1449c70bcf0c34efde3a50c6da671490d0",
+      "seconds": 5.390956401824951,
+      "peak_rss_mb": 2839.62890625
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_03.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/guides_03.json",
+      "mode": "guides",
+      "top": 720,
+      "bottom": 960,
+      "sha256": "dbe0070b297d00d339649f8b3cf4195b6c1aaf299690aa81166289e9af22448c",
+      "seconds": 5.7300333976745605,
+      "peak_rss_mb": 2841.6796875
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_00.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_00.json",
+      "mode": "normals",
+      "top": 0,
+      "bottom": 240,
+      "sha256": "6ea895cb1caf7e6b694fc3be1bac1b95db82de0fc5a17520230a5033e8d33d10",
+      "seconds": 6.932437181472778,
+      "peak_rss_mb": 3095.828125
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_01.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_01.json",
+      "mode": "normals",
+      "top": 240,
+      "bottom": 480,
+      "sha256": "9e0b3745791a64f1c598d4d0cd7a2732bbee4106761c4fd80eae11c5dcfa159e",
+      "seconds": 7.298080682754517,
+      "peak_rss_mb": 3097.828125
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_02.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_02.json",
+      "mode": "normals",
+      "top": 480,
+      "bottom": 720,
+      "sha256": "8db54a82a9b292c42a9de6059ede391ddaf23c6683d1223d5bc3b236e25658a3",
+      "seconds": 6.717573881149292,
+      "peak_rss_mb": 3093.109375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_03.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/normals_03.json",
+      "mode": "normals",
+      "top": 720,
+      "bottom": 960,
+      "sha256": "14b746d30f6ac082d5423d01d1dfc335f2d324827fb5500e9042eacb96a3bd9f",
+      "seconds": 6.7551329135894775,
+      "peak_rss_mb": 3100.265625
+    }
+  ],
+  "zero_background_normal_samples": 0,
+  "assembly": "Exact float32 native rows; no resizing, blending or repeated pixels; one full-frame denoise follows.",
+  "geometry_culled_for_memory": false,
+  "geometry_decimated_for_memory": false,
+  "source_plan": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/plan.json",
+  "source_plan_sha256": "632629fa4f07c530347d3a310e9914327739ff985a8b5dc5dd9ad620931e5318",
+  "output": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/renders/09_FOREST_CLOSEUP_FINAL.png",
+  "raw_checkpoint": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/09_FOREST_CLOSEUP_FINAL/assembled.json",
+  "raw_checkpoint_sha256": "01dbdd4745a35d88f91223e4ea00c6140b68971511e10f5f8b25ef43c0b7b2b6",
+  "denoised": true,
+  "denoising_deferred_to_separate_process": true,
+  "denoising_quality": "HIGH",
+  "denoising_prefilter": "ACCURATE",
+  "denoising_guides": [
+    "normal",
+    "albedo"
+  ],
+  "transport_seconds": 747.6911973953247,
+  "transport_peak_rss_mb": 3530.375,
+  "denoising_seconds": 7.982039213180542,
+  "denoising_peak_rss_mb": 1256.82421875,
+  "image_sha256": "7c6d26b5836431ead7dee644109440f84ce6e64923a59ebcb116eac8c1b0de3f",
+  "image_bytes": 6465549
+}

@@ -1,0 +1,801 @@
+{
+  "schema": "green-terror-rebuild-contract/1.0",
+  "project": "GREEN TERROR",
+  "revision_label": "V14 specification",
+  "date": "2026-10-21",
+  "status": "specified_not_implemented",
+  "native_v14_executed": false,
+  "new_scene_created": false,
+  "new_images_rendered": false,
+  "new_video_encoded": false,
+  "threshold_policy": "Proposed project QA tolerances; not measured biological truths or guarantees of photorealism.",
+  "baseline": {
+    "selected": null,
+    "locked": false,
+    "preferred": {
+      "recorded_path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+      "expected_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+      "currently_present_at_path": false,
+      "actual_sha256": null,
+      "byte_identity_checked": false,
+      "byte_identity_matches": null,
+      "native_reopen_performed_for_spec": false,
+      "note": "Path check is local to specification preparation; absence is not a Library-wide search."
+    },
+    "surviving_recovery_input": {
+      "recorded_path": "inputs/historical/GREEN_TERROR_V11/GREEN_TERROR_V11_STRUCTURE.blend",
+      "expected_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+      "currently_present_at_path": true,
+      "actual_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+      "byte_identity_checked": true,
+      "byte_identity_matches": true,
+      "native_reopen_performed_for_spec": false,
+      "note": "Path check is local to specification preparation; absence is not a Library-wide search."
+    },
+    "automatic_fallback_allowed": false,
+    "historical_renderer": {
+      "version": "5.4.0 Alpha",
+      "build_hash": "3fe0f2ab2a29",
+      "binary_digest": null
+    },
+    "missing_required_evidence": [
+      "Native reopened baseline selection",
+      "Complete render/camera snapshot",
+      "Selected photographic reference sheets"
+    ]
+  },
+  "constraints": {
+    "renderer": "Native Blender Cycles",
+    "image_generation_allowed": false,
+    "generated_texture_substitutes_allowed": false,
+    "frame_interpolation_allowed": false,
+    "still_pan_as_camera_motion_allowed": false,
+    "upscaling_as_native_resolution_allowed": false,
+    "existing_authorized_scans_allowed": true,
+    "numerical_raytracing_denoising_allowed": true,
+    "original_files_read_only": true,
+    "preserve_named_comparison_cameras": true,
+    "preserve_exact_wood_coordinates": false,
+    "preserve_all_18940_root_positions_and_counts": false,
+    "wood_attachment_rebinding_required": true,
+    "placement_change_ledger_required": true,
+    "no_unreported_camera_frustum_culling": true,
+    "no_unreported_quality_reduction": true,
+    "visual_approval_separate_from_technical_checks": true
+  },
+  "asset_scope": {
+    "foliage_families": [
+      "broad_climber",
+      "narrow_woody_understory",
+      "elliptic_sapling_shrub",
+      "compound_fern"
+    ],
+    "separate_architectures": [
+      "climber",
+      "lateral_shrub",
+      "suppressed_sapling",
+      "tall_juvenile",
+      "palm",
+      "fern"
+    ],
+    "historical_plant_collection_bindings": [
+      {
+        "family": "broadleaf",
+        "collection": "broadleaf prototype 00",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "broadleaf prototype 01",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "broadleaf prototype 02",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "broadleaf prototype 03",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "fern prototype 00",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "fern prototype 01",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "fern prototype 02",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "fern prototype 03",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "GT7 | fern prototype 00",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "GT7 | fern prototype 01",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "GT7 | fern prototype 02",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "fern",
+        "collection": "GT7 | fern prototype 03",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 00 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 00 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 01 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 01 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 02 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 02 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 03 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "broadleaf",
+        "collection": "GT8 | broadleaf prototype 03 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 00 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 00 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 00 | architecture 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 00 | architecture 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 01 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 01 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 01 | architecture 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 01 | architecture 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 02 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 02 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 02 | architecture 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 02 | architecture 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 03 | architecture 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 03 | architecture 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 03 | architecture 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "GT8 | shrub prototype 03 | architecture 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 0",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 1",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 2",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "midstory",
+        "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 3",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "shrub prototype 00",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "shrub prototype 01",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "shrub prototype 02",
+        "migration_status": "not_started"
+      },
+      {
+        "family": "shrub",
+        "collection": "shrub prototype 03",
+        "migration_status": "not_started"
+      }
+    ],
+    "hero_host_names_to_resolve": [
+      "Tropical_08_wood",
+      "Tree prototype 08",
+      "GT7 | Tree prototype 08",
+      "Tree prototype 02",
+      "Subcanopy prototype 02",
+      "Subcanopy prototype 03"
+    ],
+    "ground_collections_to_resolve": [
+      "DETAIL | Litter prototype 00..23",
+      "DETAIL | Scan tree_stump_01",
+      "DETAIL | Scan dead_tree_trunk_02"
+    ],
+    "integration_patch_dimensions_m": [
+      4.0,
+      4.0
+    ],
+    "reference_sheets_selected": false
+  },
+  "camera_contract": {
+    "inherited": [
+      {
+        "id": "C01",
+        "name": "04_BARK_AND_LITTER",
+        "status": "historical_record_imported_not_native_reopened",
+        "source_record": "evidence_inputs/historical_closeup_render.json",
+        "recorded_scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+        "world_matrix": [
+          [
+            0.7071068286895752,
+            -0.5144957304000854,
+            0.48507124185562134,
+            -3.4000000953674316
+          ],
+          [
+            0.7071067690849304,
+            0.5144957900047302,
+            -0.48507124185562134,
+            0.20000000298023224
+          ],
+          [
+            -3.285616045900497e-08,
+            0.6859943270683289,
+            0.7276068925857544,
+            2.4808669090270996
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 45.0,
+        "proposed_review_resolution": [
+          2048,
+          1536
+        ],
+        "frame": 1,
+        "recorded_display": {
+          "exposure": 4.199999809265137,
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "gamma": 1.0
+        },
+        "must_capture_at_G0": [
+          "sensor_width",
+          "sensor_height",
+          "sensor_fit",
+          "shift_x",
+          "shift_y",
+          "clip_start",
+          "clip_end",
+          "dof",
+          "pixel_aspect",
+          "active_camera_after_marker_evaluation"
+        ],
+        "complete_camera_snapshot": false
+      },
+      {
+        "id": "C02",
+        "name": "02_ROOTS_AND_UNDERSTORY",
+        "status": "historical_record_imported_not_native_reopened",
+        "source_record": "evidence_inputs/historical_understory_render.json",
+        "recorded_scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+        "world_matrix": [
+          [
+            0.8931001424789429,
+            -0.059006936848163605,
+            -0.44597119092941284,
+            -3.299999952316284
+          ],
+          [
+            -0.4498578906059265,
+            -0.11714611947536469,
+            -0.8853839039802551,
+            -3.5
+          ],
+          [
+            -3.4454465946964774e-09,
+            0.9913601875305176,
+            -0.1311679482460022,
+            1.0489965677261353
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 30.0,
+        "proposed_review_resolution": [
+          2048,
+          1366
+        ],
+        "frame": 1,
+        "recorded_display": {
+          "exposure": 4.199999809265137,
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "gamma": 1.0
+        },
+        "must_capture_at_G0": [
+          "sensor_width",
+          "sensor_height",
+          "sensor_fit",
+          "shift_x",
+          "shift_y",
+          "clip_start",
+          "clip_end",
+          "dof",
+          "pixel_aspect",
+          "active_camera_after_marker_evaluation"
+        ],
+        "complete_camera_snapshot": false
+      }
+    ],
+    "extra": [
+      {
+        "id": "C03",
+        "base": "C01",
+        "translation_camera_local_right_m": 0.8,
+        "aim": "Frozen baseline patch target",
+        "lens_mm": 45.0,
+        "resolution": [
+          2048,
+          1536
+        ],
+        "target_world": null,
+        "status": "proposed_not_instantiated"
+      },
+      {
+        "id": "C04",
+        "base": "C01",
+        "translation_camera_local_right_m": 0.4,
+        "height_above_locked_terrain_m": 0.35,
+        "aim": "Frozen ground patch target",
+        "lens_mm": 45.0,
+        "resolution": [
+          2048,
+          1536
+        ],
+        "target_world": null,
+        "status": "proposed_not_instantiated"
+      }
+    ],
+    "asset_rig": {
+      "axis_convention": {
+        "X": "leaf_longitudinal",
+        "Y": "lateral",
+        "Z": "upper_surface"
+      },
+      "camera_forward_axis": "-Z",
+      "camera_up_axis": "+Y",
+      "directions": {
+        "A01": [
+          0,
+          -0.8,
+          2
+        ],
+        "A02": [
+          0,
+          -0.8,
+          -2
+        ],
+        "A03": [
+          0,
+          -2,
+          0.3
+        ]
+      },
+      "normalize_direction_vectors": true,
+      "lens_mm": 70.0,
+      "sensor_mm": [
+        36.0,
+        24.0
+      ],
+      "sensor_fit": "HORIZONTAL",
+      "resolution": [
+        1600,
+        1200
+      ],
+      "distance_rule": "1.10 * bounds_sphere_radius / sin(min(fov_x,fov_y)/2)",
+      "depth_of_field": false,
+      "silhouette_pose": {
+        "offset_in_bounds_radii": [
+          3,
+          -4,
+          2
+        ],
+        "projection": "ORTHO",
+        "ortho_scale_bounds_diameters": 2.2
+      },
+      "status": "specified_not_instantiated"
+    }
+  },
+  "lighting": {
+    "historical_AB": "Capture and hold exact baseline rig; no side-specific edits",
+    "neutral_AB": "Separate readable inspection rig, serialized and identical on A and B",
+    "production_light_redesign": "Separate experiment after geometry/material gates",
+    "leaf_triplet": {
+      "source": "area",
+      "offset_in_upper_camera_basis": {
+        "soft": [
+          -1,
+          -1,
+          2
+        ],
+        "side": [
+          -2,
+          0,
+          0.25
+        ],
+        "back": [
+          0,
+          0,
+          -2
+        ]
+      },
+      "normalize_offsets": true,
+      "distance_bounds_radii": 4,
+      "size_bounds_radii": {
+        "soft": 2,
+        "side": 0.5,
+        "back": 2
+      },
+      "energy": "Calibrate once on a neutral card, serialize, lock for both A and B",
+      "energy_value": null
+    }
+  },
+  "render_contract": {
+    "preview_width_px": 960,
+    "preview_can_pass_visual_gate": false,
+    "review_initial_fixed_spp": 256,
+    "review_adaptive_sampling": false,
+    "convergence_crop_spp": [
+      256,
+      512
+    ],
+    "independent_seed_replicates_required": true,
+    "convergence_action": "Increase both sides if details or conclusions still materially change; no automatic pass at 512 spp",
+    "color_master": "scene_linear_EXR",
+    "display_output": "16bit_PNG",
+    "required_channels": [
+      "beauty",
+      "albedo",
+      "shading_normal",
+      "depth"
+    ],
+    "denoiser": "OIDN or declared compatible native denoiser",
+    "feature_filter_and_projection_match": true,
+    "noisy_features_never_declared_clean": true,
+    "retain_undenoised_for_review": true,
+    "single_display_transform": true,
+    "band_assembly": "Native film coordinates plus filter margins; full-frame denoise; overlap-control test required"
+  },
+  "technical_tolerances": {
+    "hero_attachment_m": "min(0.0002, 0.005 * blade_length_m)",
+    "hero_declared_support_max_gap_m": 0.0005,
+    "hero_sampled_penetration_max_m": 0.0002,
+    "contact_rest_edge_strain_p95_max": 0.03,
+    "contact_rest_edge_strain_max": 0.1,
+    "root_motion_max_m": 1e-05,
+    "collision_scope": "Sampled hero surfaces, including edges/interiors; not proof of full-forest nonintersection",
+    "nonfinite_coordinates_allowed": 0,
+    "invalid_indices_allowed": 0,
+    "exact_zero_area_faces_allowed": 0,
+    "small_positive_area_faces": "Scale-aware audit; never delete solely to inflate pass count"
+  },
+  "gates": [
+    {
+      "id": "G0",
+      "status": "not_evaluated",
+      "criteria": [
+        "Verified baseline identity or explicitly labeled reconstruction",
+        "Fresh control render from reopened baseline",
+        "Complete camera/light/render/dependency snapshot",
+        "Protected original bytes and durable checkpoint"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    },
+    {
+      "id": "G1",
+      "status": "not_evaluated",
+      "criteria": [
+        "Reference-matched outlines and growth-family identity",
+        "Upper/lower/grazing leaf tests",
+        "Soft/side/backlight branch tests",
+        "No cutout, inflated, corrugated or rectangular-hole failure",
+        "No unapproved proportion change on instancing",
+        "All four foliage families pass in-context inspection"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    },
+    {
+      "id": "G2",
+      "status": "not_evaluated",
+      "criteria": [
+        "Rooted acyclic plant graphs",
+        "Distinct growth-form silhouettes",
+        "Stable identities across frames and LOD",
+        "Evaluated references prove actual replacement use",
+        "No camera-hidden repetition or density loss"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    },
+    {
+      "id": "G3A",
+      "status": "not_evaluated",
+      "criteria": [
+        "Convincing gray-material buttress, trunk and junction form",
+        "Host reattachment follows remodeling",
+        "Readable bark with non-stamped attached growth",
+        "Fungi thickness, attachment and undersides accepted"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    },
+    {
+      "id": "G3B",
+      "status": "not_evaluated",
+      "criteria": [
+        "Support gaps and penetrations within declared hero tolerances",
+        "Rest-shape strain audit within limits",
+        "No stretched-root, hovering, flat-stamp or uniform-crumple artifacts",
+        "Sampled collision coverage disclosed; no false global proof"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    },
+    {
+      "id": "G4",
+      "status": "not_evaluated",
+      "criteria": [
+        "4x4m section wins in C01 and C03",
+        "Wide view C02 improves; low view C04 holds up",
+        "No critical regression in shape, material, contact or repetition",
+        "Full-stand migration has no stale bindings",
+        "No hidden render-budget degradation"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    },
+    {
+      "id": "G5",
+      "status": "not_evaluated",
+      "criteria": [
+        "48-frame motion diagnostics pass",
+        "240 native frames at 1920x1080 and 24 fps",
+        "Root stability and deformation hierarchy validated",
+        "No interpolation, frame padding, sliding or popping",
+        "Temporal source and encoded-output review passes",
+        "Final duration and decoded frame count verified"
+      ],
+      "technical_pass": null,
+      "visual_pass": null,
+      "user_approved": null,
+      "evidence": []
+    }
+  ],
+  "release_video": {
+    "status": "not_started",
+    "width": 1920,
+    "height": 1080,
+    "fps_num": 24,
+    "fps_den": 1,
+    "duration_seconds": 10,
+    "native_frame_count": 240,
+    "frames": [
+      1,
+      240
+    ],
+    "diagnostic_duration_seconds": 2,
+    "diagnostic_frame_count": 48,
+    "camera_motion_and_deformation_evidence_required": true,
+    "motion_model": "Rooted hierarchical procedural model unless calibrated solver is actually validated",
+    "temporal_review_required": true,
+    "standard_OIDN_RT_assumed_temporally_stable": false,
+    "no_static_noise_hash_as_motion_proof": true
+  },
+  "code_handoff": {
+    "baseline_snapshot.py": "New complete evaluated camera/light/render/texture/dependency snapshot and provenance lock",
+    "make_atlases.py": "Reference-bounded vein/tissue mapping from the same leaf surface coordinates",
+    "repair_geometry.py": "Replace weak leaf, fern and rest-litter construction, not shader-only variation",
+    "refine_architecture.py": "Distinct rooted branch grammars; stable identity and per-family development",
+    "integrate_forest.py": "Evaluated base/variant binding migration plus explicit placement-change ledger",
+    "repair_climber_bindings.py": "Keep family proportions; reproject attachments after host remodeling",
+    "wood_rebuild.py": "New continuous buttress/junction reconstruction and attachment coordinates",
+    "litter_contact.py": "New or revised shape-preserving support/contact solver with disclosed sample coverage",
+    "validate_scene_contract.py": "Replace old exact-wood/root invariants; preserve cameras and original inputs",
+    "render_banded.py": "Match native film coordinates and filter margins; validate seams against full/crop control",
+    "denoise_linear_asset.py": "Audit guide definitions/noise/filter alignment; retain raw beauty",
+    "review_gate.py": "Record human visual decisions separately from numerical pass flags",
+    "wind_hierarchy.py": "Proposed parent-coupled deformation and root invariance test",
+    "verify_release.py": "Clean-directory native reopen, provenance match, decode video and preserve rejection records"
+  },
+  "release_state": {
+    "implementation_complete": false,
+    "visual_acceptance_complete": false,
+    "renders_complete": false,
+    "video_complete": false
+  }
+}

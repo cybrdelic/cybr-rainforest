@@ -1,0 +1,39 @@
+{
+  "completed": true,
+  "scope": "Native EXR API and write test on factory scene, NOT a forest realism test",
+  "native_version": "5.4.0 Alpha",
+  "native_build": "3fe0f2ab2a29",
+  "exports": [
+    {
+      "file_format": "OPEN_EXR",
+      "media_type": "IMAGE",
+      "color_depth": "32",
+      "available_media_enums": [
+        "IMAGE",
+        "MULTI_LAYER_IMAGE",
+        "VIDEO"
+      ],
+      "multilayer_requested": false,
+      "path": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/evidence/singlelayer_smoke.exr",
+      "bytes": 1736,
+      "sha256": "8f3926074f14e94318663b6bd28281029ec85bde1fda5d3132db447829373025",
+      "exr_magic_valid": true
+    },
+    {
+      "file_format": "OPEN_EXR_MULTILAYER",
+      "media_type": "MULTI_LAYER_IMAGE",
+      "color_depth": "32",
+      "available_media_enums": [
+        "IMAGE",
+        "MULTI_LAYER_IMAGE",
+        "VIDEO"
+      ],
+      "multilayer_requested": true,
+      "path": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/evidence/multilayer_smoke.exr",
+      "bytes": 1886,
+      "sha256": "2257af2c37e2f4da88d702b21779988edccb98147d4a856d07ba2bb17c8b8c94",
+      "exr_magic_valid": true
+    }
+  ],
+  "seconds": 0.07645297050476074
+}

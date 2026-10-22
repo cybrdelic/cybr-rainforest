@@ -1,0 +1,58 @@
+{
+  "scope": "Files and records inspected while drafting specification; no Blender execution",
+  "native_v14_scene_created": false,
+  "source_packages": [
+    {
+      "path": "inputs/historical/GREEN_TERROR_INTEGRATED_REPAIR_SOURCE.zip",
+      "bytes": 159717009,
+      "sha256": "6aa2ca4f490dc9ab0739a0b5c9b371d7e30a2e5f7f026fddaaea7a4c492497fa"
+    },
+    {
+      "path": "inputs/historical/GREEN_TERROR_INTEGRATED_REPAIR_RENDERS.zip",
+      "bytes": 20111209,
+      "sha256": "595ae4bf0f9c91b499e3562a916c3c2ec34d93926e9e4df4062d201ef4169682"
+    },
+    {
+      "path": "inputs/historical/GREEN_TERROR_V11_STRUCTURAL_REBUILD.zip",
+      "bytes": 129348263,
+      "sha256": "529599e8382048d66a743978b528e867fb795cedf50b415d30ff77950a83791a"
+    }
+  ],
+  "local_model_checks": {
+    "selected": null,
+    "locked": false,
+    "preferred": {
+      "recorded_path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+      "expected_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+      "currently_present_at_path": false,
+      "actual_sha256": null,
+      "byte_identity_checked": false,
+      "byte_identity_matches": null,
+      "native_reopen_performed_for_spec": false,
+      "note": "Path check is local to specification preparation; absence is not a Library-wide search."
+    },
+    "surviving_recovery_input": {
+      "recorded_path": "inputs/historical/GREEN_TERROR_V11/GREEN_TERROR_V11_STRUCTURE.blend",
+      "expected_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+      "currently_present_at_path": true,
+      "actual_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+      "byte_identity_checked": true,
+      "byte_identity_matches": true,
+      "native_reopen_performed_for_spec": false,
+      "note": "Path check is local to specification preparation; absence is not a Library-wide search."
+    },
+    "automatic_fallback_allowed": false,
+    "historical_renderer": {
+      "version": "5.4.0 Alpha",
+      "build_hash": "3fe0f2ab2a29",
+      "binary_digest": null
+    },
+    "missing_required_evidence": [
+      "Native reopened baseline selection",
+      "Complete render/camera snapshot",
+      "Selected photographic reference sheets"
+    ]
+  },
+  "imported_camera_records": 2,
+  "historical_collection_bindings": 56
+}

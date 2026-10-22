@@ -1,0 +1,26 @@
+{
+  "completed": true,
+  "assets": [
+    {
+      "family": "cordate",
+      "native_cdt": true,
+      "explicit_boundary_edges": 354,
+      "vertices": 13085,
+      "triangles": 25508
+    },
+    {
+      "family": "elliptic",
+      "native_cdt": true,
+      "explicit_boundary_edges": 236,
+      "vertices": 8518,
+      "triangles": 16597
+    },
+    {
+      "family": "lance",
+      "native_cdt": true,
+      "explicit_boundary_edges": 236,
+      "vertices": 5523,
+      "triangles": 10591
+    }
+  ]
+}

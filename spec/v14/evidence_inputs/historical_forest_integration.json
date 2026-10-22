@@ -1,0 +1,1372 @@
+{
+  "completed": true,
+  "input": "inputs/historical/GREEN_TERROR_V11/GREEN_TERROR_V11_STRUCTURE.blend",
+  "input_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+  "image_generation_used": false,
+  "scope": "full-stand prototype replacement; native camera and root transforms preserved",
+  "prototype_bindings": [
+    {
+      "collection": "broadleaf prototype 00",
+      "family": "broadleaf",
+      "original_bounds_height": 1.2091275453567505,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1117"
+      ]
+    },
+    {
+      "collection": "broadleaf prototype 01",
+      "family": "broadleaf",
+      "original_bounds_height": 1.2384761571884155,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1214"
+      ]
+    },
+    {
+      "collection": "broadleaf prototype 02",
+      "family": "broadleaf",
+      "original_bounds_height": 1.1009349822998047,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1311"
+      ]
+    },
+    {
+      "collection": "broadleaf prototype 03",
+      "family": "broadleaf",
+      "original_bounds_height": 1.3430728912353516,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1408"
+      ]
+    },
+    {
+      "collection": "fern prototype 00",
+      "family": "fern",
+      "original_bounds_height": 0.2776238024234772,
+      "replacement_objects": [
+        "REPAIR | fern frond 881 0",
+        "REPAIR | fern frond 881 1",
+        "REPAIR | fern frond 881 2",
+        "REPAIR | fern frond 881 3",
+        "REPAIR | fern frond 881 4",
+        "REPAIR | fern frond 881 5",
+        "REPAIR | fern frond 881 6",
+        "REPAIR | fern frond 881 7",
+        "REPAIR | fern frond 881 8",
+        "REPAIR | fern frond 881 9",
+        "REPAIR | fern root and fiddleheads",
+        "REPAIR | complete varied fern 881"
+      ]
+    },
+    {
+      "collection": "fern prototype 01",
+      "family": "fern",
+      "original_bounds_height": 0.2933623194694519,
+      "replacement_objects": [
+        "REPAIR | fern frond 972 0",
+        "REPAIR | fern frond 972 1",
+        "REPAIR | fern frond 972 2",
+        "REPAIR | fern frond 972 3",
+        "REPAIR | fern frond 972 4",
+        "REPAIR | fern frond 972 5",
+        "REPAIR | fern frond 972 6",
+        "REPAIR | fern frond 972 7",
+        "REPAIR | fern root and fiddleheads.001",
+        "REPAIR | complete varied fern 972"
+      ]
+    },
+    {
+      "collection": "fern prototype 02",
+      "family": "fern",
+      "original_bounds_height": 0.3221430480480194,
+      "replacement_objects": [
+        "REPAIR | fern frond 1063 0",
+        "REPAIR | fern frond 1063 1",
+        "REPAIR | fern frond 1063 2",
+        "REPAIR | fern frond 1063 3",
+        "REPAIR | fern frond 1063 4",
+        "REPAIR | fern frond 1063 5",
+        "REPAIR | fern frond 1063 6",
+        "REPAIR | fern frond 1063 7",
+        "REPAIR | fern frond 1063 8",
+        "REPAIR | fern root and fiddleheads.002",
+        "REPAIR | complete varied fern 1063"
+      ]
+    },
+    {
+      "collection": "fern prototype 03",
+      "family": "fern",
+      "original_bounds_height": 0.24445262551307678,
+      "replacement_objects": [
+        "REPAIR | fern frond 1154 0",
+        "REPAIR | fern frond 1154 1",
+        "REPAIR | fern frond 1154 2",
+        "REPAIR | fern frond 1154 3",
+        "REPAIR | fern frond 1154 4",
+        "REPAIR | fern frond 1154 5",
+        "REPAIR | fern frond 1154 6",
+        "REPAIR | fern frond 1154 7",
+        "REPAIR | fern frond 1154 8",
+        "REPAIR | fern frond 1154 9",
+        "REPAIR | fern root and fiddleheads.003",
+        "REPAIR | complete varied fern 1154"
+      ]
+    },
+    {
+      "collection": "GT7 | fern prototype 00",
+      "family": "fern",
+      "original_bounds_height": 0.2776238024234772,
+      "replacement_objects": [
+        "REPAIR | fern frond 881 0",
+        "REPAIR | fern frond 881 1",
+        "REPAIR | fern frond 881 2",
+        "REPAIR | fern frond 881 3",
+        "REPAIR | fern frond 881 4",
+        "REPAIR | fern frond 881 5",
+        "REPAIR | fern frond 881 6",
+        "REPAIR | fern frond 881 7",
+        "REPAIR | fern frond 881 8",
+        "REPAIR | fern frond 881 9",
+        "REPAIR | fern root and fiddleheads",
+        "REPAIR | complete varied fern 881"
+      ]
+    },
+    {
+      "collection": "GT7 | fern prototype 01",
+      "family": "fern",
+      "original_bounds_height": 0.2933623194694519,
+      "replacement_objects": [
+        "REPAIR | fern frond 972 0",
+        "REPAIR | fern frond 972 1",
+        "REPAIR | fern frond 972 2",
+        "REPAIR | fern frond 972 3",
+        "REPAIR | fern frond 972 4",
+        "REPAIR | fern frond 972 5",
+        "REPAIR | fern frond 972 6",
+        "REPAIR | fern frond 972 7",
+        "REPAIR | fern root and fiddleheads.001",
+        "REPAIR | complete varied fern 972"
+      ]
+    },
+    {
+      "collection": "GT7 | fern prototype 02",
+      "family": "fern",
+      "original_bounds_height": 0.3221430480480194,
+      "replacement_objects": [
+        "REPAIR | fern frond 1063 0",
+        "REPAIR | fern frond 1063 1",
+        "REPAIR | fern frond 1063 2",
+        "REPAIR | fern frond 1063 3",
+        "REPAIR | fern frond 1063 4",
+        "REPAIR | fern frond 1063 5",
+        "REPAIR | fern frond 1063 6",
+        "REPAIR | fern frond 1063 7",
+        "REPAIR | fern frond 1063 8",
+        "REPAIR | fern root and fiddleheads.002",
+        "REPAIR | complete varied fern 1063"
+      ]
+    },
+    {
+      "collection": "GT7 | fern prototype 03",
+      "family": "fern",
+      "original_bounds_height": 0.24445262551307678,
+      "replacement_objects": [
+        "REPAIR | fern frond 1154 0",
+        "REPAIR | fern frond 1154 1",
+        "REPAIR | fern frond 1154 2",
+        "REPAIR | fern frond 1154 3",
+        "REPAIR | fern frond 1154 4",
+        "REPAIR | fern frond 1154 5",
+        "REPAIR | fern frond 1154 6",
+        "REPAIR | fern frond 1154 7",
+        "REPAIR | fern frond 1154 8",
+        "REPAIR | fern frond 1154 9",
+        "REPAIR | fern root and fiddleheads.003",
+        "REPAIR | complete varied fern 1154"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 00 | architecture 0",
+      "family": "broadleaf",
+      "original_bounds_height": 0.8797997236251831,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1117"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 00 | architecture 1",
+      "family": "broadleaf",
+      "original_bounds_height": 0.9390102028846741,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1134"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 01 | architecture 0",
+      "family": "broadleaf",
+      "original_bounds_height": 0.8847872614860535,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1214"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 01 | architecture 1",
+      "family": "broadleaf",
+      "original_bounds_height": 0.960538923740387,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1231"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 02 | architecture 0",
+      "family": "broadleaf",
+      "original_bounds_height": 0.8072494864463806,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1311"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 02 | architecture 1",
+      "family": "broadleaf",
+      "original_bounds_height": 0.804108738899231,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1328"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 03 | architecture 0",
+      "family": "broadleaf",
+      "original_bounds_height": 0.76527339220047,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1408"
+      ]
+    },
+    {
+      "collection": "GT8 | broadleaf prototype 03 | architecture 1",
+      "family": "broadleaf",
+      "original_bounds_height": 0.9187241792678833,
+      "replacement_objects": [
+        "REPAIR | broadleaf basal plant 1425"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 00 | architecture 0",
+      "family": "shrub",
+      "original_bounds_height": 1.0533778667449951,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3317"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 00 | architecture 1",
+      "family": "shrub",
+      "original_bounds_height": 1.8038811683654785,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3334"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 00 | architecture 2",
+      "family": "shrub",
+      "original_bounds_height": 1.1916054487228394,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3317"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 00 | architecture 3",
+      "family": "shrub",
+      "original_bounds_height": 1.0033067464828491,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3334"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 01 | architecture 0",
+      "family": "shrub",
+      "original_bounds_height": 1.3375498056411743,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3414"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 01 | architecture 1",
+      "family": "shrub",
+      "original_bounds_height": 1.5523604154586792,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3431"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 01 | architecture 2",
+      "family": "shrub",
+      "original_bounds_height": 1.0706572532653809,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3414"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 01 | architecture 3",
+      "family": "shrub",
+      "original_bounds_height": 1.086442232131958,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3431"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 02 | architecture 0",
+      "family": "shrub",
+      "original_bounds_height": 1.355254054069519,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3511"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 02 | architecture 1",
+      "family": "shrub",
+      "original_bounds_height": 1.0848050117492676,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3528"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 02 | architecture 2",
+      "family": "shrub",
+      "original_bounds_height": 1.329263687133789,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3511"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 02 | architecture 3",
+      "family": "shrub",
+      "original_bounds_height": 1.5565259456634521,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3528"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 03 | architecture 0",
+      "family": "shrub",
+      "original_bounds_height": 1.356020212173462,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3608"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 03 | architecture 1",
+      "family": "shrub",
+      "original_bounds_height": 1.0545196533203125,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3625"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 03 | architecture 2",
+      "family": "shrub",
+      "original_bounds_height": 1.4156049489974976,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3608"
+      ]
+    },
+    {
+      "collection": "GT8 | shrub prototype 03 | architecture 3",
+      "family": "shrub",
+      "original_bounds_height": 1.3057422637939453,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3625"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 0",
+      "family": "midstory",
+      "original_bounds_height": 8.561415672302246,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3317.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 1",
+      "family": "midstory",
+      "original_bounds_height": 8.95830249786377,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3334.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 2",
+      "family": "midstory",
+      "original_bounds_height": 8.155981063842773,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3317.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 00 | growth history 3",
+      "family": "midstory",
+      "original_bounds_height": 8.640186309814453,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3334.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 0",
+      "family": "midstory",
+      "original_bounds_height": 10.536798477172852,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3414.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 1",
+      "family": "midstory",
+      "original_bounds_height": 11.115248680114746,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3431.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 2",
+      "family": "midstory",
+      "original_bounds_height": 10.541446685791016,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3414.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 01 | growth history 3",
+      "family": "midstory",
+      "original_bounds_height": 10.897947311401367,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3431.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 0",
+      "family": "midstory",
+      "original_bounds_height": 12.536498069763184,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3511.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 1",
+      "family": "midstory",
+      "original_bounds_height": 13.35508918762207,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3528.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 2",
+      "family": "midstory",
+      "original_bounds_height": 12.548221588134766,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3511.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 02 | growth history 3",
+      "family": "midstory",
+      "original_bounds_height": 13.066155433654785,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3528.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 0",
+      "family": "midstory",
+      "original_bounds_height": 14.21314525604248,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3608.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 1",
+      "family": "midstory",
+      "original_bounds_height": 14.792832374572754,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3625.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 2",
+      "family": "midstory",
+      "original_bounds_height": 14.053935050964355,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3608.001"
+      ]
+    },
+    {
+      "collection": "GT9 | GT7 | Midstory prototype 03 | growth history 3",
+      "family": "midstory",
+      "original_bounds_height": 14.038848876953125,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3625.001"
+      ]
+    },
+    {
+      "collection": "shrub prototype 00",
+      "family": "shrub",
+      "original_bounds_height": 1.8297232389450073,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3317"
+      ]
+    },
+    {
+      "collection": "shrub prototype 01",
+      "family": "shrub",
+      "original_bounds_height": 1.8856359720230103,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3414"
+      ]
+    },
+    {
+      "collection": "shrub prototype 02",
+      "family": "shrub",
+      "original_bounds_height": 1.9491474628448486,
+      "replacement_objects": [
+        "REPAIR | rooted piper plant 3511"
+      ]
+    },
+    {
+      "collection": "shrub prototype 03",
+      "family": "shrub",
+      "original_bounds_height": 1.7376643419265747,
+      "replacement_objects": [
+        "REPAIR | rooted cordate plant 3608"
+      ]
+    }
+  ],
+  "climbers": [
+    {
+      "host": "Emergent_00_wood",
+      "new": "REPAIR | Emergent_00_attached_climbers_and_moss",
+      "vertices": 13677
+    },
+    {
+      "host": "Emergent_01_wood",
+      "new": "REPAIR | Emergent_01_attached_climbers_and_moss",
+      "vertices": 13677
+    },
+    {
+      "host": "Subcanopy_00_wood",
+      "new": "REPAIR | Subcanopy_00_attached_climbers_and_moss",
+      "vertices": 10238
+    },
+    {
+      "host": "Subcanopy_01_wood",
+      "new": "REPAIR | Subcanopy_01_attached_climbers_and_moss",
+      "vertices": 9311
+    },
+    {
+      "host": "Subcanopy_02_wood",
+      "new": "REPAIR | Subcanopy_02_attached_climbers_and_moss",
+      "vertices": 77318
+    },
+    {
+      "host": "Subcanopy_03_wood",
+      "new": "REPAIR | Subcanopy_03_attached_climbers_and_moss",
+      "vertices": 118052
+    },
+    {
+      "host": "Tropical_00_wood",
+      "new": "REPAIR | Tropical_00_attached_climbers_and_moss",
+      "vertices": 15531
+    },
+    {
+      "host": "Tropical_01_wood",
+      "new": "REPAIR | Tropical_01_attached_climbers_and_moss",
+      "vertices": 10238
+    },
+    {
+      "host": "Tropical_02_wood",
+      "new": "REPAIR | Tropical_02_attached_climbers_and_moss",
+      "vertices": 134856
+    },
+    {
+      "host": "Tropical_03_wood",
+      "new": "REPAIR | Tropical_03_attached_climbers_and_moss",
+      "vertices": 11474
+    },
+    {
+      "host": "Tropical_04_wood",
+      "new": "REPAIR | Tropical_04_attached_climbers_and_moss",
+      "vertices": 16458
+    },
+    {
+      "host": "Tropical_05_wood",
+      "new": "REPAIR | Tropical_05_attached_climbers_and_moss",
+      "vertices": 10856
+    },
+    {
+      "host": "Tropical_06_wood",
+      "new": "REPAIR | Tropical_06_attached_climbers_and_moss",
+      "vertices": 13368
+    },
+    {
+      "host": "Tropical_07_wood",
+      "new": "REPAIR | Tropical_07_attached_climbers_and_moss",
+      "vertices": 10856
+    },
+    {
+      "host": "Tropical_08_wood",
+      "new": "REPAIR | Tropical_08_attached_climbers_and_moss",
+      "vertices": 112364
+    },
+    {
+      "host": "Tropical_09_wood",
+      "new": "REPAIR | Tropical_09_attached_climbers_and_moss",
+      "vertices": 10238
+    }
+  ],
+  "litter_clusters": [
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.06961157603216939,
+          "edge_strain_p95": 0.0058826970807310695,
+          "max_edge_length_error_m": 5.588038765003741e-05,
+          "median_clearance_before_m": 0.024422975684702395,
+          "median_clearance_after_m": 0.012874938786529913,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.011174681537011602,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.03490247549403596,
+          "edge_strain_p95": 0.009310167203719638,
+          "max_edge_length_error_m": 5.034688110944858e-05,
+          "median_clearance_before_m": 0.014962902178255673,
+          "median_clearance_after_m": 0.00371796784137165,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003757469881872869,
+          "rms_settling_m": 0.009921989076085064,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.07654827095011084,
+          "edge_strain_p95": 0.009588749477823948,
+          "max_edge_length_error_m": 0.00012411084566656128,
+          "median_clearance_before_m": 0.020133611242473124,
+          "median_clearance_after_m": 0.00847399866556052,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.011233141041104133,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.1105829736375631,
+          "edge_strain_p95": 0.010205326263787543,
+          "max_edge_length_error_m": 0.00017018521912634012,
+          "median_clearance_before_m": 0.014485901536163196,
+          "median_clearance_after_m": 0.0029411328000853616,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00038111823042469815,
+          "rms_settling_m": 0.010303014560975793,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.11236416765347712,
+          "edge_strain_p95": 0.009555927259978692,
+          "max_edge_length_error_m": 0.0001092533006222798,
+          "median_clearance_before_m": 0.007052933581613276,
+          "median_clearance_after_m": 0.0006667907315822206,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00036396962761648874,
+          "rms_settling_m": 0.006306551056038297,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.08687929092689241,
+          "edge_strain_p95": 0.0054242310738470785,
+          "max_edge_length_error_m": 9.293128357176945e-05,
+          "median_clearance_before_m": 0.02193852415381259,
+          "median_clearance_after_m": 0.01048073028110113,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003775754939779434,
+          "rms_settling_m": 0.010521043559575161,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.14468047334066597,
+          "edge_strain_p95": 0.040664881952675945,
+          "max_edge_length_error_m": 0.00024290423409502803,
+          "median_clearance_before_m": 0.01003355235000975,
+          "median_clearance_after_m": 0.0019249733744247273,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": -4.0875719966615084e-05,
+          "rms_settling_m": 0.008642650258592802,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.11354975603213514,
+          "edge_strain_p95": 0.0053683163151862084,
+          "max_edge_length_error_m": 7.2595137021518e-05,
+          "median_clearance_before_m": 0.024973139594495295,
+          "median_clearance_after_m": 0.013348661635428392,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.011224058736945779,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.08947800949708175,
+          "edge_strain_p95": 0.02098086633482321,
+          "max_edge_length_error_m": 5.6862293134864444e-05,
+          "median_clearance_before_m": 0.013454228396446154,
+          "median_clearance_after_m": 0.0023287463060930966,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003790811162656081,
+          "rms_settling_m": 0.009364617909917937,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.09530436926010964,
+          "edge_strain_p95": 0.010795106525206542,
+          "max_edge_length_error_m": 0.00016345236165034565,
+          "median_clearance_before_m": 0.016109018548578026,
+          "median_clearance_after_m": 0.004462042824700043,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.010893399374731829,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.08042076406391221,
+          "edge_strain_p95": 0.026246549364466798,
+          "max_edge_length_error_m": 0.0001278627554589227,
+          "median_clearance_before_m": 0.00986476648562492,
+          "median_clearance_after_m": 0.0006574777399140103,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003921280550550667,
+          "rms_settling_m": 0.008892471447472839,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.054406890322448345,
+          "edge_strain_p95": 0.00831970652264915,
+          "max_edge_length_error_m": 0.00018704524354970064,
+          "median_clearance_before_m": 0.01767404280528426,
+          "median_clearance_after_m": 0.006372941515114695,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00037457024791578974,
+          "rms_settling_m": 0.010024080435910207,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.18922705553191277,
+          "edge_strain_p95": 0.004727244866098167,
+          "max_edge_length_error_m": 0.00018007658970957408,
+          "median_clearance_before_m": 0.025734662169408673,
+          "median_clearance_after_m": 0.014086805682565935,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00036871703036344024,
+          "rms_settling_m": 0.010873908395864768,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.052146064187111575,
+          "edge_strain_p95": 0.015818172614460856,
+          "max_edge_length_error_m": 0.0001314717992362464,
+          "median_clearance_before_m": 0.010660420003213635,
+          "median_clearance_after_m": 0.000803912340634344,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0002569450180452751,
+          "rms_settling_m": 0.009088715795414648,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.1028551339329856,
+          "edge_strain_p95": 0.007865578290294044,
+          "max_edge_length_error_m": 0.00015054576276666426,
+          "median_clearance_before_m": 0.017831037248671057,
+          "median_clearance_after_m": 0.006348424598884381,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.010878842015999285,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.08184844798675776,
+          "edge_strain_p95": 0.008155891313931973,
+          "max_edge_length_error_m": 7.73344095437974e-05,
+          "median_clearance_before_m": 0.01723988176375048,
+          "median_clearance_after_m": 0.0056182146104742,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0005502203890127401,
+          "rms_settling_m": 0.01114210644488198,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.07360238737678464,
+          "edge_strain_p95": 0.01581343706592112,
+          "max_edge_length_error_m": 9.34510772823559e-05,
+          "median_clearance_before_m": 0.007639247886091471,
+          "median_clearance_after_m": 0.0006519268569651828,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.006603966376765539,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.046591578710324946,
+          "edge_strain_p95": 0.005296368381530804,
+          "max_edge_length_error_m": 1.9126009453700578e-05,
+          "median_clearance_before_m": 0.013146062198003032,
+          "median_clearance_after_m": 0.001543297997186413,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0005175412282639189,
+          "rms_settling_m": 0.010464495945125142,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.05428609903634581,
+          "edge_strain_p95": 0.004589537898156071,
+          "max_edge_length_error_m": 8.493554103841498e-05,
+          "median_clearance_before_m": 0.021766309085038658,
+          "median_clearance_after_m": 0.010179765106911114,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003755568143736076,
+          "rms_settling_m": 0.010772866025811017,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.03473412666219697,
+          "edge_strain_p95": 0.007444125422764662,
+          "max_edge_length_error_m": 0.00016001166316855636,
+          "median_clearance_before_m": 0.024112015620301505,
+          "median_clearance_after_m": 0.013026879620334515,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00030844006715431693,
+          "rms_settling_m": 0.009841369664952415,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.2573652203955704,
+          "edge_strain_p95": 0.04245126501594007,
+          "max_edge_length_error_m": 0.00021240725578856867,
+          "median_clearance_before_m": 0.007461253936508866,
+          "median_clearance_after_m": 0.0006701353629324051,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00035352110517775266,
+          "rms_settling_m": 0.006055039427087051,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 8,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.0891371052756039,
+          "edge_strain_p95": 0.00880657494135198,
+          "max_edge_length_error_m": 0.0002509261103432643,
+          "median_clearance_before_m": 0.01947804676294327,
+          "median_clearance_after_m": 0.007817915269488053,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.01098954184504453,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.08569009251706862,
+          "edge_strain_p95": 0.00847270125648689,
+          "max_edge_length_error_m": 0.00013352446799347675,
+          "median_clearance_before_m": 0.01950822207869718,
+          "median_clearance_after_m": 0.007993488651089661,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003753810100344448,
+          "rms_settling_m": 0.01044075334753043,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.2405042620279114,
+          "edge_strain_p95": 0.017639886703202042,
+          "max_edge_length_error_m": 0.00012928387589275503,
+          "median_clearance_before_m": 0.012193069180174263,
+          "median_clearance_after_m": 0.0014098388755004682,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003011862650411125,
+          "rms_settling_m": 0.009929337177763545,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.08751990346032663,
+          "edge_strain_p95": 0.007048698667552036,
+          "max_edge_length_error_m": 0.0001151685372131608,
+          "median_clearance_before_m": 0.02058867571044342,
+          "median_clearance_after_m": 0.008977301773927011,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00043202729647804153,
+          "rms_settling_m": 0.010742101125746934,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.22945665855677835,
+          "edge_strain_p95": 0.008685791117059553,
+          "max_edge_length_error_m": 0.00017276597844986807,
+          "median_clearance_before_m": 0.015558339276615187,
+          "median_clearance_after_m": 0.003939384177453703,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00036026335153244507,
+          "rms_settling_m": 0.01032723179942165,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.1136972057439229,
+          "edge_strain_p95": 0.024135280446804942,
+          "max_edge_length_error_m": 0.00032996990203556413,
+          "median_clearance_before_m": 0.010177042536862198,
+          "median_clearance_after_m": 0.0008681380803411097,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00017651518350477943,
+          "rms_settling_m": 0.008589283368260339,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        },
+        {
+          "max_edge_strain": 0.18540273692185802,
+          "edge_strain_p95": 0.022594152028329595,
+          "max_edge_length_error_m": 0.0001832776954041812,
+          "median_clearance_before_m": 0.011218142437925394,
+          "median_clearance_after_m": 0.0008743305252005996,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00021106590839209405,
+          "rms_settling_m": 0.009291732223503773,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 7
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.0610283839475366,
+          "edge_strain_p95": 0.0076574814273733015,
+          "max_edge_length_error_m": 6.660584985895227e-05,
+          "median_clearance_before_m": 0.021240269727259876,
+          "median_clearance_after_m": 0.00961291914295051,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.011115510081803535,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.0827090085629926,
+          "edge_strain_p95": 0.015191290985920827,
+          "max_edge_length_error_m": 0.00011503499187796775,
+          "median_clearance_before_m": 0.011935003629498366,
+          "median_clearance_after_m": 0.001529152933142476,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00036155355701413677,
+          "rms_settling_m": 0.009479418657957768,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.10448472279982655,
+          "edge_strain_p95": 0.011377583169335605,
+          "max_edge_length_error_m": 0.00013315769469854181,
+          "median_clearance_before_m": 0.013923617507517338,
+          "median_clearance_after_m": 0.0022912565155212192,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.010668343487646458,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.07648636677124909,
+          "edge_strain_p95": 0.009073076468101798,
+          "max_edge_length_error_m": 0.00010555562171936199,
+          "median_clearance_before_m": 0.009731335236720415,
+          "median_clearance_after_m": 0.00066566254600721,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003795293910161127,
+          "rms_settling_m": 0.00921495321474946,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.10881977156401303,
+          "edge_strain_p95": 0.014363004598502002,
+          "max_edge_length_error_m": 9.446128814132124e-05,
+          "median_clearance_before_m": 0.013298937755939185,
+          "median_clearance_after_m": 0.0016688550375109504,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00041134170539865005,
+          "rms_settling_m": 0.010879667919087864,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.14253532949799996,
+          "edge_strain_p95": 0.004875674822865749,
+          "max_edge_length_error_m": 7.216908246020573e-05,
+          "median_clearance_before_m": 0.025467097255587576,
+          "median_clearance_after_m": 0.0140095417182098,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003731943674026225,
+          "rms_settling_m": 0.0107433473784663,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.06300980618677474,
+          "edge_strain_p95": 0.012973117005487613,
+          "max_edge_length_error_m": 8.520291902024048e-05,
+          "median_clearance_before_m": 0.012958652485860755,
+          "median_clearance_after_m": 0.0013418598348973881,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0006145991790361214,
+          "rms_settling_m": 0.010666469879544662,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.040269534505789815,
+          "edge_strain_p95": 0.007355452969413824,
+          "max_edge_length_error_m": 9.059960667513831e-05,
+          "median_clearance_before_m": 0.01861549118459225,
+          "median_clearance_after_m": 0.007115512863385577,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.01104146765284426,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.07061854624846937,
+          "edge_strain_p95": 0.017293537606156168,
+          "max_edge_length_error_m": 9.478505708420803e-05,
+          "median_clearance_before_m": 0.005511370316946361,
+          "median_clearance_after_m": 0.0006565552378629703,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00033835298067453126,
+          "rms_settling_m": 0.005030963216116871,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.08114566643569525,
+          "edge_strain_p95": 0.016565700582875518,
+          "max_edge_length_error_m": 0.0001617113823178004,
+          "median_clearance_before_m": 0.014111087111122115,
+          "median_clearance_after_m": 0.002863147666744623,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00048154478932838606,
+          "rms_settling_m": 0.009603839648198303,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.09676950381245844,
+          "edge_strain_p95": 0.013067778994107618,
+          "max_edge_length_error_m": 0.00015587816933680405,
+          "median_clearance_before_m": 0.014365995264798403,
+          "median_clearance_after_m": 0.002829365944832313,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.010744652715494947,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.11470676858934897,
+          "edge_strain_p95": 0.04744000895043346,
+          "max_edge_length_error_m": 0.00031460162385948563,
+          "median_clearance_before_m": 0.011146372506016267,
+          "median_clearance_after_m": 0.0007982950955747153,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00018361287507993006,
+          "rms_settling_m": 0.008964520906694766,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.04688184614813204,
+          "edge_strain_p95": 0.006849765187699163,
+          "max_edge_length_error_m": 0.0001948892398172591,
+          "median_clearance_before_m": 0.01792150173261762,
+          "median_clearance_after_m": 0.006292158554435063,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003787808636420611,
+          "rms_settling_m": 0.010715264580111763,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.07631886014107434,
+          "edge_strain_p95": 0.022255409634065776,
+          "max_edge_length_error_m": 6.860226338608125e-05,
+          "median_clearance_before_m": 0.012389738018864286,
+          "median_clearance_after_m": 0.0018593301926572428,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00034431871140705103,
+          "rms_settling_m": 0.009883526604868196,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.05901096241684214,
+          "edge_strain_p95": 0.008430087202947717,
+          "max_edge_length_error_m": 0.00016852039971720738,
+          "median_clearance_before_m": 0.014453525151312352,
+          "median_clearance_after_m": 0.003003267341601043,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.010410106668312605,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.16498499960748267,
+          "edge_strain_p95": 0.02005896482133642,
+          "max_edge_length_error_m": 0.00015463320744766446,
+          "median_clearance_before_m": 0.009903012302877955,
+          "median_clearance_after_m": 0.0006530785510794929,
+          "min_vertex_clearance_m": 0.0006499999999999998,
+          "min_centroid_clearance_m": 0.0005979067791011884,
+          "rms_settling_m": 0.00887803291837192,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.1025982119928424,
+          "edge_strain_p95": 0.01247446864918332,
+          "max_edge_length_error_m": 0.0001654547599389579,
+          "median_clearance_before_m": 0.014444898605080471,
+          "median_clearance_after_m": 0.0028730021588834294,
+          "min_vertex_clearance_m": 0.0006499999999999998,
+          "min_centroid_clearance_m": 0.00046050127012403977,
+          "rms_settling_m": 0.010350534209733413,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.08014059955885237,
+          "edge_strain_p95": 0.011381670511514473,
+          "max_edge_length_error_m": 8.130015506052678e-05,
+          "median_clearance_before_m": 0.011983959445074882,
+          "median_clearance_after_m": 0.0007017930222947889,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0004479871052537922,
+          "rms_settling_m": 0.010334856656784965,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.05564438002837985,
+          "edge_strain_p95": 0.014080532523252916,
+          "max_edge_length_error_m": 6.485039523358108e-05,
+          "median_clearance_before_m": 0.007459570065292536,
+          "median_clearance_after_m": 0.0006551777194550227,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00036350394066672967,
+          "rms_settling_m": 0.007099272254154514,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.15269575416610598,
+          "edge_strain_p95": 0.004934191553769624,
+          "max_edge_length_error_m": 0.00011893291306055119,
+          "median_clearance_before_m": 0.02162351267816359,
+          "median_clearance_after_m": 0.010110742528469201,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0003697505663249412,
+          "rms_settling_m": 0.010739164829923858,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.14422522403825622,
+          "edge_strain_p95": 0.01389801036814258,
+          "max_edge_length_error_m": 0.0001564924794240771,
+          "median_clearance_before_m": 0.01782009543636995,
+          "median_clearance_after_m": 0.006809905521994585,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0002912778297459902,
+          "rms_settling_m": 0.009291689439720972,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    },
+    {
+      "accepted": 7,
+      "attempts": 7,
+      "per_leaf": [
+        {
+          "max_edge_strain": 0.10318816747046647,
+          "edge_strain_p95": 0.006670699144715782,
+          "max_edge_length_error_m": 0.00015597259142842435,
+          "median_clearance_before_m": 0.02310408973991871,
+          "median_clearance_after_m": 0.011464868024469697,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.011323757617963738,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 0
+        },
+        {
+          "max_edge_strain": 0.0969901826806131,
+          "edge_strain_p95": 0.009564067038542871,
+          "max_edge_length_error_m": 7.22983026636469e-05,
+          "median_clearance_before_m": 0.012851034312568243,
+          "median_clearance_after_m": 0.0014990288781468253,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.0003661198771398866,
+          "rms_settling_m": 0.01035663021775774,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 1
+        },
+        {
+          "max_edge_strain": 0.08959251450393067,
+          "edge_strain_p95": 0.01185924277378869,
+          "max_edge_length_error_m": 0.00012349654316735903,
+          "median_clearance_before_m": 0.018022546041011812,
+          "median_clearance_after_m": 0.00641880223671338,
+          "min_vertex_clearance_m": 0.00065,
+          "min_centroid_clearance_m": 0.00065,
+          "rms_settling_m": 0.011071710667817895,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 2
+        },
+        {
+          "max_edge_strain": 0.0774642867691412,
+          "edge_strain_p95": 0.031578738134096694,
+          "max_edge_length_error_m": 0.0001192490341961048,
+          "median_clearance_before_m": 0.0067250100114587714,
+          "median_clearance_after_m": 0.0006582275059307897,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00031397986552186667,
+          "rms_settling_m": 0.006512946647302611,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 3
+        },
+        {
+          "max_edge_strain": 0.06778018851994956,
+          "edge_strain_p95": 0.010063404660186112,
+          "max_edge_length_error_m": 6.792634635154667e-05,
+          "median_clearance_before_m": 0.019879103649148067,
+          "median_clearance_after_m": 0.008221990197451397,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0006264985410223585,
+          "rms_settling_m": 0.011015586616216298,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 4
+        },
+        {
+          "max_edge_strain": 0.09196922139334704,
+          "edge_strain_p95": 0.005999584794566829,
+          "max_edge_length_error_m": 0.00013757451835967258,
+          "median_clearance_before_m": 0.019031362104415896,
+          "median_clearance_after_m": 0.007906776509933296,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.00037614155721978244,
+          "rms_settling_m": 0.011229791854225953,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 5
+        },
+        {
+          "max_edge_strain": 0.09223947939755732,
+          "edge_strain_p95": 0.023387737271490953,
+          "max_edge_length_error_m": 0.0003474242825710974,
+          "median_clearance_before_m": 0.009812713278405749,
+          "median_clearance_after_m": 0.0013248121300061394,
+          "min_vertex_clearance_m": 0.0006499999999999995,
+          "min_centroid_clearance_m": 0.0001872647833766894,
+          "rms_settling_m": 0.008606747656886307,
+          "collision_scope": "height-field vertices and face centroids; no global/self collision guarantee",
+          "leaf": 6
+        }
+      ],
+      "fragment_target": 21,
+      "method": "3D metric-constrained settling with weak rest-shape penalty; steep-support rejection; sampled contacts"
+    }
+  ],
+  "fungus_materials": [
+    "Woodland bracket | fungus_cap",
+    "Woodland bracket | fungus_pores",
+    "GT7 | fungus"
+  ],
+  "controller_transforms_preserved": true,
+  "original_placements": 18940,
+  "camera_matrices_preserved": true,
+  "packed_images": 42,
+  "scene": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_INTEGRATED_REPAIR.blend",
+  "scene_sha256": "08481bf67dc8ff54562e766a3e0e4f50ca422090249755e0b160201ccfbc545a",
+  "seconds": 50.762855052948,
+  "source_unchanged": true
+}

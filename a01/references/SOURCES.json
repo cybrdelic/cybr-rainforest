@@ -1,0 +1,43 @@
+{
+  "project": "GREEN TERROR / asset gate A01",
+  "reference_use": "morphological observation only, never image textures or backgrounds",
+  "references": [
+    {
+      "url": "https://plants.ces.ncsu.edu/plants/philodendron-hederaceum/",
+      "observed": [
+        "heart-shaped outline",
+        "slender petioles",
+        "alternate leaves",
+        "free stipules",
+        "new bronze growth"
+      ],
+      "images_observed": [
+        "KENPEI leaves, CC BY-SA 3.0",
+        "Alex Popovkin, Bahia, Brazil, CC BY 2.0"
+      ],
+      "species_match": "reference-guided approximation, not species-calibrated"
+    },
+    {
+      "url": "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/",
+      "observed": [
+        "pinnate tapering arching fronds",
+        "asymmetric auriculate pinnae",
+        "serrulate/crenate margins"
+      ],
+      "reference_type": "botanical description; linked photo could not be fetched"
+    },
+    {
+      "url": "https://algorithmicbotany.org/papers/venation.sig2005.html",
+      "use": "inspiration for auxin-source space-colonization; this implementation uses a static leaf domain and hand-authored major veins, not the complete paper growth model"
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/latest/render/cycles/render_settings/sampling.html",
+      "use": "render sampling documentation"
+    }
+  ],
+  "calibration_limits": [
+    "Pigment, gloss and transmission coefficients are authored, not spectrally measured.",
+    "Finite branching and shape variants still repeat.",
+    "Litter uses rigid support samples and a conservative support proxy, not a global contact solver."
+  ]
+}

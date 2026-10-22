@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "seconds": 19.929125785827637,
+  "assets": [
+    {
+      "family": "cordate",
+      "nodes": 7261,
+      "edges": 7293,
+      "loop_joins": 33,
+      "vertices": 12733,
+      "triangles": 25109,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "seed": 30401,
+      "outline_valid": true
+    },
+    {
+      "family": "elliptic",
+      "nodes": 5220,
+      "edges": 5246,
+      "loop_joins": 27,
+      "vertices": 8284,
+      "triangles": 16330,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "seed": 30402,
+      "outline_valid": true
+    },
+    {
+      "family": "lance",
+      "nodes": 3687,
+      "edges": 3717,
+      "loop_joins": 31,
+      "vertices": 5289,
+      "triangles": 10340,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "seed": 30403,
+      "outline_valid": true
+    }
+  ],
+  "photos_used_as_textures": false,
+  "image_generation_used": false
+}

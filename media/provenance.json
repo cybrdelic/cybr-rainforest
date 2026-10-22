@@ -1,0 +1,78 @@
+{
+  "review_date_utc": "2026-10-22",
+  "review_scope": "Existing artifact bytes, decoded frames and visible pixels inspected; no project code, Blender render or scene rebuild executed.",
+  "files": [
+    {
+      "path": "media/recovery-proof.png",
+      "bytes": 3652817,
+      "sha256": "22c93db1a8712282f8042c6b18168fd38614ecbbae1601384055ef2802a8a956",
+      "role": "Historical native forest reconstruction pipeline proof, not a V14 visual upgrade.",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "path": "media/pipeline-test-320x240.png",
+      "bytes": 409224,
+      "sha256": "6c1823a648f508df8bfea317e50c56829b190ba705a3e8aa2698fc3c527becdf",
+      "role": "Later low-resolution pipeline test, not final realism evidence.",
+      "width": 320,
+      "height": 240
+    },
+    {
+      "path": "media/branch-inspection.mp4",
+      "bytes": 613608,
+      "sha256": "7da77642f936adf698fa31d9fb39c9d750bc431a81b6363d43d291fb85c6b291",
+      "role": "Historical native camera motion around a static branch; no full-forest or wind animation."
+    },
+    {
+      "path": "media/branch-inspection.gif",
+      "bytes": 3715650,
+      "sha256": "ea95a768c4f1b3fc224cbbcf620233c28fb61d47a6834817e76343ba27a1bd33",
+      "role": "README preview derived only from the existing branch MP4; downsampled and looped, no invented frames.",
+      "width": 640,
+      "height": 480
+    }
+  ],
+  "source_film": {
+    "source_name": "GREEN_TERROR_NATIVE_ASSET_INSPECTION.mp4",
+    "sha256": "7da77642f936adf698fa31d9fb39c9d750bc431a81b6363d43d291fb85c6b291",
+    "historical_delivery_hash_matches": true,
+    "width": 960,
+    "height": 720,
+    "fps": 24,
+    "duration_seconds": 4,
+    "decoded_frames": 96,
+    "distinct_decoded_frames": 96,
+    "audio": false,
+    "camera_motion_only": true,
+    "full_forest_video": false
+  },
+  "gif_conversion": {
+    "source": "media/branch-inspection.mp4",
+    "output": "media/branch-inspection.gif",
+    "width": 640,
+    "height": 480,
+    "frames": 48,
+    "distinct_frames": 48,
+    "duration_seconds": 4.0,
+    "nominal_fps": 12,
+    "loop": true,
+    "filter": "fps=12,scale=640:-1:flags=lanczos,palettegen/paletteuse (sierra2_4a)",
+    "frame_interpolation": false,
+    "synthesized_scene_motion": false
+  },
+  "recovery_proof": {
+    "historical_record_hash_matches": true,
+    "width": 960,
+    "height": 720,
+    "samples": 32,
+    "v14_complete": false,
+    "final_film_complete": false
+  },
+  "pixel_review": {
+    "recovery_proof": "Dense green leaves, smooth tissue, repeated clusters and pale bark; old baseline remains visibly stylized.",
+    "pipeline_test": "Small native 320 by 240 forest test; not comparable as final high-resolution quality evidence.",
+    "inspection_film": "Two camera orbits and a lighting cut around the same static procedural leafy branch.",
+    "gif": "Reviewed converted middle frame; all 48 decoded GIF frames distinct."
+  }
+}

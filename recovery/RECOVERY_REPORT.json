@@ -1,0 +1,51 @@
+{
+  "completed_scope": "Native recovery and render/export repair only",
+  "native_reconstruction_completed": true,
+  "model": {
+    "path": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/GREEN_TERROR_RECONSTRUCTED_BASELINE.blend",
+    "bytes": 365728728,
+    "sha256": "90d33964366c7103209ce4bb72aa1b9a253acee30f16262c57bf0560d09316d6"
+  },
+  "native_reopen": {
+    "passed": true,
+    "packed_images": 42,
+    "external_libraries": 0,
+    "historical_planting_roots": 18940
+  },
+  "native_image": {
+    "path": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/renders/RECOVERED_FOREST_PROOF.png",
+    "width": 960,
+    "height": 720,
+    "samples": 32,
+    "sha256": "22c93db1a8712282f8042c6b18168fd38614ecbbae1601384055ef2802a8a956",
+    "renderer": "CYCLES",
+    "completed": true
+  },
+  "export_fix": "Capability-checked EXR modes; real single-layer and multilayer native smoke writes passed",
+  "visual_review": {
+    "inspected": true,
+    "visual_upgrade_claim": false,
+    "observed": "Retains dense repeated leaf clusters, smooth large blades and inherited pale bark geometry. A pipeline recovery proof, not a V14 visual candidate."
+  },
+  "recovered_library_candidate": {
+    "path": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/recovered_library/GREEN_TERROR_A01_FOREST_CANDIDATE.blend",
+    "sha256": "8a55fc26711bb3f28578296d19f37822b1faff959ea20c2456a9eb9e27d5cd08",
+    "native_open_completed": true,
+    "packed_images": 26,
+    "v14_identity_established": false,
+    "promoted_to_final": false
+  },
+  "v14_complete": false,
+  "film_complete": false,
+  "image_generation_used": false,
+  "upscaled": false,
+  "all_subprocesses_completed": true,
+  "evidence": [
+    "evidence/RECOVERY_STATUS.json",
+    "evidence/NATIVE_REOPEN.json",
+    "evidence/EXR_NATIVE_TEST.json",
+    "evidence/VERIFICATION_PROGRESS.json",
+    "evidence/A01_NATIVE_AUDIT.json"
+  ],
+  "timestamp_unix": 1792642443.7195277
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "green-terror-visual-review/1.0",
+  "status": "not_evaluated",
+  "reviewer": null,
+  "reviewer_role": null,
+  "reviewer_roles": [
+    "user",
+    "internal_visual_reviewer",
+    "external_reviewer"
+  ],
+  "baseline_scene_sha256": null,
+  "candidate_scene_sha256": null,
+  "gate": null,
+  "camera": null,
+  "image_pair": {
+    "baseline": null,
+    "candidate": null
+  },
+  "labels_blinded": null,
+  "matched_controls_verified": false,
+  "viewing_scales": [
+    "thumbnail",
+    "normal",
+    "native_100_percent"
+  ],
+  "criteria": [
+    {
+      "name": "leaf_shape_and_attachment",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    },
+    {
+      "name": "material_response",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    },
+    {
+      "name": "plant_architecture",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    },
+    {
+      "name": "wood_macroform",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    },
+    {
+      "name": "attached_growth",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    },
+    {
+      "name": "litter_contact_and_decay",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    },
+    {
+      "name": "depth_and_distribution",
+      "decision": "not_evaluated",
+      "baseline_crop": null,
+      "candidate_crop": null,
+      "reason": null,
+      "critical_regression": null
+    }
+  ],
+  "decision": null,
+  "allowed_decisions": [
+    "accept",
+    "reject",
+    "not_evaluated"
+  ],
+  "technical_status_does_not_set_visual_status": true,
+  "user_approval": null,
+  "next_required_change": null
+}

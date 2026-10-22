@@ -1,0 +1,576 @@
+{
+  "completed": true,
+  "native_reopened": true,
+  "scene": "inputs/historical/GREEN_TERROR_RECOVERY_CONFIRMED/GREEN_TERROR_RECONSTRUCTED_BASELINE.blend",
+  "scene_sha256": "90d33964366c7103209ce4bb72aa1b9a253acee30f16262c57bf0560d09316d6",
+  "scene_bytes": 365728728,
+  "native_version": "5.4.0 Alpha",
+  "native_build": "3fe0f2ab2a29",
+  "packed_images": [
+    {
+      "name": "bark_brown_02_diff_2k.jpg",
+      "packed_bytes": 2356592,
+      "sha256": "285051e34826ace29f4ab438ad35cc1201b2aae0a6157a5f3c0bf6667bbc539e"
+    },
+    {
+      "name": "bark_brown_02_disp_2k.png",
+      "packed_bytes": 6555476,
+      "sha256": "9428b672837475fac8fbd4377e5b10a8b344fa3f2a5ee8fed66cccff9c0e67d8"
+    },
+    {
+      "name": "bark_brown_02_nor_gl_2k.png",
+      "packed_bytes": 9323032,
+      "sha256": "d37078fc9b058f60b9445e53f8fef7c74caf8065b325a07521152b6033229456"
+    },
+    {
+      "name": "bark_brown_02_rough_2k.jpg",
+      "packed_bytes": 1236654,
+      "sha256": "adafcab150c1ca99150c77198329e251437dc00fa1f66019f75624366926996e"
+    },
+    {
+      "name": "cordate_dead.png",
+      "packed_bytes": 1827442,
+      "sha256": "0b75219a4b1b65fae7cd33bcc08ff2ae8a3a2c7c0ab5e934274e3ee51c2fd0cf"
+    },
+    {
+      "name": "cordate_height.png",
+      "packed_bytes": 3746998,
+      "sha256": "0440a476a8ef89bc0a8112cb3c88a0684228c404f3b2bdb0b846959d943effb6"
+    },
+    {
+      "name": "cordate_mature.png",
+      "packed_bytes": 1768799,
+      "sha256": "8d52ca08ce801540cb4cbd7d10ff1ae34de0f654fdfb0f4f9b95ed7d9ac535cc"
+    },
+    {
+      "name": "cordate_roughness.png",
+      "packed_bytes": 4264459,
+      "sha256": "11617286e716afec33007c941fdc524865ad187528533ef702edc9aa33df4591"
+    },
+    {
+      "name": "cordate_thickness.png",
+      "packed_bytes": 918565,
+      "sha256": "062d8b252f1a40f83e4e5ef55749ac9d46231ee96fcd847c5fcdfff3022915b9"
+    },
+    {
+      "name": "cordate_underside.png",
+      "packed_bytes": 2084817,
+      "sha256": "1b1bbb3d89746beee3559298397adbe3eb835090f29a3f10fef77f004080ed24"
+    },
+    {
+      "name": "cordate_young.png",
+      "packed_bytes": 2005428,
+      "sha256": "5ec220df1ccc7468434624fee58ca4fff9b05a74da92d050f1e54dd5dea1e82e"
+    },
+    {
+      "name": "dead_tree_trunk_02_diff",
+      "packed_bytes": 3484654,
+      "sha256": "d5b928c12885249e5a5fbe13619ac9693a67f6196137cc9eadedd5a6b90a87de"
+    },
+    {
+      "name": "dead_tree_trunk_02_nor_gl",
+      "packed_bytes": 4920531,
+      "sha256": "c01134451c6610e3c9225f16d8da2080b0eaba4df137e2bf1a7980d7ce417f35"
+    },
+    {
+      "name": "dead_tree_trunk_02_rough",
+      "packed_bytes": 2968937,
+      "sha256": "0be2e1a7c945090c385c7ae2636e6e6c341d4da14d741164b5cfe3080655331d"
+    },
+    {
+      "name": "fern_height.png",
+      "packed_bytes": 3581804,
+      "sha256": "3607920cbed024ad023ed2847fa410e948cb949e3ac0ed0bbf8e48dbe3bf7bee"
+    },
+    {
+      "name": "fern_mature.png",
+      "packed_bytes": 1722071,
+      "sha256": "6102948f7d69b36e547f38a18fce2873fdda180dc009b4ea2e7f1251e527882b"
+    },
+    {
+      "name": "fern_roughness.png",
+      "packed_bytes": 4251593,
+      "sha256": "d721f2ad310bac5dac7d2d2eca5b556852bdc42e6090286fd89fc312ead42296"
+    },
+    {
+      "name": "fern_thickness.png",
+      "packed_bytes": 806302,
+      "sha256": "ab380ae67f9e7fa105b3120a338e04dc1f25ffe22d782b488caaf1c157d8bf8e"
+    },
+    {
+      "name": "fern_underside.png",
+      "packed_bytes": 2039555,
+      "sha256": "aae7557a2703a6c3b0c88f99a9c912a88507bd642550a9c6eb11f61170bb0e3b"
+    },
+    {
+      "name": "fern_young.png",
+      "packed_bytes": 1956187,
+      "sha256": "56387677ae93f8a75f9472903cca58ef79ed2aae090cee65b7834039b59f6b9b"
+    },
+    {
+      "name": "GT11 numerical vascular atlas",
+      "packed_bytes": 40454,
+      "sha256": "524ca358be50328a2c7f2e766abe70c7bae7272909c7556a439138e088459fbc"
+    },
+    {
+      "name": "leaf_pigment_multiplier.png",
+      "packed_bytes": 1161578,
+      "sha256": "633fe3a38715c7b91bc3e5bbdb616fcaafdeb55b1a8cb8cef5769a9e80e35db1"
+    },
+    {
+      "name": "leaf_tissue_state.png",
+      "packed_bytes": 1172830,
+      "sha256": "0960a52eac2ec164346f08bb9e2c01bab09721047458cc7a1ff3b39b25864015"
+    },
+    {
+      "name": "leaf_vein_height16.png",
+      "packed_bytes": 3390203,
+      "sha256": "4a286fab435200f9608378c28d99da1e3e43507e567ce92f58e50024894c4528"
+    },
+    {
+      "name": "mud_forest_diff_2k.jpg",
+      "packed_bytes": 3683329,
+      "sha256": "6726cf9ad9b1be9bf284c629dd95d732527b18fc92be06ae9093a96a68f77628"
+    },
+    {
+      "name": "mud_forest_disp_2k.png",
+      "packed_bytes": 9369270,
+      "sha256": "ea775c25a83b90ad843dfdd2af61b388cc2ae4c3c27f9f8faa03986ac667afcb"
+    },
+    {
+      "name": "mud_forest_nor_gl_2k.png",
+      "packed_bytes": 24357908,
+      "sha256": "999d8791e94860ce4b011b8e64167f5804a5fd397bafe3b775ba76d729b3aa9a"
+    },
+    {
+      "name": "mud_forest_rough_2k.jpg",
+      "packed_bytes": 1106194,
+      "sha256": "53245bf1e48255c38bb84ad033fb1b33da317d8507c513afd3f7f4dddcfbedaf"
+    },
+    {
+      "name": "piper_dead.png",
+      "packed_bytes": 1817554,
+      "sha256": "e6cbef68c1bc53f0707512fd8962983ae88c132508d859b23754f6c584051265"
+    },
+    {
+      "name": "piper_height.png",
+      "packed_bytes": 3619591,
+      "sha256": "8518117e72d778e97e809a70f9b0c1d74ba430fb1a459209ed3542717d5db427"
+    },
+    {
+      "name": "piper_mature.png",
+      "packed_bytes": 1751960,
+      "sha256": "e87f7bbd2d894a55430e9e11b208b3ac812a83c32baa3a8ed6d575dfcd67c383"
+    },
+    {
+      "name": "piper_roughness.png",
+      "packed_bytes": 4257004,
+      "sha256": "58af3bb0757d129b7b3ff3af7e785a952c972bab1cfa137c72f86e2e82f20dd1"
+    },
+    {
+      "name": "piper_thickness.png",
+      "packed_bytes": 893636,
+      "sha256": "c277e6887afd2e3c7dce004bcf491f84b376bd9a38ac9ff9962cc77f64ac2cd8"
+    },
+    {
+      "name": "piper_underside.png",
+      "packed_bytes": 2069558,
+      "sha256": "ad5009e8ade4a8e8748e23e7001bf5a71e34690769d304cdf24a789411e97f66"
+    },
+    {
+      "name": "piper_young.png",
+      "packed_bytes": 1987092,
+      "sha256": "7f0782bb70f1e7870196343d62fd475c420dd2792605b642ee73b0bd3c0e342e"
+    },
+    {
+      "name": "tree_bark_03_diff_2k.jpg",
+      "packed_bytes": 3807797,
+      "sha256": "8e8e2f2f4cf3fb09d91203e688c4f5fd3e14b3044d45236ad1f192452f55b34c"
+    },
+    {
+      "name": "tree_bark_03_disp_2k.png",
+      "packed_bytes": 6284691,
+      "sha256": "12aa9b0951c402c338e83994694c22490e9d2867c6594bc10cf4ed2a0c3a7cf3"
+    },
+    {
+      "name": "tree_bark_03_nor_gl_2k.png",
+      "packed_bytes": 26913291,
+      "sha256": "15fc8f6b1aa6fab60e7821fab66ba4d4da20b8f97c283c9b35988727e2d030f0"
+    },
+    {
+      "name": "tree_bark_03_rough_2k.jpg",
+      "packed_bytes": 1771898,
+      "sha256": "35b623b8c4daa1612e18d626adde7f8886835d417b633ffac2b0e24efec81060"
+    },
+    {
+      "name": "tree_stump_01_diff",
+      "packed_bytes": 3189746,
+      "sha256": "77d5238bc40168bcff0833dcf6510aecea4a2b6746968fed7879c5ca7864e6f5"
+    },
+    {
+      "name": "tree_stump_01_nor_gl",
+      "packed_bytes": 4415649,
+      "sha256": "2cf395f2779c9e3dfab96088af1384573ecc3f36edbd5ccae8dfe26577c969b0"
+    },
+    {
+      "name": "tree_stump_01_rough",
+      "packed_bytes": 2801595,
+      "sha256": "b025cf566d4ce1da452353f3d98c6ddee2fa63b2b440cfa94d9405de347f846f"
+    }
+  ],
+  "packed_image_count": 42,
+  "external_blend_libraries": 0,
+  "original_planting_root_count": 18940,
+  "comparison_cameras": {
+    "01_GREEN_TERROR": {
+      "matrix": [
+        [
+          0.9988945722579956,
+          -0.00476291636005044,
+          -0.046764880418777466,
+          0.0
+        ],
+        [
+          -0.04700680077075958,
+          -0.10121197998523712,
+          -0.9937537312507629,
+          -7.5
+        ],
+        [
+          -2.4954660560183584e-10,
+          0.9948534965515137,
+          -0.10132399201393127,
+          1.1175405979156494
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 25.0
+    },
+    "02_ROOTS_AND_UNDERSTORY": {
+      "matrix": [
+        [
+          0.8931001424789429,
+          -0.059006936848163605,
+          -0.44597119092941284,
+          -3.299999952316284
+        ],
+        [
+          -0.4498578906059265,
+          -0.11714611947536469,
+          -0.8853839039802551,
+          -3.5
+        ],
+        [
+          -3.4454465946964774e-09,
+          0.9913601875305176,
+          -0.1311679482460022,
+          1.0489965677261353
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 30.0
+    },
+    "03_CANOPY_CATHEDRAL": {
+      "matrix": [
+        [
+          0.9923723936080933,
+          -0.1002940982580185,
+          -0.071680448949337,
+          0.0
+        ],
+        [
+          -0.12327608466148376,
+          -0.8073673844337463,
+          -0.5770276188850403,
+          -8.100000381469727
+        ],
+        [
+          6.120174589341332e-09,
+          0.5814628005027771,
+          -0.8135730028152466,
+          1.7330015897750854
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 22.0
+    },
+    "04_BARK_AND_LITTER": {
+      "matrix": [
+        [
+          0.7071068286895752,
+          -0.5144957304000854,
+          0.48507124185562134,
+          -3.4000000953674316
+        ],
+        [
+          0.7071067690849304,
+          0.5144957900047302,
+          -0.48507124185562134,
+          0.20000000298023224
+        ],
+        [
+          -3.285616045900497e-08,
+          0.6859943270683289,
+          0.7276068925857544,
+          2.4808669090270996
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 45.0
+    },
+    "05_DECOMPOSER_GARDEN": {
+      "matrix": [
+        [
+          0.7727262377738953,
+          -0.45107004046440125,
+          0.4465758800506592,
+          -3.200000047683716
+        ],
+        [
+          0.6347394585609436,
+          0.5491285920143127,
+          -0.5436576008796692,
+          -0.30000001192092896
+        ],
+        [
+          8.287020847319582e-08,
+          0.7035578489303589,
+          0.7106379866600037,
+          2.299999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 58.0
+    },
+    "06_BUTTRESS_PASSAGE": {
+      "matrix": [
+        [
+          0.7856362462043762,
+          0.06644735485315323,
+          0.6151101589202881,
+          -1.350000023841858
+        ],
+        [
+          0.618688702583313,
+          -0.08437760919332504,
+          -0.7810919880867004,
+          -1.600000023841858
+        ],
+        [
+          2.8407200147739786e-08,
+          0.9942158460617065,
+          -0.1074003353714943,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 30.0
+    },
+    "07_EPIPHYTE_MICROFOREST": {
+      "matrix": [
+        [
+          0.7682212591171265,
+          -0.18804341554641724,
+          0.6119442582130432,
+          -3.0999999046325684
+        ],
+        [
+          0.6401844620704651,
+          0.22565209865570068,
+          -0.7343330383300781,
+          0.23000000417232513
+        ],
+        [
+          -1.0659388038902762e-08,
+          0.9558874368667603,
+          0.2937332093715668,
+          1.649999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 62.0
+    },
+    "08_RAINFOREST_INTERIOR": {
+      "matrix": [
+        [
+          0.9539307951927185,
+          0.03326128423213959,
+          0.2981773316860199,
+          2.9000000953674316
+        ],
+        [
+          0.30002671480178833,
+          -0.10575363785028458,
+          -0.9480506777763367,
+          -6.900000095367432
+        ],
+        [
+          -4.4684565381203356e-08,
+          0.9938359260559082,
+          -0.1108609288930893,
+          1.850000023841858
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 25.0
+    },
+    "09_CROWN_ASCENT": {
+      "matrix": [
+        [
+          0.9172617793083191,
+          0.35720500349998474,
+          0.17616862058639526,
+          -1.5
+        ],
+        [
+          0.39828482270240784,
+          -0.8226537704467773,
+          -0.4057215452194214,
+          -5.199999809265137
+        ],
+        [
+          1.953715411673329e-08,
+          0.4423181414604187,
+          -0.8968582153320312,
+          1.7000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 22.0
+    },
+    "10_LIVING_BARK": {
+      "matrix": [
+        [
+          0.7071067690849304,
+          -0.4485289752483368,
+          0.5466459393501282,
+          -3.0799999237060547
+        ],
+        [
+          0.7071067690849304,
+          0.44852885603904724,
+          -0.546645998954773,
+          0.11999999731779099
+        ],
+        [
+          9.130211964247792e-08,
+          0.7730741500854492,
+          0.6343156695365906,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 62.0
+    },
+    "11_ROOT_LEVEL": {
+      "matrix": [
+        [
+          0.7793756723403931,
+          -0.06476102769374847,
+          0.6232010722160339,
+          -2.700000047683716
+        ],
+        [
+          0.626556932926178,
+          0.0805564597249031,
+          -0.7752013206481934,
+          -0.800000011920929
+        ],
+        [
+          -3.7278482523106504e-08,
+          0.9946439862251282,
+          0.10336021333932877,
+          1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 40.0
+    },
+    "12_LAYERED_INTERIOR": {
+      "matrix": [
+        [
+          0.9574378728866577,
+          0.05964481085538864,
+          0.28240957856178284,
+          1.0
+        ],
+        [
+          0.2886393666267395,
+          -0.19784606993198395,
+          -0.9367733001708984,
+          -8.199999809265137
+        ],
+        [
+          -4.0242287724368e-08,
+          0.9784168004989624,
+          -0.20664116740226746,
+          1.600000023841858
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 26.0
+    }
+  },
+  "seconds": 1.9233968257904053,
+  "scope": "Input integrity and reopen/portability check; not a V14 build or visual-quality approval"
+}

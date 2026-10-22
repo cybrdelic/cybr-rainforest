@@ -1,0 +1,222 @@
+{
+  "kind": "Code-only recovery checkpoint",
+  "models_included": false,
+  "textures_included": false,
+  "required_baseline_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+  "recorded_final_model_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+  "scope": "Contains repair source, not completed renders or animation. Full rebuild also requires original V11 and the assets in the full source archive.",
+  "files": [
+    {
+      "path": "src/build_assets.py",
+      "sha256": "9eaaedd6325afde4b62c834c03a6ff22c8c842f9c491e8efb71d09224205d966"
+    },
+    {
+      "path": "src/make_atlases.py",
+      "sha256": "243c5b50f217e4012d65eaf718b95a56593f3415f9b3b48dcfea1a3dfb431205"
+    },
+    {
+      "path": "src/repair_geometry.py",
+      "sha256": "6c114227dda1f76f833741de17b954b02722fbddf2aac96ff5c930ca9b5ce2b8"
+    },
+    {
+      "path": "src/build_repaired_assets.py",
+      "sha256": "2d8b75f765c5ced3bbb0d0c3eabb0ae4b5e4d7fb4eeb668c6f23e40318e8f9af"
+    },
+    {
+      "path": "src/integrate_forest.py",
+      "sha256": "ba9826565c96680b0172a8179fcbeac294be68ef14a88f5385eda60c325671c4"
+    },
+    {
+      "path": "src/finalize_models.py",
+      "sha256": "8a7056002170397bd8ca232a303f96f6e986e9c2eaa8b2ab79e6b7eea7814f28"
+    },
+    {
+      "path": "src/refine_architecture.py",
+      "sha256": "c4194765039fe9e1313980a381d29c35de1fb7cdd85aa27a71cb85189730764b"
+    },
+    {
+      "path": "src/repair_climber_bindings.py",
+      "sha256": "a9381eb458d618bca9f294793d6326a4fda4ad0aa995f88153e3ed4f2f6cf872"
+    },
+    {
+      "path": "src/rebuild_delivery.py",
+      "sha256": "7024dfcb16b7c668048fb680e168400a8a237bc3895c83f3818a8917acdcbeff"
+    },
+    {
+      "path": "src/validate_scene_contract.py",
+      "sha256": "59db918511d0b16adc513a3656cdc825403deff114e74e6945c8a165947a165e"
+    },
+    {
+      "path": "src/validate_models.py",
+      "sha256": "aefd2e8aa5cc21c210d0584afbb52194a2f8c707f0ec4de13a8f939f6afe1035"
+    },
+    {
+      "path": "src/test_repair_math.py",
+      "sha256": "0a73549a4d420df94054dff28edcca60292f1b481da86c1bd9eb9b32cbf629db"
+    },
+    {
+      "path": "src/render_asset.py",
+      "sha256": "2d52ac659c3f90e750d9c87026b56ea1c19f72a03266de2aa5de730dddd28088"
+    },
+    {
+      "path": "src/render_memory_safe.py",
+      "sha256": "dcdb2325a375f458964ca601ae15b4fce44bc6ea92735fd912ca57421be61e85"
+    },
+    {
+      "path": "src/denoise_linear_asset.py",
+      "sha256": "7ded67b69cad0ef94529e615becb62dd18c7dd1129d2ca1114e5c85b6345208f"
+    },
+    {
+      "path": "src/render_forest.py",
+      "sha256": "d625a928a4b46f46468655fd153e29b0128f6280c499155ca56cce24fd3d83a3"
+    },
+    {
+      "path": "src/render_delivery.py",
+      "sha256": "5fd690b779bb8dfd86ba13c90952244b62b563211aff7221fcec303b240df0aa"
+    },
+    {
+      "path": "src/render_banded.py",
+      "sha256": "0cd6cfce48a3fc015d0eba5dadc74328a315da1c0691d180d644a97b245de32f"
+    },
+    {
+      "path": "src/assemble_bands.py",
+      "sha256": "82028c5a6d7355974214192e32ee6dd757494b9bb68fbdd3349fa9e5a40b3ab3"
+    },
+    {
+      "path": "src/package_repair_release.py",
+      "sha256": "8259e0dbf890774f1e50c1c88696abfbc05f470be6fca4c8d42ed7ba2043503e"
+    },
+    {
+      "path": "legacy/upstream/botany.py",
+      "sha256": "eb162e385070dc63c0aa0ffc808dde5662649571cb3a18e47d9ed110226faa06"
+    },
+    {
+      "path": "legacy/upstream/apply_v6.py",
+      "sha256": "2124f634dce035546de2b7208190c7f1a15c79d0a55bf78ba016e85e3a88af5a"
+    },
+    {
+      "path": "legacy/upstream/ecology_v8.py",
+      "sha256": "97b937e03fa1a7d53d28a2c3592f78e0d2e4e77ed1f196cda56256936f4cc6ca"
+    },
+    {
+      "path": "legacy/upstream/climbers.py",
+      "sha256": "42defb068b7e2fc7ecdbf5bbe7e46419101e95e59211522631251e7caf0437db"
+    },
+    {
+      "path": "legacy/upstream/botanical_detail.py",
+      "sha256": "e683f71d30123fed9a5188c09d68d6d4dfed9bc17fd99675b6129c9801d512ca"
+    },
+    {
+      "path": "legacy/upstream/morphology_v9.py",
+      "sha256": "440f00553d5b70b102c3db8cd4d01e3ca6cd6bccbd1516fa7cc098715bbc432d"
+    },
+    {
+      "path": "legacy/src/surfaces.py",
+      "sha256": "b474910dba29c674b9d9d686613ec10142820156b2f73699200c3d9f1ba40b4b"
+    },
+    {
+      "path": "legacy/src/refine_visible_surfaces.py",
+      "sha256": "928fa8eda8074da02f207e617b0b4c5c1822a4953e4d270a43f82987c30d30b3"
+    },
+    {
+      "path": "legacy/src/materials.py",
+      "sha256": "f970537d34d5fb0489b4bebc0114ee57007e25f5ba24a45c73d38d97f541eca1"
+    },
+    {
+      "path": "legacy/src/validate.py",
+      "sha256": "dc1b6a0c76625b4794e57a59c7d041fd9995a29ae290f427bbbb7f894fb2a5af"
+    },
+    {
+      "path": "legacy/src/audit_settings.py",
+      "sha256": "3a8645ad75f53fdd82efb27c832cf744287f971057d1561c208cb45d7e829398"
+    },
+    {
+      "path": "legacy/src/memory_audit.py",
+      "sha256": "398b8b31c15e792e55416adb009e6ab57bcdd8dc9c3e5370deafebdf6af54398"
+    },
+    {
+      "path": "legacy/src/raw_view.py",
+      "sha256": "f593b3194f2259a80ccf3e41f947fc11eae818eb676a695eefd6abee12b4cc05"
+    },
+    {
+      "path": "legacy/src/instance_microflora.py",
+      "sha256": "907cdb7c37166428d2d5f7061ae88a649edcd03cb7284a7ef972a8c0f3153242"
+    },
+    {
+      "path": "legacy/src/render.py",
+      "sha256": "68adc725b9b3ef81f9c9b70843123db2bf15e5bd6a387c34a0bcec2026d4b3b1"
+    },
+    {
+      "path": "legacy/src/audit_instances.py",
+      "sha256": "159d17a4ff49e78adb8d883a1aebcd728c042d1331ffce153dcdcbcdf0c22864"
+    },
+    {
+      "path": "legacy/src/camera_hosts.py",
+      "sha256": "6a6c327ab5d2447c67040a12f7ef7af0db3ea7dff782f1fda764b8459d19d7c2"
+    },
+    {
+      "path": "legacy/src/package_delivery.py",
+      "sha256": "891dad48c5ff669fe897fd1e0a2a43625a1fe98c493c6fbcc2af60b51fa8056b"
+    },
+    {
+      "path": "legacy/src/finish.py",
+      "sha256": "f5e9038e3e3556b4b1afbe60846a60b7acb614aa2bafc06c9b08bfd350b25bd2"
+    },
+    {
+      "path": "legacy/src/budget_small_blades.py",
+      "sha256": "ee7a3fb870b0a67a948f78b337590d364246763cf27b5e79f17daeb60ada5cc8"
+    },
+    {
+      "path": "legacy/src/morphology.py",
+      "sha256": "72ce5da0a364a477674ea44255be9ed6ab3cba9139863fa29dbcff3e140ef349"
+    },
+    {
+      "path": "legacy/src/exr_checkpoint.py",
+      "sha256": "945b72bd145b1f37303b51288b6c940842f8c294adae83e623a73d790c83fdef"
+    },
+    {
+      "path": "legacy/src/instance_fronds.py",
+      "sha256": "63469e96e6674e71f1709da9a8d0acac2474152a719640ab0a6573b32b6299c3"
+    },
+    {
+      "path": "legacy/src/denoise_checkpoint.py",
+      "sha256": "748ddbd550079cfabb6bfd16a218b92186039743622ff595d4e7b59f0c252ed5"
+    },
+    {
+      "path": "legacy/src/build.py",
+      "sha256": "93a4d26b9f764547dbdb172a813aa84816c8bd56c4ed4adc96f039ada0734aa6"
+    },
+    {
+      "path": "legacy/src/share_identical_geometry.py",
+      "sha256": "4c2d8acd8210fb83c5e5df6e4f6eea456b7d06746c6121a942b9f432b8e1d17a"
+    },
+    {
+      "path": "legacy/src/audit_inventory.py",
+      "sha256": "b4621f5559fb20e0ccdfa44e102bcd3599d7db225440afcdff43a574cf034d79"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a1579a4c759f0cdaf8bcfc8a74c8b8392357f4fd762b1c8dfcd13e95523392f2"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "be21ec4f6e97e6982c2441251399e6f22c41a14947f877cd5d753dd253b3cd02"
+    },
+    {
+      "path": "evidence/final_model_promotion.json",
+      "sha256": "67e5555362b030a390a274da8091cba831c1ee1981b67ea2c419732bba22965a"
+    },
+    {
+      "path": "evidence/climber_binding_review.json",
+      "sha256": "90a0e571ee0c581a7358eb39496f1afae8a04d137aaa00678460f6202408f510"
+    },
+    {
+      "path": "evidence/forest_integration.json",
+      "sha256": "b572642dabcb708a0aa6e719df3cac53f53eaa036b4c88a070408bf588c4eb17"
+    },
+    {
+      "path": "evidence/family_binding_tests.json",
+      "sha256": "c0569bf11a01b158c46d226cfc84aa90abdb9c2b566b0b0db9eb76c62d1c90be"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Native structural redesign, not an image-generated replacement.",
+  "finishing_stage": "failed",
+  "render_delivery_complete": false,
+  "verified_stills": [],
+  "verified_model": "inputs/historical/GREEN_TERROR_STRUCTURAL_REDESIGN/GREEN_TERROR_STRUCTURAL_REDESIGN_PORTABLE.blend",
+  "model_sha256": "8cfb24d5ca38c7677010290d91165e8d44469c1a89a30df58b84788954b8a00e",
+  "native_reopen_verified": true,
+  "image_generation_used": false,
+  "new_video_completed": false,
+  "visual_photorealism_approval": false,
+  "recorded_error": "Native step failed: inputs/historical/GREEN_TERROR_STRUCTURAL_REDESIGN/evidence/CONTROL_CLOSEUP.log, exit 1"
+}

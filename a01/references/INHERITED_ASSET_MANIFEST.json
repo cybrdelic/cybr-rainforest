@@ -1,0 +1,1321 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-17T14:22:27.341096+00:00",
+  "generator": "src/fetch_assets.py",
+  "provider": "Poly Haven",
+  "provider_url": "https://polyhaven.com",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "credit": "Surface texture assets by Poly Haven and the credited artists.",
+  "acquisition": "Official public API; each downloaded file verified by API byte count and MD5; SHA-256 recorded locally.",
+  "image_origin": "Photographic surface assets; no AI-generated imagery.",
+  "api_user_agent": "GreenTerrorRainforestRender/3.0 (CC0-surface-acquisition)",
+  "assets": [
+    {
+      "id": "bark_brown_02",
+      "asset_type": "texture",
+      "name": "Bark Brown 02",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "asset_page": "https://polyhaven.com/a/bark_brown_02",
+      "api_info_url": "https://api.polyhaven.com/info/bark_brown_02",
+      "api_files_url": "https://api.polyhaven.com/files/bark_brown_02",
+      "dimensions_mm": [
+        999.9990463256836,
+        999.998927116394
+      ],
+      "tile_size_m": [
+        0.9999990463256836,
+        0.999998927116394
+      ],
+      "description": "Free 8K bark texture showing rough brown tree bark with deep vertical furrows, wooden knots and subtle mossy green patches, high-detail surface relief.",
+      "source_metadata": {
+        "date_published": 1545431528,
+        "sponsors": [
+          "9910225"
+        ],
+        "name": "Bark Brown 02",
+        "old_id": 182,
+        "categories": [
+          "wood",
+          "outdoor",
+          "natural",
+          "bark"
+        ],
+        "type": 1,
+        "dimensions": [
+          999.9990463256836,
+          999.998927116394
+        ],
+        "authors": {
+          "Rob Tuytel": "All"
+        },
+        "max_resolution": [
+          8192,
+          8192
+        ],
+        "files_hash": "6791070915dfc329106f7427d305d13b87984763",
+        "tags": [
+          "bark",
+          "tree",
+          "forest",
+          "knots",
+          "wooden knots",
+          "tree trunk"
+        ],
+        "description": "Free 8K bark texture showing rough brown tree bark with deep vertical furrows, wooden knots and subtle mossy green patches, high-detail surface relief.",
+        "category_id": "8d2e6acd-922e-5774-89f1-3988e37758c3",
+        "category": "Wood/Bark/Furrowed Bark",
+        "attributes": {
+          "surface_use": "object",
+          "condition": [
+            "weathered",
+            "mossy"
+          ],
+          "origin": "natural",
+          "setting": "outdoor"
+        },
+        "img_version": "d35bc0c7",
+        "download_count": 231532,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/bark_brown_02.png?width=256&height=256&format=webp&v=d35bc0c7"
+      },
+      "selected_api_file_records": {
+        "Diffuse": {
+          "size": 2356592,
+          "md5": "11a2a6039bb5b93f12dcf1689838545b",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_diff_2k.jpg"
+        },
+        "Rough": {
+          "size": 1236654,
+          "md5": "1c17004a7262d26d3867198a8fd0e8c1",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_rough_2k.jpg"
+        },
+        "nor_gl": {
+          "size": 9323032,
+          "md5": "24bbfca9cae988a4a753cb42123cab3f",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bark_brown_02/bark_brown_02_nor_gl_2k.png"
+        },
+        "Displacement": {
+          "size": 6555476,
+          "md5": "8bc0ca06214c073060c7bafee313214d",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bark_brown_02/bark_brown_02_disp_2k.png"
+        }
+      },
+      "maps": [
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_diff_2k.jpg",
+          "size_bytes": 2356592,
+          "md5": "11a2a6039bb5b93f12dcf1689838545b",
+          "sha256": "285051e34826ace29f4ab438ad35cc1201b2aae0a6157a5f3c0bf6667bbc539e",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Rough",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_rough_2k.jpg",
+          "size_bytes": 1236654,
+          "md5": "1c17004a7262d26d3867198a8fd0e8c1",
+          "sha256": "adafcab150c1ca99150c77198329e251437dc00fa1f66019f75624366926996e",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 1
+        },
+        {
+          "map": "nor_gl",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_nor_gl_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bark_brown_02/bark_brown_02_nor_gl_2k.png",
+          "size_bytes": 9323032,
+          "md5": "24bbfca9cae988a4a753cb42123cab3f",
+          "sha256": "d37078fc9b058f60b9445e53f8fef7c74caf8065b325a07521152b6033229456",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "png_color_type": 6
+        },
+        {
+          "map": "Displacement",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_disp_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bark_brown_02/bark_brown_02_disp_2k.png",
+          "size_bytes": 6555476,
+          "md5": "8bc0ca06214c073060c7bafee313214d",
+          "sha256": "9428b672837475fac8fbd4377e5b10a8b344fa3f2a5ee8fed66cccff9c0e67d8",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 4
+        }
+      ],
+      "files": [
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_diff_2k.jpg",
+          "size_bytes": 2356592,
+          "md5": "11a2a6039bb5b93f12dcf1689838545b",
+          "sha256": "285051e34826ace29f4ab438ad35cc1201b2aae0a6157a5f3c0bf6667bbc539e",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Rough",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_rough_2k.jpg",
+          "size_bytes": 1236654,
+          "md5": "1c17004a7262d26d3867198a8fd0e8c1",
+          "sha256": "adafcab150c1ca99150c77198329e251437dc00fa1f66019f75624366926996e",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 1
+        },
+        {
+          "map": "nor_gl",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_nor_gl_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bark_brown_02/bark_brown_02_nor_gl_2k.png",
+          "size_bytes": 9323032,
+          "md5": "24bbfca9cae988a4a753cb42123cab3f",
+          "sha256": "d37078fc9b058f60b9445e53f8fef7c74caf8065b325a07521152b6033229456",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "png_color_type": 6
+        },
+        {
+          "map": "Displacement",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/bark_brown_02/bark_brown_02_disp_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bark_brown_02/bark_brown_02_disp_2k.png",
+          "size_bytes": 6555476,
+          "md5": "8bc0ca06214c073060c7bafee313214d",
+          "sha256": "9428b672837475fac8fbd4377e5b10a8b344fa3f2a5ee8fed66cccff9c0e67d8",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 4
+        }
+      ]
+    },
+    {
+      "id": "tree_bark_03",
+      "asset_type": "texture",
+      "name": "Tree Bark 03",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "asset_page": "https://polyhaven.com/a/tree_bark_03",
+      "api_info_url": "https://api.polyhaven.com/info/tree_bark_03",
+      "api_files_url": "https://api.polyhaven.com/files/tree_bark_03",
+      "dimensions_mm": [
+        1000,
+        1000
+      ],
+      "tile_size_m": [
+        1.0,
+        1.0
+      ],
+      "description": "Free 8K texture of old tree bark with deep vertical fissures, rough coarse surface, earthy brown-gray tones and scattered green moss patches.",
+      "source_metadata": {
+        "type": 1,
+        "tags": [
+          "bark",
+          "moss",
+          "rough",
+          "old"
+        ],
+        "date_published": 1553565430,
+        "name": "Tree Bark 03",
+        "old_id": 196,
+        "categories": [
+          "wood",
+          "natural",
+          "outdoor",
+          "bark"
+        ],
+        "authors": {
+          "Rob Tuytel": "All"
+        },
+        "dimensions": [
+          1000,
+          1000
+        ],
+        "max_resolution": [
+          8192,
+          8192
+        ],
+        "files_hash": "8fcb8cfa68b0965fe8914b1ffa5b90e922d4d239",
+        "description": "Free 8K texture of old tree bark with deep vertical fissures, rough coarse surface, earthy brown-gray tones and scattered green moss patches.",
+        "category_id": "fc8dd00d-a670-5b83-af7f-2281cb9ca987",
+        "category": "Wood/Bark/Fissured Bark",
+        "attributes": {
+          "surface_use": "object",
+          "condition": [
+            "mossy"
+          ],
+          "origin": "natural",
+          "setting": "outdoor"
+        },
+        "img_version": "af9c5247",
+        "download_count": 64311,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/tree_bark_03.png?width=256&height=256&format=webp&v=af9c5247"
+      },
+      "selected_api_file_records": {
+        "Diffuse": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/tree_bark_03/tree_bark_03_diff_2k.jpg",
+          "md5": "5ca9ee65b42be92e1c7800385721ff56",
+          "size": 3807797
+        },
+        "Rough": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/tree_bark_03/tree_bark_03_rough_2k.jpg",
+          "md5": "8cb3f67a7384350de35c0bc043432027",
+          "size": 1771898
+        },
+        "nor_gl": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/tree_bark_03/tree_bark_03_nor_gl_2k.png",
+          "md5": "17fddc05ec4263d43d5d97083251f17c",
+          "size": 26913291
+        },
+        "Displacement": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/tree_bark_03/tree_bark_03_disp_2k.png",
+          "md5": "774077f3ec95e88b9778bf971909fa82",
+          "size": 6284691
+        }
+      },
+      "maps": [
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/tree_bark_03/tree_bark_03_diff_2k.jpg",
+          "size_bytes": 3807797,
+          "md5": "5ca9ee65b42be92e1c7800385721ff56",
+          "sha256": "8e8e2f2f4cf3fb09d91203e688c4f5fd3e14b3044d45236ad1f192452f55b34c",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Rough",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/tree_bark_03/tree_bark_03_rough_2k.jpg",
+          "size_bytes": 1771898,
+          "md5": "8cb3f67a7384350de35c0bc043432027",
+          "sha256": "35b623b8c4daa1612e18d626adde7f8886835d417b633ffac2b0e24efec81060",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 1
+        },
+        {
+          "map": "nor_gl",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_nor_gl_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/tree_bark_03/tree_bark_03_nor_gl_2k.png",
+          "size_bytes": 26913291,
+          "md5": "17fddc05ec4263d43d5d97083251f17c",
+          "sha256": "15fc8f6b1aa6fab60e7821fab66ba4d4da20b8f97c283c9b35988727e2d030f0",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 6
+        },
+        {
+          "map": "Displacement",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_disp_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/tree_bark_03/tree_bark_03_disp_2k.png",
+          "size_bytes": 6284691,
+          "md5": "774077f3ec95e88b9778bf971909fa82",
+          "sha256": "12aa9b0951c402c338e83994694c22490e9d2867c6594bc10cf4ed2a0c3a7cf3",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 0
+        }
+      ],
+      "files": [
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/tree_bark_03/tree_bark_03_diff_2k.jpg",
+          "size_bytes": 3807797,
+          "md5": "5ca9ee65b42be92e1c7800385721ff56",
+          "sha256": "8e8e2f2f4cf3fb09d91203e688c4f5fd3e14b3044d45236ad1f192452f55b34c",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Rough",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/tree_bark_03/tree_bark_03_rough_2k.jpg",
+          "size_bytes": 1771898,
+          "md5": "8cb3f67a7384350de35c0bc043432027",
+          "sha256": "35b623b8c4daa1612e18d626adde7f8886835d417b633ffac2b0e24efec81060",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 1
+        },
+        {
+          "map": "nor_gl",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_nor_gl_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/tree_bark_03/tree_bark_03_nor_gl_2k.png",
+          "size_bytes": 26913291,
+          "md5": "17fddc05ec4263d43d5d97083251f17c",
+          "sha256": "15fc8f6b1aa6fab60e7821fab66ba4d4da20b8f97c283c9b35988727e2d030f0",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 6
+        },
+        {
+          "map": "Displacement",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_bark_03/tree_bark_03_disp_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/tree_bark_03/tree_bark_03_disp_2k.png",
+          "size_bytes": 6284691,
+          "md5": "774077f3ec95e88b9778bf971909fa82",
+          "sha256": "12aa9b0951c402c338e83994694c22490e9d2867c6594bc10cf4ed2a0c3a7cf3",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 0
+        }
+      ]
+    },
+    {
+      "id": "mud_forest",
+      "asset_type": "texture",
+      "name": "Mud Forest",
+      "authors": {
+        "eye-candy.xyz": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "asset_page": "https://polyhaven.com/a/mud_forest",
+      "api_info_url": "https://api.polyhaven.com/info/mud_forest",
+      "api_files_url": "https://api.polyhaven.com/files/mud_forest",
+      "dimensions_mm": [
+        2349.9999046325684,
+        2349.9999046325684
+      ],
+      "tile_size_m": [
+        2.3499999046325684,
+        2.3499999046325684
+      ],
+      "description": "Free 8K Mud Forest texture of dark, wet forest mud with compacted soil, scattered brown leaves and sticks, subtle wet sheen and fine, rough organic debris.",
+      "source_metadata": {
+        "date_published": 1680307200,
+        "name": "Mud Forest",
+        "categories": [
+          "outdoor",
+          "floor",
+          "natural",
+          "dirty"
+        ],
+        "type": 1,
+        "staging": null,
+        "tags": [
+          "brown",
+          "ground",
+          "dirty",
+          "leaves",
+          "mud",
+          "forest",
+          "sticks"
+        ],
+        "authors": {
+          "eye-candy.xyz": "All"
+        },
+        "info": null,
+        "dimensions": [
+          2349.9999046325684,
+          2349.9999046325684
+        ],
+        "max_resolution": [
+          8192,
+          8192
+        ],
+        "files_hash": "c09133c4536ecd3111be89c1d7122d8b96e36e60",
+        "description": "Free 8K Mud Forest texture of dark, wet forest mud with compacted soil, scattered brown leaves and sticks, subtle wet sheen and fine, rough organic debris.",
+        "category_id": "12aa7954-48be-5855-812b-7dc4aca856fd",
+        "category": "Ground & Terrain/Soil & Mud/Wet Mud",
+        "attributes": {
+          "surface_use": "ground",
+          "condition": [
+            "weathered"
+          ],
+          "origin": "natural",
+          "setting": "outdoor"
+        },
+        "img_version": "a2ab72f0",
+        "download_count": 37080,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/mud_forest.png?width=256&height=256&format=webp&v=a2ab72f0"
+      },
+      "selected_api_file_records": {
+        "Diffuse": {
+          "size": 3683329,
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mud_forest/mud_forest_diff_2k.jpg",
+          "md5": "e78c6eae192daae3d00a677a588d1739"
+        },
+        "Rough": {
+          "size": 1106194,
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mud_forest/mud_forest_rough_2k.jpg",
+          "md5": "f7feab5e66a7eabb63116bad875fc4c5"
+        },
+        "nor_gl": {
+          "size": 24357908,
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/mud_forest/mud_forest_nor_gl_2k.png",
+          "md5": "e6132199d99d207825f9eb9e846ebadd"
+        },
+        "Displacement": {
+          "size": 9369270,
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/mud_forest/mud_forest_disp_2k.png",
+          "md5": "70a9f1e1d2dfd59153a31cb5780bf711"
+        }
+      },
+      "maps": [
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mud_forest/mud_forest_diff_2k.jpg",
+          "size_bytes": 3683329,
+          "md5": "e78c6eae192daae3d00a677a588d1739",
+          "sha256": "6726cf9ad9b1be9bf284c629dd95d732527b18fc92be06ae9093a96a68f77628",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Rough",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mud_forest/mud_forest_rough_2k.jpg",
+          "size_bytes": 1106194,
+          "md5": "f7feab5e66a7eabb63116bad875fc4c5",
+          "sha256": "53245bf1e48255c38bb84ad033fb1b33da317d8507c513afd3f7f4dddcfbedaf",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "nor_gl",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_nor_gl_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/mud_forest/mud_forest_nor_gl_2k.png",
+          "size_bytes": 24357908,
+          "md5": "e6132199d99d207825f9eb9e846ebadd",
+          "sha256": "999d8791e94860ce4b011b8e64167f5804a5fd397bafe3b775ba76d729b3aa9a",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 2
+        },
+        {
+          "map": "Displacement",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_disp_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/mud_forest/mud_forest_disp_2k.png",
+          "size_bytes": 9369270,
+          "md5": "70a9f1e1d2dfd59153a31cb5780bf711",
+          "sha256": "ea775c25a83b90ad843dfdd2af61b388cc2ae4c3c27f9f8faa03986ac667afcb",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 2
+        }
+      ],
+      "files": [
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mud_forest/mud_forest_diff_2k.jpg",
+          "size_bytes": 3683329,
+          "md5": "e78c6eae192daae3d00a677a588d1739",
+          "sha256": "6726cf9ad9b1be9bf284c629dd95d732527b18fc92be06ae9093a96a68f77628",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Rough",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_rough_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/mud_forest/mud_forest_rough_2k.jpg",
+          "size_bytes": 1106194,
+          "md5": "f7feab5e66a7eabb63116bad875fc4c5",
+          "sha256": "53245bf1e48255c38bb84ad033fb1b33da317d8507c513afd3f7f4dddcfbedaf",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "nor_gl",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_nor_gl_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/mud_forest/mud_forest_nor_gl_2k.png",
+          "size_bytes": 24357908,
+          "md5": "e6132199d99d207825f9eb9e846ebadd",
+          "sha256": "999d8791e94860ce4b011b8e64167f5804a5fd397bafe3b775ba76d729b3aa9a",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 2
+        },
+        {
+          "map": "Displacement",
+          "format": "png",
+          "requested_resolution": "2k",
+          "path": "polyhaven/mud_forest/mud_forest_disp_2k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/mud_forest/mud_forest_disp_2k.png",
+          "size_bytes": 9369270,
+          "md5": "70a9f1e1d2dfd59153a31cb5780bf711",
+          "sha256": "ea775c25a83b90ad843dfdd2af61b388cc2ae4c3c27f9f8faa03986ac667afcb",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 16,
+          "png_color_type": 2
+        }
+      ]
+    },
+    {
+      "id": "dead_tree_trunk_02",
+      "asset_type": "model",
+      "name": "Dead Tree Trunk 02",
+      "authors": {
+        "Jenelle van Heerden": "Photography",
+        "Rico Cilliers": "processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "asset_page": "https://polyhaven.com/a/dead_tree_trunk_02",
+      "api_info_url": "https://api.polyhaven.com/info/dead_tree_trunk_02",
+      "api_files_url": "https://api.polyhaven.com/files/dead_tree_trunk_02",
+      "dimensions_mm": [
+        4053.7197589874268,
+        1056.6102862358093,
+        1055.4723739624023
+      ],
+      "dimensions_m": [
+        4.053719758987427,
+        1.0566102862358093,
+        1.0554723739624023
+      ],
+      "polycount": 155864,
+      "description": "Free 8K 3D model of a dead tree trunk - decayed, dry log with rough bark, lichen and broken stub; great for woodland debris, stump or forest-floor ground cover.",
+      "source_metadata": {
+        "lods": true,
+        "name": "Dead Tree Trunk 02",
+        "categories": [
+          "nature",
+          "plants",
+          "trees",
+          "collection: verdant_trail"
+        ],
+        "type": 2,
+        "version_required": {
+          "blend": "4.0.1"
+        },
+        "tags": [
+          "trunk",
+          "log",
+          "tree trunk",
+          "dead",
+          "decayed",
+          "dry",
+          "rough texture",
+          "forest floor",
+          "stump",
+          "bark",
+          "woodland",
+          "debris",
+          "environment",
+          "ground cover"
+        ],
+        "info": null,
+        "date_published": 1707177600,
+        "staging": null,
+        "max_resolution": [
+          8192,
+          8192
+        ],
+        "polycount": 155864,
+        "texel_density": 2880.0556980188876,
+        "dimensions": [
+          4053.7197589874268,
+          1056.6102862358093,
+          1055.4723739624023
+        ],
+        "sponsors": [
+          "26820710"
+        ],
+        "authors": {
+          "Jenelle van Heerden": "Photography",
+          "Rico Cilliers": "processing"
+        },
+        "files_hash": "0f6fb24c57fc368a36a02efe96bd2e838320575b",
+        "description": "Free 8K 3D model of a dead tree trunk - decayed, dry log with rough bark, lichen and broken stub; great for woodland debris, stump or forest-floor ground cover.",
+        "category_id": "a690b075-9aa9-5ad2-a35e-3e247d1fce4b",
+        "category": "Nature/Logs, Branches & Roots/Fallen Logs & Stumps",
+        "collections": [
+          "verdant_trail"
+        ],
+        "attributes": {
+          "condition": [
+            "weathered"
+          ],
+          "material": [
+            "wood"
+          ],
+          "lods": true
+        },
+        "img_version": "9e9ae236",
+        "download_count": 40130,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/dead_tree_trunk_02.png?width=256&height=256&format=webp&v=9e9ae236"
+      },
+      "selected_api_file_records": {
+        "gltf_2k": {
+          "include": {
+            "textures/dead_tree_trunk_02_nor_gl_2k.jpg": {
+              "size": 4920531,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_nor_gl_2k.jpg",
+              "md5": "50337a23125956306c1f7948e838d42f"
+            },
+            "textures/dead_tree_trunk_02_diff_2k.jpg": {
+              "size": 3484654,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_diff_2k.jpg",
+              "md5": "016bd2d6b12a49c130ffd1a34c0e50e9"
+            },
+            "textures/dead_tree_trunk_02_arm_2k.jpg": {
+              "size": 2968937,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_arm_2k.jpg",
+              "md5": "6c34b9bcc1f65d9f3c8e14016ceda09f"
+            },
+            "dead_tree_trunk_02.bin": {
+              "size": 1974352,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/dead_tree_trunk_02/dead_tree_trunk_02.bin",
+              "md5": "7848170c88b67d9e1d5e7d111db7b7ff"
+            }
+          },
+          "size": 2849,
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/dead_tree_trunk_02/dead_tree_trunk_02_2k.gltf",
+          "md5": "7f970c5713209f3babce57a9d1a07e83"
+        }
+      },
+      "gltf_path": "polyhaven/dead_tree_trunk_02/dead_tree_trunk_02_2k.gltf",
+      "maps": [
+        {
+          "map": "nor_gl",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/textures/dead_tree_trunk_02_nor_gl_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_nor_gl_2k.jpg",
+          "size_bytes": 4920531,
+          "md5": "50337a23125956306c1f7948e838d42f",
+          "sha256": "c01134451c6610e3c9225f16d8da2080b0eaba4df137e2bf1a7980d7ce417f35",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/textures/dead_tree_trunk_02_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_diff_2k.jpg",
+          "size_bytes": 3484654,
+          "md5": "016bd2d6b12a49c130ffd1a34c0e50e9",
+          "sha256": "d5b928c12885249e5a5fbe13619ac9693a67f6196137cc9eadedd5a6b90a87de",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "arm",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/textures/dead_tree_trunk_02_arm_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_arm_2k.jpg",
+          "size_bytes": 2968937,
+          "md5": "6c34b9bcc1f65d9f3c8e14016ceda09f",
+          "sha256": "0be2e1a7c945090c385c7ae2636e6e6c341d4da14d741164b5cfe3080655331d",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        }
+      ],
+      "files": [
+        {
+          "map": "gltf",
+          "format": "gltf",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/dead_tree_trunk_02_2k.gltf",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/dead_tree_trunk_02/dead_tree_trunk_02_2k.gltf",
+          "size_bytes": 2849,
+          "md5": "7f970c5713209f3babce57a9d1a07e83",
+          "sha256": "47699d11f00d22d5f87f8776f94c9f2516f839a0de9c5da80126b355200edd42",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": null
+        },
+        {
+          "map": "nor_gl",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/textures/dead_tree_trunk_02_nor_gl_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_nor_gl_2k.jpg",
+          "size_bytes": 4920531,
+          "md5": "50337a23125956306c1f7948e838d42f",
+          "sha256": "c01134451c6610e3c9225f16d8da2080b0eaba4df137e2bf1a7980d7ce417f35",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/textures/dead_tree_trunk_02_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_diff_2k.jpg",
+          "size_bytes": 3484654,
+          "md5": "016bd2d6b12a49c130ffd1a34c0e50e9",
+          "sha256": "d5b928c12885249e5a5fbe13619ac9693a67f6196137cc9eadedd5a6b90a87de",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "arm",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/textures/dead_tree_trunk_02_arm_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/dead_tree_trunk_02/dead_tree_trunk_02_arm_2k.jpg",
+          "size_bytes": 2968937,
+          "md5": "6c34b9bcc1f65d9f3c8e14016ceda09f",
+          "sha256": "0be2e1a7c945090c385c7ae2636e6e6c341d4da14d741164b5cfe3080655331d",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "geometry",
+          "format": "bin",
+          "requested_resolution": "2k",
+          "path": "polyhaven/dead_tree_trunk_02/dead_tree_trunk_02.bin",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/dead_tree_trunk_02/dead_tree_trunk_02.bin",
+          "size_bytes": 1974352,
+          "md5": "7848170c88b67d9e1d5e7d111db7b7ff",
+          "sha256": "2b1b7ca07d98396ddc1987e367dcff9734df16b62e997c14837512d134687ded",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": null
+        }
+      ],
+      "gltf_actual_geometry": {
+        "vertices": 46112,
+        "triangles": 83128,
+        "mesh_count": 1,
+        "verified_external_dependencies": [
+          "textures/dead_tree_trunk_02_nor_gl_2k.jpg",
+          "textures/dead_tree_trunk_02_diff_2k.jpg",
+          "textures/dead_tree_trunk_02_arm_2k.jpg",
+          "dead_tree_trunk_02.bin"
+        ]
+      }
+    },
+    {
+      "id": "tree_stump_01",
+      "asset_type": "model",
+      "name": "Tree Stump 01",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "asset_page": "https://polyhaven.com/a/tree_stump_01",
+      "api_info_url": "https://api.polyhaven.com/info/tree_stump_01",
+      "api_files_url": "https://api.polyhaven.com/files/tree_stump_01",
+      "dimensions_mm": [
+        1425.5504608154297,
+        1590.3143286705017,
+        572.6675391197205
+      ],
+      "dimensions_m": [
+        1.4255504608154297,
+        1.5903143286705017,
+        0.5726675391197205
+      ],
+      "polycount": 41046,
+      "description": "Free 8K model of a decayed tree stump with exposed roots, rough bark, moss patches and leaf-littered forest floor detail.",
+      "source_metadata": {
+        "date_published": 1688515200,
+        "name": "Tree Stump 01",
+        "type": 2,
+        "staging": null,
+        "authors": {
+          "Rob Tuytel": "All"
+        },
+        "info": null,
+        "categories": [
+          "nature",
+          "plants",
+          "ground cover",
+          "trees",
+          "collection: pine_forest"
+        ],
+        "tags": [
+          "tree",
+          "trunk",
+          "stump",
+          "dead tree",
+          "bark",
+          "forest",
+          "natural",
+          "nature",
+          "woodland",
+          "foliage",
+          "environment",
+          "forest floor",
+          "leaf",
+          "dead",
+          "roots",
+          "decayed",
+          "log",
+          "dry",
+          "mossy",
+          "debris",
+          "ground cover",
+          "moss",
+          "rough texture"
+        ],
+        "max_resolution": [
+          8192,
+          8192
+        ],
+        "polycount": 41046,
+        "texel_density": 3835.391643639636,
+        "dimensions": [
+          1425.5504608154297,
+          1590.3143286705017,
+          572.6675391197205
+        ],
+        "files_hash": "a61e4018508b545a75a5a705d54d5de8e9c8df9f",
+        "description": "Free 8K model of a decayed tree stump with exposed roots, rough bark, moss patches and leaf-littered forest floor detail.",
+        "category_id": "a690b075-9aa9-5ad2-a35e-3e247d1fce4b",
+        "category": "Nature/Logs, Branches & Roots/Fallen Logs & Stumps",
+        "collections": [
+          "pine_forest"
+        ],
+        "attributes": {
+          "condition": [
+            "weathered"
+          ],
+          "material": [
+            "wood"
+          ]
+        },
+        "img_version": "8d45a18a",
+        "download_count": 21873,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/tree_stump_01.png?width=256&height=256&format=webp&v=8d45a18a"
+      },
+      "selected_api_file_records": {
+        "gltf_2k": {
+          "include": {
+            "tree_stump_01.bin": {
+              "size": 965380,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/tree_stump_01/tree_stump_01.bin",
+              "md5": "acb292727949126b92e58217fd50fca9"
+            },
+            "textures/tree_stump_01_nor_gl_2k.jpg": {
+              "size": 4415649,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_nor_gl_2k.jpg",
+              "md5": "78c30fd8b3b070596e92e7969c78eaa7"
+            },
+            "textures/tree_stump_01_diff_2k.jpg": {
+              "size": 3189746,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_diff_2k.jpg",
+              "md5": "5e061f6985b34f3c36824e63473ed1c9"
+            },
+            "textures/tree_stump_01_arm_2k.jpg": {
+              "size": 2801595,
+              "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_arm_2k.jpg",
+              "md5": "07f544eae11d9a255bef25e82510a91f"
+            }
+          },
+          "size": 2793,
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/tree_stump_01/tree_stump_01_2k.gltf",
+          "md5": "5af8eb57d53722ad13a5b06f8910563e"
+        }
+      },
+      "gltf_path": "polyhaven/tree_stump_01/tree_stump_01_2k.gltf",
+      "maps": [
+        {
+          "map": "nor_gl",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/textures/tree_stump_01_nor_gl_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_nor_gl_2k.jpg",
+          "size_bytes": 4415649,
+          "md5": "78c30fd8b3b070596e92e7969c78eaa7",
+          "sha256": "2cf395f2779c9e3dfab96088af1384573ecc3f36edbd5ccae8dfe26577c969b0",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/textures/tree_stump_01_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_diff_2k.jpg",
+          "size_bytes": 3189746,
+          "md5": "5e061f6985b34f3c36824e63473ed1c9",
+          "sha256": "77d5238bc40168bcff0833dcf6510aecea4a2b6746968fed7879c5ca7864e6f5",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "arm",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/textures/tree_stump_01_arm_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_arm_2k.jpg",
+          "size_bytes": 2801595,
+          "md5": "07f544eae11d9a255bef25e82510a91f",
+          "sha256": "b025cf566d4ce1da452353f3d98c6ddee2fa63b2b440cfa94d9405de347f846f",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        }
+      ],
+      "files": [
+        {
+          "map": "gltf",
+          "format": "gltf",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/tree_stump_01_2k.gltf",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/tree_stump_01/tree_stump_01_2k.gltf",
+          "size_bytes": 2793,
+          "md5": "5af8eb57d53722ad13a5b06f8910563e",
+          "sha256": "9fd1a672738ce1023318b9af829ccc725bb05ddcf38ff2de905a66f42d8f5143",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": null
+        },
+        {
+          "map": "geometry",
+          "format": "bin",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/tree_stump_01.bin",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/tree_stump_01/tree_stump_01.bin",
+          "size_bytes": 965380,
+          "md5": "acb292727949126b92e58217fd50fca9",
+          "sha256": "b4d9ca70b3c908c4a638fbd6a23ed96c84055bbbf14cf44b89e31ad59fa21e0a",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": null
+        },
+        {
+          "map": "nor_gl",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/textures/tree_stump_01_nor_gl_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_nor_gl_2k.jpg",
+          "size_bytes": 4415649,
+          "md5": "78c30fd8b3b070596e92e7969c78eaa7",
+          "sha256": "2cf395f2779c9e3dfab96088af1384573ecc3f36edbd5ccae8dfe26577c969b0",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "Diffuse",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/textures/tree_stump_01_diff_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_diff_2k.jpg",
+          "size_bytes": 3189746,
+          "md5": "5e061f6985b34f3c36824e63473ed1c9",
+          "sha256": "77d5238bc40168bcff0833dcf6510aecea4a2b6746968fed7879c5ca7864e6f5",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "sRGB",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        },
+        {
+          "map": "arm",
+          "format": "jpg",
+          "requested_resolution": "2k",
+          "path": "polyhaven/tree_stump_01/textures/tree_stump_01_arm_2k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_stump_01/tree_stump_01_arm_2k.jpg",
+          "size_bytes": 2801595,
+          "md5": "07f544eae11d9a255bef25e82510a91f",
+          "sha256": "b025cf566d4ce1da452353f3d98c6ddee2fa63b2b440cfa94d9405de347f846f",
+          "validated_size_and_md5": true,
+          "reused_verified_local_file": true,
+          "color_space": "Non-Color",
+          "dimensions_px": [
+            2048,
+            2048
+          ],
+          "storage_bit_depth": 8,
+          "components": 3
+        }
+      ],
+      "gltf_actual_geometry": {
+        "vertices": 22472,
+        "triangles": 41046,
+        "mesh_count": 1,
+        "verified_external_dependencies": [
+          "textures/tree_stump_01_nor_gl_2k.jpg",
+          "textures/tree_stump_01_diff_2k.jpg",
+          "textures/tree_stump_01_arm_2k.jpg",
+          "tree_stump_01.bin"
+        ]
+      }
+    }
+  ],
+  "total_files": 22,
+  "total_bytes": 121492618
+}

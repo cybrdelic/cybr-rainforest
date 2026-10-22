@@ -1,0 +1,13 @@
+{
+  "host_python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "Pillow": "12.3.0",
+  "native_blender": "5.4.0 Alpha",
+  "native_build": "3fe0f2ab2a29",
+  "renderer": "Cycles CPU",
+  "original_blend_required_to_open_assets": false,
+  "original_blend_required_to_rebuild_assets": false,
+  "original_blend_required_for_unchanged_baseline_hash_check": true
+}

@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "scope": "Document/package structure, imported-record consistency and JSON parsing ONLY; not native rendering or visual quality",
+  "checks": [
+    {
+      "name": "Two historical cameras imported",
+      "passed": true
+    },
+    {
+      "name": "Camera scene record matches preferred historical scene",
+      "passed": true
+    },
+    {
+      "name": "Recorded lens lengths imported",
+      "passed": true
+    },
+    {
+      "name": "C01 matrix shape and finite values",
+      "passed": true
+    },
+    {
+      "name": "C01 homogeneous row",
+      "passed": true
+    },
+    {
+      "name": "C01 rotation orthonormal within source precision",
+      "passed": true
+    },
+    {
+      "name": "C02 matrix shape and finite values",
+      "passed": true
+    },
+    {
+      "name": "C02 homogeneous row",
+      "passed": true
+    },
+    {
+      "name": "C02 rotation orthonormal within source precision",
+      "passed": true
+    },
+    {
+      "name": "56 historical bindings preserved in manifest",
+      "passed": true
+    },
+    {
+      "name": "All gates deliberately not evaluated",
+      "passed": true
+    },
+    {
+      "name": "No native completion claimed",
+      "passed": true
+    },
+    {
+      "name": "Ten seconds at 24 fps gives 240 native frames",
+      "passed": true
+    },
+    {
+      "name": "Same historical transform/exposure for both cameras",
+      "passed": true
+    },
+    {
+      "name": "Original file references never treated as a new completed scene",
+      "passed": true
+    },
+    {
+      "name": "All JSON parse successfully",
+      "passed": true
+    }
+  ],
+  "native_blender_tests_executed": 0,
+  "visual_reviews_performed": 0
+}

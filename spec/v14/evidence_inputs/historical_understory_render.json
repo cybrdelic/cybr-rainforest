@@ -1,0 +1,208 @@
+{
+  "completed": true,
+  "scene": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+  "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+  "camera": "02_ROOTS_AND_UNDERSTORY",
+  "width": 1280,
+  "height": 854,
+  "mode": "radiance",
+  "samples": 40,
+  "renderer": "CYCLES",
+  "image_generated": false,
+  "native_resolution": true,
+  "camera_matrix": [
+    [
+      0.8931001424789429,
+      -0.059006936848163605,
+      -0.44597119092941284,
+      -3.299999952316284
+    ],
+    [
+      -0.4498578906059265,
+      -0.11714611947536469,
+      -0.8853839039802551,
+      -3.5
+    ],
+    [
+      -3.4454465946964774e-09,
+      0.9913601875305176,
+      -0.1311679482460022,
+      1.0489965677261353
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens_mm": 30.0,
+  "native_bvh": "EMBREE compact; debug settings explicitly enabled",
+  "exposure": 4.199999809265137,
+  "look": "AgX - Medium High Contrast",
+  "view_transform": "AgX",
+  "gamma": 1.0,
+  "seconds": 620.2279117107391,
+  "peak_rss_mb": 3561.24609375,
+  "linear_files": {
+    "Image": {
+      "path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/assembled_Image.exr",
+      "sha256": "56857f89c4da574ab7b8d4bfddebaee166543f06a54146ef010f4d5b8cb5c78f"
+    },
+    "Albedo": {
+      "path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/assembled_Albedo.exr",
+      "sha256": "14a4549d22ece8887af07a90d8f8fbf474e213ca1c7c0d23743194a223a76f47"
+    },
+    "Normal": {
+      "path": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/assembled_Normal.exr",
+      "sha256": "c113d638b92a70b07f2d15e353f18e8249802a4ead3453834db1e1a04f9f924d"
+    }
+  },
+  "true_first_surface_guides": true,
+  "guide_samples": 4,
+  "bands": [
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_00.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_00.json",
+      "mode": "radiance",
+      "top": 0,
+      "bottom": 240,
+      "sha256": "e156ccff6ce4f6e8421f0371f2e61d0f00ea78338111dbae37595f295edb22a0",
+      "seconds": 155.43002700805664,
+      "peak_rss_mb": 3561.24609375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_01.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_01.json",
+      "mode": "radiance",
+      "top": 240,
+      "bottom": 480,
+      "sha256": "5a172abfa4bf460982ea966856b6aa3568c1fc8e9ac33c6b500a96bdfe400256",
+      "seconds": 160.08424854278564,
+      "peak_rss_mb": 3526.02734375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_02.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_02.json",
+      "mode": "radiance",
+      "top": 480,
+      "bottom": 720,
+      "sha256": "cfed5956f816dddb63873546b64534e877fd64313acba4dd6b67db8da2ed70b0",
+      "seconds": 157.44149684906006,
+      "peak_rss_mb": 3539.74609375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_03.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/radiance_03.json",
+      "mode": "radiance",
+      "top": 720,
+      "bottom": 854,
+      "sha256": "a6b8675716f225933f7f57600cf8e80d2b56167c60a2876c87dd4318052d80d4",
+      "seconds": 86.36241173744202,
+      "peak_rss_mb": 3542.625
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_00.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_00.json",
+      "mode": "guides",
+      "top": 0,
+      "bottom": 240,
+      "sha256": "d30d37f0ada3efb7ec13ee6efea12c2310229c6891c99a011adbb599c6a4cea2",
+      "seconds": 5.891651153564453,
+      "peak_rss_mb": 2833.51171875
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_01.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_01.json",
+      "mode": "guides",
+      "top": 240,
+      "bottom": 480,
+      "sha256": "b1bfe36e8d765c0fb5a019ebfbf12183681d91a75e6d814f2a3fafdd89a35d1f",
+      "seconds": 5.784023284912109,
+      "peak_rss_mb": 2828.19140625
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_02.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_02.json",
+      "mode": "guides",
+      "top": 480,
+      "bottom": 720,
+      "sha256": "fc1f88b72cb00329716547a2f1e94605705a15b53121c9c8c063b525bebfe671",
+      "seconds": 5.851487159729004,
+      "peak_rss_mb": 2838.8828125
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_03.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/guides_03.json",
+      "mode": "guides",
+      "top": 720,
+      "bottom": 854,
+      "sha256": "9a1433bc5a0dbd078c719e6616578d5480d041569c9192cca39ea1bd812cf61a",
+      "seconds": 5.150063514709473,
+      "peak_rss_mb": 2843.2890625
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_00.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_00.json",
+      "mode": "normals",
+      "top": 0,
+      "bottom": 240,
+      "sha256": "3762bcd0703154431c96991c2668dcdb6d87bc4a99c9da0ce07f4719aed35d4f",
+      "seconds": 6.864486932754517,
+      "peak_rss_mb": 3072.37109375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_01.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_01.json",
+      "mode": "normals",
+      "top": 240,
+      "bottom": 480,
+      "sha256": "44edd085dc48f90197ec0d414329e40307a45b5021ba5f1eafa8607895834e9d",
+      "seconds": 7.450096607208252,
+      "peak_rss_mb": 3083.53125
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_02.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_02.json",
+      "mode": "normals",
+      "top": 480,
+      "bottom": 720,
+      "sha256": "6c7f66152f88b5704324550a4460b0d7f0cce0eab7e71e03a068301c28050e5a",
+      "seconds": 7.861916542053223,
+      "peak_rss_mb": 3088.59375
+    },
+    {
+      "file": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_03.exr",
+      "record": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/normals_03.json",
+      "mode": "normals",
+      "top": 720,
+      "bottom": 854,
+      "sha256": "a2a14d6d08588aac8d0f0e0ab6ff1942545e2cfadab7d66783e4a5d0bed66cec",
+      "seconds": 6.934335231781006,
+      "peak_rss_mb": 3097.5625
+    }
+  ],
+  "zero_background_normal_samples": 42,
+  "assembly": "Exact float32 native rows; no resizing, blending or repeated pixels; one full-frame denoise follows.",
+  "geometry_culled_for_memory": false,
+  "geometry_decimated_for_memory": false,
+  "source_plan": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/plan.json",
+  "source_plan_sha256": "b2e16b3f8ac2528781dcdcfdce3556a8fc5eb7881e27da41a28387c08b9a2ce3",
+  "output": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/renders/10_FOREST_UNDERSTORY_FINAL.png",
+  "raw_checkpoint": "inputs/historical/GREEN_TERROR_ASSET_REPAIR/raw_bands/10_FOREST_UNDERSTORY_FINAL/assembled.json",
+  "raw_checkpoint_sha256": "3bf94a1f750c3259ac9232adddaa4dcb148840b341ed2c0584fd6496f65183fa",
+  "denoised": true,
+  "denoising_deferred_to_separate_process": true,
+  "denoising_quality": "HIGH",
+  "denoising_prefilter": "ACCURATE",
+  "denoising_guides": [
+    "normal",
+    "albedo"
+  ],
+  "transport_seconds": 611.1062445640564,
+  "transport_peak_rss_mb": 3561.24609375,
+  "denoising_seconds": 9.121577024459839,
+  "denoising_peak_rss_mb": 1159.05078125,
+  "image_sha256": "af2899acdd5acf6dc2473c84d2ca7a1cf6b67a948e1cffc7dc4cf7e4ecad6765",
+  "image_bytes": 5619741
+}

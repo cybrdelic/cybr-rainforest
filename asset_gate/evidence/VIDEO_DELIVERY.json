@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "path": "inputs/historical/GREEN_TERROR_ASSET_GATE/GREEN_TERROR_NATIVE_ASSET_INSPECTION.mp4",
+  "sha256": "7da77642f936adf698fa31d9fb39c9d750bc431a81b6363d43d291fb85c6b291",
+  "frames_rendered": 96,
+  "decoded_frames": 96,
+  "unique_decoded_frames": 96,
+  "width": 960,
+  "height": 720,
+  "fps": 24,
+  "seconds": 4,
+  "samples_per_frame": 32,
+  "renderer": "CYCLES",
+  "camera_motion_only": true,
+  "full_forest_video": false,
+  "image_generation_used": false,
+  "upscaled": false,
+  "interpolated": false,
+  "looped": false,
+  "audio": false,
+  "animation_sha256": "bd512a8bd7b2ad4206d598337d52cac78d22c1f7e585e1b14418451a40b95b23"
+}

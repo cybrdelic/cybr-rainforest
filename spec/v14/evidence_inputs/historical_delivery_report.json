@@ -1,0 +1,194 @@
+{
+  "project": "GREEN TERROR",
+  "revision": "Integrated botanical and contact repair",
+  "completed_native_delivery": true,
+  "scope": "Full-forest asset integration and a repaired bounded contact study; native stills and editable models. Not a finished hyperrealistic environment or a new film.",
+  "input_scene": "inputs/historical/GREEN_TERROR_V11/GREEN_TERROR_V11_STRUCTURE.blend",
+  "input_sha256": "16b3a638e8392e298e7169da8d752ef2153d8fab84b9416e8382870bf7eaf17e",
+  "input_unchanged": true,
+  "models": [
+    {
+      "file": "GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+      "bytes": 365226763,
+      "sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+      "packed_textures": 42,
+      "unique_triangles": 9222516,
+      "zero_area_triangles": 0,
+      "validation": "evidence/validation_GREEN_TERROR_FOREST_REPAIRED_FINAL.json"
+    },
+    {
+      "file": "GROUND_SECTION_FINAL.blend",
+      "bytes": 118180190,
+      "sha256": "4a9c0030b601270816c5e590e62bffab2458c7c3f71e8e88525a9ae5ca47258d",
+      "packed_textures": 26,
+      "unique_triangles": 1632870,
+      "zero_area_triangles": 0,
+      "validation": "evidence/validation_GROUND_SECTION_FINAL.json"
+    }
+  ],
+  "stills": [
+    {
+      "title": "Original forest close-up",
+      "file": "renders/09_FOREST_CLOSEUP_FINAL.png",
+      "width": 1280,
+      "height": 960,
+      "bit_depth": 16,
+      "samples": 48,
+      "adaptive_sampling": false,
+      "scene": "GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+      "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+      "sha256": "7c6d26b5836431ead7dee644109440f84ce6e64923a59ebcb116eac8c1b0de3f",
+      "seconds": 755.6732416152954,
+      "peak_rss_mb": 3530.375,
+      "record": "renders/09_FOREST_CLOSEUP_FINAL.json",
+      "native_full_resolution": true,
+      "upscaled": false,
+      "image_generated": false,
+      "pixel_band_assembly": true
+    },
+    {
+      "title": "Original forest understory",
+      "file": "renders/10_FOREST_UNDERSTORY_FINAL.png",
+      "width": 1280,
+      "height": 854,
+      "bit_depth": 16,
+      "samples": 40,
+      "adaptive_sampling": false,
+      "scene": "GREEN_TERROR_FOREST_REPAIRED_FINAL.blend",
+      "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd",
+      "sha256": "af2899acdd5acf6dc2473c84d2ca7a1cf6b67a948e1cffc7dc4cf7e4ecad6765",
+      "seconds": 620.2279117107391,
+      "peak_rss_mb": 3561.24609375,
+      "record": "renders/10_FOREST_UNDERSTORY_FINAL.json",
+      "native_full_resolution": true,
+      "upscaled": false,
+      "image_generated": false,
+      "pixel_band_assembly": true
+    },
+    {
+      "title": "Bounded contact and fern study",
+      "file": "renders/04_GROUND_SECTION.png",
+      "width": 1600,
+      "height": 1067,
+      "bit_depth": 16,
+      "samples": 80,
+      "adaptive_sampling": true,
+      "scene": "GROUND_SECTION_FINAL.blend",
+      "scene_sha256": "4a9c0030b601270816c5e590e62bffab2458c7c3f71e8e88525a9ae5ca47258d",
+      "sha256": "ce2243aa4cde8512f0e311e8a7c80429272f0160999b0727d24bd656b7af01d2",
+      "seconds": 121.73366485599945,
+      "peak_rss_mb": 1946.85546875,
+      "record": "renders/04_GROUND_SECTION.json",
+      "native_full_resolution": true,
+      "upscaled": false,
+      "image_generated": false,
+      "pixel_band_assembly": false
+    }
+  ],
+  "new_video_completed": false,
+  "image_generation_used": false,
+  "geometry_culled_for_render_memory": false,
+  "geometry_decimated_for_render_memory": false,
+  "original_planting_roots": 18940,
+  "original_controller_data_preserved": true,
+  "original_camera_matrices_preserved": true,
+  "referenced_plant_collection_bindings": 56,
+  "host_climber_rebuilds": 16,
+  "hierarchical_plant_graphs": 16,
+  "final_scene_contract": {
+    "controllers": true,
+    "cameras": true,
+    "lights": true,
+    "wood_coordinates": true,
+    "world": true,
+    "display": true,
+    "all_replaced_collections_nonempty": true,
+    "no_linked_external_blend_libraries": true,
+    "all_file_images_packed": true,
+    "all_graphs_are_rooted_acyclic": true,
+    "original_root_count_18940": true
+  },
+  "coherent_climber_hosts": 16,
+  "coherent_leaf_family_per_vine": true,
+  "native_final_scene_contract": "evidence/final_scene_contract.json",
+  "family_binding_validation": "evidence/family_binding_tests.json",
+  "litter_contact_study": {
+    "accepted_leaves": 360,
+    "median_per_leaf_clearance_before_m": 0.015222647717739816,
+    "median_per_leaf_clearance_after_m": 0.0037417650873618658,
+    "minimum_sampled_centroid_clearance_m": -6.088040785983545e-05,
+    "maximum_accepted_p95_strain": 0.049306022320043615,
+    "scope": "Local metric-preserving settling and sampled supports; neither global collision-free proof nor calibrated cloth physics."
+  },
+  "solver_tests": {
+    "passed": true,
+    "count": 24,
+    "report": "evidence/solver_tests.json"
+  },
+  "visual_review": {
+    "images_inspected": true,
+    "inspection_method": "Decoded the native 16-bit files, then visually inspected full-frame JPEG display conversions. No cropping or relighting was used to hide scene weaknesses. The ground thumbnail was also inspected; original native PNGs are delivered.",
+    "inspected_image_hashes": [
+      "7c6d26b5836431ead7dee644109440f84ce6e64923a59ebcb116eac8c1b0de3f",
+      "af2899acdd5acf6dc2473c84d2ca7a1cf6b67a948e1cffc7dc4cf7e4ecad6765",
+      "ce2243aa4cde8512f0e311e8a7c80429272f0160999b0727d24bd656b7af01d2"
+    ],
+    "records": [
+      {
+        "file": "renders/09_FOREST_CLOSEUP_FINAL.png",
+        "sha256": "7c6d26b5836431ead7dee644109440f84ce6e64923a59ebcb116eac8c1b0de3f",
+        "width": 1280,
+        "height": 960,
+        "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd"
+      },
+      {
+        "file": "renders/10_FOREST_UNDERSTORY_FINAL.png",
+        "sha256": "af2899acdd5acf6dc2473c84d2ca7a1cf6b67a948e1cffc7dc4cf7e4ecad6765",
+        "width": 1280,
+        "height": 854,
+        "scene_sha256": "02c3132703404571f2f85bbcc16290639d32497ff819433a68639e2441c6a9fd"
+      },
+      {
+        "file": "renders/04_GROUND_SECTION.png",
+        "sha256": "ce2243aa4cde8512f0e311e8a7c80429272f0160999b0727d24bd656b7af01d2",
+        "width": 1600,
+        "height": 1067,
+        "scene_sha256": "4a9c0030b601270816c5e590e62bffab2458c7c3f71e8e88525a9ae5ca47258d"
+      }
+    ],
+    "photorealism_approved": false,
+    "all_realism_problems_fixed": false,
+    "observed_improvements": [
+      "Native leaf proportions are no longer stretched to the inherited generic blade ratios.",
+      "Climbing plants keep one leaf family per vine with distinct mature and juvenile orientation.",
+      "Actual referenced shrub and midstory assets contain connected branching hierarchies rather than the earlier sparse lateral template.",
+      "Fern fronds vary in length, age, droop, pinna spacing, orientation and damage.",
+      "The bounded litter study has less elevated clearance after local metric-constrained settling."
+    ],
+    "remaining_visible_weaknesses": [
+      "The forest close-up still has smooth and repeated leaf silhouettes, especially in the dense left-hand shrubs.",
+      "The wide shot remains dark in the foreground and reveals repeated upright stems and large simple crown forms.",
+      "The large pale bark surfaces and root macrogeometry are inherited; they were not comprehensively remodeled in this repair.",
+      "Dead leaves in the contact study still read somewhat leathery or uniformly crumpled, despite better support.",
+      "The new render set is static; no wind or temporal stability has been validated."
+    ],
+    "rejected_test": {
+      "file": "renders/07_DRY_TISSUE_REVIEW.png",
+      "reason": "Reducing broad pigment/bump variation too far produced plain cardboard-like leaves. This model/material variant is not delivered as final."
+    },
+    "acceptance_scope": "Completed native integration repair and contact-study delivery, not an approved finished hyperrealistic rainforest."
+  },
+  "native_pipeline": "CPU Cycles radiance; independent native material-color and shading-normal guides; exact float32 full-resolution row assembly where required; one full-frame OIDN High/Accurate and one AgX display transform; original 16-bit PNG.",
+  "failed_attempts": [
+    "Concurrent native build/render exhausted worker memory; rerun serially.",
+    "Full-frame 1280 x 960 forest attempt was killed before completion; final forest outputs are newly completed native pixel bands."
+  ],
+  "remaining_limits": [
+    "Finite species-like families and repeated distant crowns remain.",
+    "Large trunk/root macrostructure is inherited from the retained forest.",
+    "Litter appearance still needs better decay/boundary variation; sampled contact is not complete collision resolution.",
+    "Materials are authored approximations, not measured spectral tissue.",
+    "Static forest; no new whole-forest wind or native film in this delivery.",
+    "Native validation and larger geometry counts do not certify hyperrealism."
+  ]
+}
